@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.4.12)  15 JUL 2018 09:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.4.12)  15 JUL 2018 21:36
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**paper
-(./paper.tex
+**/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.te
+x
+
+(/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (./ieeeaccess.cls (./IEEEtran.cls
@@ -854,17 +857,17 @@ File: figures/PerimeterBotsCircle4.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/PerimeterBotsCircle4.pdf  used on input line 4
 35.
 (pdftex.def)             Requested size: 113.81102pt x 146.73784pt.
-<figures/PerimeterBotsCircle1.pdf, id=115, 369.38pt x 464.73625pt>
+<figures/PerimeterBotsCircle1.pdf, id=115, 560.55621pt x 792.64932pt>
 File: figures/PerimeterBotsCircle1.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle1.pdf>
 Package pdftex.def Info: figures/PerimeterBotsCircle1.pdf  used on input line 4
 45.
-(pdftex.def)             Requested size: 113.81102pt x 143.18742pt.
+(pdftex.def)             Requested size: 113.81102pt x 160.92183pt.
 File: figures/PerimeterBotsCircle1.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle1.pdf>
 Package pdftex.def Info: figures/PerimeterBotsCircle1.pdf  used on input line 4
 45.
-(pdftex.def)             Requested size: 113.81102pt x 143.18742pt.
+(pdftex.def)             Requested size: 113.81102pt x 160.92183pt.
 <figures/PerimeterBotsCircle2.pdf, id=116, 368.37625pt x 467.7475pt>
 File: figures/PerimeterBotsCircle2.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle2.pdf>
@@ -1547,19 +1550,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [15 <./figures/BaselineConcaveEffectPath80602.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/ConcavePerimeter4560-DIST.pdf, id=306, 1387.1825pt x 711.65875pt>
+<figures/ConcavePerimeter4560-DIST.pdf, id=306, 1387.58403pt x 711.85951pt>
 File: figures/ConcavePerimeter4560-DIST.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST.pdf  used on input l
-ine 825.
-(pdftex.def)             Requested size: 512.1496pt x 262.74495pt.
+ine 823.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/ConcavePerimeter4560-DIST.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST.pdf  used on input l
-ine 825.
-(pdftex.def)             Requested size: 512.1496pt x 262.74495pt.
+ine 823.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 825--825
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 823--823
  [][] 
  []
 
@@ -1568,7 +1571,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 835.
+Package pdftex.def Info: notaglineLogo.png  used on input line 833.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1590,15 +1593,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: figures/ConcavePerimeter4560-DIST-2.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST-2.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST-2.pdf  used on input
- line 838.
+ line 836.
 (pdftex.def)             Requested size: 512.1496pt x 262.74495pt.
 File: figures/ConcavePerimeter4560-DIST-2.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST-2.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST-2.pdf  used on input
- line 838.
+ line 836.
 (pdftex.def)             Requested size: 512.1496pt x 262.74495pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 838--838
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 836--836
  [][] 
  []
 
@@ -1610,7 +1613,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 848.
+Package pdftex.def Info: notaglineLogo.png  used on input line 846.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1630,19 +1633,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [17 <./figures/Concave4560-1.pdf> <./figures/Concave4560-2.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/ConcavePerimeter4560-MAG.pdf, id=338, 1363.0925pt x 717.68124pt>
+<figures/ConcavePerimeter4560-MAG.pdf, id=338, 1387.58403pt x 711.85951pt>
 File: figures/ConcavePerimeter4560-MAG.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-MAG.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-MAG.pdf  used on input li
-ne 851.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+ne 849.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/ConcavePerimeter4560-MAG.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-MAG.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-MAG.pdf  used on input li
-ne 851.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+ne 849.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 851--851
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 849--849
  [][] 
  []
 
@@ -1651,7 +1654,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 861.
+Package pdftex.def Info: notaglineLogo.png  used on input line 859.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1671,19 +1674,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [18 <./figures/Concave4560-3.pdf> <./figures/ConcavePerimeter4560-DIST.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/ConcavePerimeter4560-MAG-2.pdf, id=354, 1363.0925pt x 717.68124pt>
+<figures/ConcavePerimeter4560-MAG-2.pdf, id=398, 1387.58403pt x 711.85951pt>
 File: figures/ConcavePerimeter4560-MAG-2.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-MAG-2.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-MAG-2.pdf  used on input 
-line 864.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+line 862.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/ConcavePerimeter4560-MAG-2.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-MAG-2.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-MAG-2.pdf  used on input 
-line 864.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+line 862.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 864--864
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 862--862
  [][] 
  []
 
@@ -1692,7 +1695,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 874.
+Package pdftex.def Info: notaglineLogo.png  used on input line 872.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1711,54 +1714,51 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [19 <./figures/ConcavePerimeter4560-DIST-2.pdf> <./figures/ConcavePerimeter4560
 -MAG.pdf>]
-<figures/ConcavePerimeter4560-1.pdf, id=371, 1363.0925pt x 717.68124pt>
+<figures/ConcavePerimeter4560-1.pdf, id=460, 1387.58403pt x 711.85951pt>
 File: figures/ConcavePerimeter4560-1.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-1.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-1.pdf  used on input line
- 879.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+ 877.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/ConcavePerimeter4560-1.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-1.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-1.pdf  used on input line
- 879.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+ 877.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 879--879
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 877--877
  [][] 
  []
 
-<figures/SwarmCoverage4560-1.pdf, id=372, 1363.0925pt x 717.68124pt>
+<figures/SwarmCoverage4560-1.pdf, id=461, 1387.58403pt x 711.85951pt>
 File: figures/SwarmCoverage4560-1.pdf Graphic file (type pdf)
 <use figures/SwarmCoverage4560-1.pdf>
 Package pdftex.def Info: figures/SwarmCoverage4560-1.pdf  used on input line 89
-2.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+0.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/SwarmCoverage4560-1.pdf Graphic file (type pdf)
 <use figures/SwarmCoverage4560-1.pdf>
 Package pdftex.def Info: figures/SwarmCoverage4560-1.pdf  used on input line 89
-2.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+0.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 892--892
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 890--890
  [][] 
  []
 
-
-Underfull \vbox (badness 1354) has occurred while \output is active []
-
-<figures/SwarmCoverage4560-2.pdf, id=373, 1363.0925pt x 717.68124pt>
+<figures/SwarmCoverage4560-2.pdf, id=462, 1387.58403pt x 711.85951pt>
 File: figures/SwarmCoverage4560-2.pdf Graphic file (type pdf)
 <use figures/SwarmCoverage4560-2.pdf>
 Package pdftex.def Info: figures/SwarmCoverage4560-2.pdf  used on input line 90
-5.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+3.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/SwarmCoverage4560-2.pdf Graphic file (type pdf)
 <use figures/SwarmCoverage4560-2.pdf>
 Package pdftex.def Info: figures/SwarmCoverage4560-2.pdf  used on input line 90
-5.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+3.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 905--905
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 903--903
  [][] 
  []
 
@@ -1789,7 +1789,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 922.
+Package pdftex.def Info: notaglineLogo.png  used on input line 920.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1806,401 +1806,320 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[21 <./figures/ConcavePerimeter4560-1.pdf> <./figures/SwarmCoverage4560-1.pdf>]
-<figures/OilSlick.pdf, id=399, 449.68pt x 385.44pt>
+[21 <./figures/ConcavePerimeter4560-1.pdf> <./figures/SwarmCoverage4560-1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/SwarmCoverage4560-1.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>]
+<figures/OilSlick.pdf, id=596, 449.68pt x 385.44pt>
 File: figures/OilSlick.pdf Graphic file (type pdf)
 <use figures/OilSlick.pdf>
 Package pdftex.def Info: figures/OilSlick.pdf  used on input line 924.
-(pdftex.def)             Requested size: 227.62204pt x 195.10735pt.
+(pdftex.def)             Requested size: 512.1496pt x 439.03564pt.
 File: figures/OilSlick.pdf Graphic file (type pdf)
 <use figures/OilSlick.pdf>
 Package pdftex.def Info: figures/OilSlick.pdf  used on input line 924.
-(pdftex.def)             Requested size: 227.62204pt x 195.10735pt.
-<figures/OilSpillSimulator.pdf, id=400, 1029.8475pt x 790.955pt>
+(pdftex.def)             Requested size: 512.1496pt x 439.03564pt.
+
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 924--924
+ [][] 
+ []
+
+<figures/OilSpillSimulator.pdf, id=597, 1029.8475pt x 790.955pt>
 File: figures/OilSpillSimulator.pdf Graphic file (type pdf)
 <use figures/OilSpillSimulator.pdf>
 Package pdftex.def Info: figures/OilSpillSimulator.pdf  used on input line 936.
 
-(pdftex.def)             Requested size: 227.62204pt x 174.81926pt.
+(pdftex.def)             Requested size: 512.1496pt x 393.35239pt.
 File: figures/OilSpillSimulator.pdf Graphic file (type pdf)
 <use figures/OilSpillSimulator.pdf>
 Package pdftex.def Info: figures/OilSpillSimulator.pdf  used on input line 936.
 
-(pdftex.def)             Requested size: 227.62204pt x 174.81926pt.
+(pdftex.def)             Requested size: 512.1496pt x 393.35239pt.
 
-Underfull \vbox (badness 2012) has occurred while \output is active []
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 936--936
+ [][] 
+ []
 
-<figures/OilSpillBase1.pdf, id=401, 1363.0925pt x 717.68124pt>
+<figures/OilSpillBase1.pdf, id=598, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillBase1.pdf Graphic file (type pdf)
 <use figures/OilSpillBase1.pdf>
-Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 948.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 949.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillBase1.pdf Graphic file (type pdf)
 <use figures/OilSpillBase1.pdf>
-Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 948.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 949.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 948--948
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 949--949
  [][] 
  []
 
-<figures/OilSpillBase2.pdf, id=402, 1363.0925pt x 717.68124pt>
+<figures/OilSpillBase2.pdf, id=599, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillBase2.pdf Graphic file (type pdf)
 <use figures/OilSpillBase2.pdf>
-Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 958.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 959.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillBase2.pdf Graphic file (type pdf)
 <use figures/OilSpillBase2.pdf>
-Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 958.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 959.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 958--958
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 959--959
  [][] 
  []
 
-<figures/OilSpillBase3.pdf, id=403, 1363.0925pt x 717.68124pt>
+<figures/OilSpillBase3.pdf, id=600, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillBase3.pdf Graphic file (type pdf)
 <use figures/OilSpillBase3.pdf>
-Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 968.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 969.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillBase3.pdf Graphic file (type pdf)
 <use figures/OilSpillBase3.pdf>
-Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 968.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 969.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 968--968
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 969--969
  [][] 
  []
 
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 978.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[22 <./figures/SwarmCoverage4560-2.pdf> <./figures/OilSlick.pdf> <./figures/Oil
-SpillSimulator.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<figures/OilSpillConcave1.pdf, id=425, 1363.0925pt x 717.68124pt>
+<figures/OilSpillConcave1.pdf, id=601, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillConcave1.pdf Graphic file (type pdf)
 <use figures/OilSpillConcave1.pdf>
-Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 980.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 982.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillConcave1.pdf Graphic file (type pdf)
 <use figures/OilSpillConcave1.pdf>
-Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 980.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 982.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 980--980
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 982--982
  [][] 
  []
 
-<figures/OilSpillConcave2.pdf, id=426, 1363.0925pt x 717.68124pt>
+<figures/OilSpillConcave2.pdf, id=602, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillConcave2.pdf Graphic file (type pdf)
 <use figures/OilSpillConcave2.pdf>
-Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 990.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 993.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillConcave2.pdf Graphic file (type pdf)
 <use figures/OilSpillConcave2.pdf>
-Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 990.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 993.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 990--990
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 993--993
  [][] 
  []
 
-<figures/OilSpillConcave3.pdf, id=427, 1363.0925pt x 717.68124pt>
+<figures/OilSpillConcave3.pdf, id=603, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillConcave3.pdf Graphic file (type pdf)
 <use figures/OilSpillConcave3.pdf>
-Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 1000.
+Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 1004.
 
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillConcave3.pdf Graphic file (type pdf)
 <use figures/OilSpillConcave3.pdf>
-Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 1000.
+Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 1004.
 
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 1000--1000
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 1004--1004
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1010.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[23 <./figures/OilSpillBase1.pdf> <./figures/OilSpillBase2.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1012.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[24 <./figures/OilSpillBase3.pdf> <./figures/OilSpillConcave1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1012.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[25 <./figures/OilSpillConcave2.pdf> <./figures/OilSpillConcave3.pdf>]
-<figures/OilSpillPerimeter8060-DIST-1.pdf, id=474, 1363.0925pt x 717.68124pt>
+<figures/OilSpillPerimeter8060-DIST-1.pdf, id=604, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillPerimeter8060-DIST-1.pdf Graphic file (type pdf)
 <use figures/OilSpillPerimeter8060-DIST-1.pdf>
 Package pdftex.def Info: figures/OilSpillPerimeter8060-DIST-1.pdf  used on inpu
-t line 1015.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+t line 1019.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillPerimeter8060-DIST-1.pdf Graphic file (type pdf)
 <use figures/OilSpillPerimeter8060-DIST-1.pdf>
 Package pdftex.def Info: figures/OilSpillPerimeter8060-DIST-1.pdf  used on inpu
-t line 1015.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+t line 1019.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 1015--1015
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 1019--1019
  [][] 
  []
 
-<figures/OilSpillPerimeter8060-MAG-1.pdf, id=475, 1363.0925pt x 717.68124pt>
+<figures/OilSpillPerimeter8060-MAG-1.pdf, id=605, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillPerimeter8060-MAG-1.pdf Graphic file (type pdf)
 <use figures/OilSpillPerimeter8060-MAG-1.pdf>
 Package pdftex.def Info: figures/OilSpillPerimeter8060-MAG-1.pdf  used on input
- line 1028.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+ line 1032.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 File: figures/OilSpillPerimeter8060-MAG-1.pdf Graphic file (type pdf)
 <use figures/OilSpillPerimeter8060-MAG-1.pdf>
 Package pdftex.def Info: figures/OilSpillPerimeter8060-MAG-1.pdf  used on input
- line 1028.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+ line 1032.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 1028--1028
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 1032--1032
  [][] 
  []
 
-<figures/OilSpillPerimeter8060-1.pdf, id=476, 1363.0925pt x 717.68124pt>
-File: figures/OilSpillPerimeter8060-1.pdf Graphic file (type pdf)
-<use figures/OilSpillPerimeter8060-1.pdf>
-Package pdftex.def Info: figures/OilSpillPerimeter8060-1.pdf  used on input lin
-e 1043.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
-File: figures/OilSpillPerimeter8060-1.pdf Graphic file (type pdf)
-<use figures/OilSpillPerimeter8060-1.pdf>
-Package pdftex.def Info: figures/OilSpillPerimeter8060-1.pdf  used on input lin
-e 1043.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 1044.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 1043--1043
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[22 <./figures/SwarmCoverage4560-2.pdf>]
+<figures/OilSpillPerimeter8060-1.pdf, id=647, 1387.58403pt x 711.85951pt>
+File: figures/OilSpillPerimeter8060-1.pdf Graphic file (type pdf)
+<use figures/OilSpillPerimeter8060-1.pdf>
+Package pdftex.def Info: figures/OilSpillPerimeter8060-1.pdf  used on input lin
+e 1047.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
+File: figures/OilSpillPerimeter8060-1.pdf Graphic file (type pdf)
+<use figures/OilSpillPerimeter8060-1.pdf>
+Package pdftex.def Info: figures/OilSpillPerimeter8060-1.pdf  used on input lin
+e 1047.
+(pdftex.def)             Requested size: 512.1496pt x 262.74303pt.
+
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 1047--1047
  [][] 
  []
 
-<figures/PerimeterObject2.pdf, id=477, 981.6675pt x 776.9025pt>
+<figures/PerimeterObject2.pdf, id=648, 981.6675pt x 776.9025pt>
 File: figures/PerimeterObject2.pdf Graphic file (type pdf)
 <use figures/PerimeterObject2.pdf>
-Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 1058.
+Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 1064.
 
 (pdftex.def)             Requested size: 142.26378pt x 112.58276pt.
 File: figures/PerimeterObject2.pdf Graphic file (type pdf)
 <use figures/PerimeterObject2.pdf>
-Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 1058.
+Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 1064.
 
 (pdftex.def)             Requested size: 142.26378pt x 112.58276pt.
-<figures/PerimeterObject1.pdf, id=478, 764.8575pt x 776.9025pt>
+<figures/PerimeterObject1.pdf, id=649, 764.8575pt x 776.9025pt>
 File: figures/PerimeterObject1.pdf Graphic file (type pdf)
 <use figures/PerimeterObject1.pdf>
-Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 1068.
+Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 1074.
 
 (pdftex.def)             Requested size: 142.26378pt x 144.49525pt.
 File: figures/PerimeterObject1.pdf Graphic file (type pdf)
 <use figures/PerimeterObject1.pdf>
-Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 1068.
+Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 1074.
 
 (pdftex.def)             Requested size: 142.26378pt x 144.49525pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 1084.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[23 <./figures/OilSlick.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
 []|\T1/ptm/b/n/8 Weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
 \T1/ptm/b/n/8 com-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
 []|\T1/ptm/b/n/8 Baseline
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1088
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
 []|\T1/ptm/m/n/8 Sample
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 1089--1089
+Underfull \hbox (badness 3029) in paragraph at lines 1095--1095
 []|\T1/ptm/m/n/8 weight ad-juster for con-cave
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 1090--1090
+Underfull \hbox (badness 2799) in paragraph at lines 1096--1096
 []|\T1/ptm/m/n/8 weight ad-juster for ob-sta-cle
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 1091--1091
+Underfull \hbox (badness 1412) in paragraph at lines 1097--1097
 []|\T1/ptm/m/n/8 weight ad-juster for co-he-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1100
 []|\T1/ptm/m/n/8 Repulsion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 []|\T1/ptm/m/n/8 Neighbour
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1102
 []|\T1/ptm/m/n/8 Obstacle
  []
 
-<figures/ObstacleTest.pdf, id=479, 812.03375pt x 765.86125pt>
+<figures/ObstacleTest.pdf, id=659, 812.03375pt x 765.86125pt>
 File: figures/ObstacleTest.pdf Graphic file (type pdf)
 <use figures/ObstacleTest.pdf>
-Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1103.
+Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1109.
 (pdftex.def)             Requested size: 227.62204pt x 214.6734pt.
 File: figures/ObstacleTest.pdf Graphic file (type pdf)
 <use figures/ObstacleTest.pdf>
-Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1103.
+Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1109.
 (pdftex.def)             Requested size: 227.62204pt x 214.6734pt.
-<figures/SWARMCOVER456060BASELINE.pdf, id=480, 1363.0925pt x 717.68124pt>
+<figures/SWARMCOVER456060BASELINE.pdf, id=660, 1363.0925pt x 717.68124pt>
 File: figures/SWARMCOVER456060BASELINE.pdf Graphic file (type pdf)
 <use figures/SWARMCOVER456060BASELINE.pdf>
 Package pdftex.def Info: figures/SWARMCOVER456060BASELINE.pdf  used on input li
-ne 1115.
+ne 1121.
 (pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
 File: figures/SWARMCOVER456060BASELINE.pdf Graphic file (type pdf)
 <use figures/SWARMCOVER456060BASELINE.pdf>
 Package pdftex.def Info: figures/SWARMCOVER456060BASELINE.pdf  used on input li
-ne 1115.
+ne 1121.
 (pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
 
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 1115--1115
- [][] 
- []
-
-File: notaglineLogo.png Graphic file (type png)
-<use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1125.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<figures/SWARMCOVER456060CONCAVE.pdf, id=484, 1363.0925pt x 717.68124pt>
-File: figures/SWARMCOVER456060CONCAVE.pdf Graphic file (type pdf)
-<use figures/SWARMCOVER456060CONCAVE.pdf>
-Package pdftex.def Info: figures/SWARMCOVER456060CONCAVE.pdf  used on input lin
-e 1127.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
-File: figures/SWARMCOVER456060CONCAVE.pdf Graphic file (type pdf)
-<use figures/SWARMCOVER456060CONCAVE.pdf>
-Package pdftex.def Info: figures/SWARMCOVER456060CONCAVE.pdf  used on input lin
-e 1127.
-(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
-
-Overfull \hbox (7.02783pt too wide) in paragraph at lines 1127--1127
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 1121--1121
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2837) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1127.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1131.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2217,11 +2136,32 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[27 <./figures/OilSpillPerimeter8060-DIST-1.pdf> <./figures/OilSpillPerimeter80
-60-MAG-1.pdf>]
+[24 <./figures/OilSpillSimulator.pdf>]
+<figures/SWARMCOVER456060CONCAVE.pdf, id=670, 1363.0925pt x 717.68124pt>
+File: figures/SWARMCOVER456060CONCAVE.pdf Graphic file (type pdf)
+<use figures/SWARMCOVER456060CONCAVE.pdf>
+Package pdftex.def Info: figures/SWARMCOVER456060CONCAVE.pdf  used on input lin
+e 1133.
+(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+File: figures/SWARMCOVER456060CONCAVE.pdf Graphic file (type pdf)
+<use figures/SWARMCOVER456060CONCAVE.pdf>
+Package pdftex.def Info: figures/SWARMCOVER456060CONCAVE.pdf  used on input lin
+e 1133.
+(pdftex.def)             Requested size: 512.1496pt x 269.65544pt.
+
+Overfull \hbox (7.02783pt too wide) in paragraph at lines 1133--1133
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1140.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1144.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2238,25 +2178,59 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[28 <./figures/OilSpillPerimeter8060-1.pdf> <./figures/PerimeterObject2.pdf> <.
-/figures/PerimeterObject1.pdf> <./figures/ObstacleTest.pdf>]
+[25 <./figures/OilSpillBase1.pdf> <./figures/OilSpillBase2.pdf
+
+pdfTeX warning: pdflatex (file ./figures/OilSpillBase2.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figures/IdealSwarm.pdf, id=527, 302.12875pt x 261.97874pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 1146.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[26 <./figures/OilSpillBase3.pdf> <./figures/OilSpillConcave1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/OilSpillConcave1.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
+<figures/IdealSwarm.pdf, id=833, 302.12875pt x 261.97874pt>
 File: figures/IdealSwarm.pdf Graphic file (type pdf)
 <use figures/IdealSwarm.pdf>
-Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1142.
+Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1148.
 (pdftex.def)             Requested size: 170.71652pt x 148.03026pt.
 File: figures/IdealSwarm.pdf Graphic file (type pdf)
 <use figures/IdealSwarm.pdf>
-Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1142.
+Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1148.
 (pdftex.def)             Requested size: 170.71652pt x 148.03026pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+(./paper.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1142.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2273,8 +2247,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[29 <./figures/SWARMCOVER456060BASELINE.pdf> <./figures/SWARMCOVER456060CONCAVE
-.pdf>] (./paper.bbl
+[27 <./figures/OilSpillConcave2.pdf> <./figures/OilSpillConcave3.pdf
+
+pdfTeX warning: pdflatex (file ./figures/OilSpillConcave3.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
 
 LaTeX Font Warning: Font shape `T1/ptm/n/it' undefined
 (Font)              using `T1/ptm/n/n' instead on input line 7.
@@ -2285,7 +2262,59 @@ Underfull \hbox (badness 5288) in paragraph at lines 4--9
 reou,
  []
 
+
+Underfull \vbox (badness 7540) has occurred while \output is active []
+
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 18.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[28 <./figures/OilSpillPerimeter8060-DIST-1.pdf> <./figures/OilSpillPerimeter80
+60-MAG-1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/OilSpillPerimeter8060-MAG-1.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 43.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[29 <./figures/OilSpillPerimeter8060-1.pdf> <./figures/PerimeterObject2.pdf> <.
+/figures/PerimeterObject1.pdf>]
 LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 147.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.805> not available
 (Font)              size <5> substituted on input line 147.
@@ -2300,14 +2329,14 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.805> not available
 
 
 Underfull \hbox (badness 4886) in paragraph at lines 144--150
-[]\T1/ptm/n/it/7.61 David Smal-ley.  Au-tonomous war-fare : A rev-o-lu-tion in 
-mil-i-
+[]\T1/ptm/m/n/7.61 David Smal-ley.  Au-tonomous war-fare : A rev-o-lu-tion in m
+il-i-
  []
 
 )
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1157.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1163.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2324,51 +2353,35 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[30 <./figures/IdealSwarm.pdf>]
-<Images/eliot.pdf, id=553, 41.15375pt x 40.15pt>
+[30 <./figures/ObstacleTest.pdf>]
+<Images/eliot.pdf, id=1081, 41.15375pt x 40.15pt>
 File: Images/eliot.pdf Graphic file (type pdf)
 <use Images/eliot.pdf>
-Package pdftex.def Info: Images/eliot.pdf  used on input line 1158.
+Package pdftex.def Info: Images/eliot.pdf  used on input line 1164.
 (pdftex.def)             Requested size: 72.27884pt x 70.51593pt.
 File: Images/eliot.pdf Graphic file (type pdf)
 <use Images/eliot.pdf>
-Package pdftex.def Info: Images/eliot.pdf  used on input line 1158.
+Package pdftex.def Info: Images/eliot.pdf  used on input line 1164.
 (pdftex.def)             Requested size: 72.27884pt x 70.51593pt.
 
-Underfull \hbox (badness 1675) in paragraph at lines 1158--1160
+Underfull \hbox (badness 1675) in paragraph at lines 1164--1166
 []\T1/phv/m/n/8 NEIL ELIOT \T1/ptm/n/n/8 has been a Se-nior Lec-turer at
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 1158--1160
+Underfull \hbox (badness 1533) in paragraph at lines 1164--1166
 \T1/ptm/n/n/8 Northum-bria Uni-ver-sity since 1998. Neil was
  []
 
-<Images/kenda.pdf, id=556, 146.5475pt x 128.48pt>
-File: Images/kenda.pdf Graphic file (type pdf)
-<use Images/kenda.pdf>
-Package pdftex.def Info: Images/kenda.pdf  used on input line 1162.
-(pdftex.def)             Requested size: 72.26953pt x 63.35959pt.
-File: Images/kenda.pdf Graphic file (type pdf)
-<use Images/kenda.pdf>
-Package pdftex.def Info: Images/kenda.pdf  used on input line 1162.
-(pdftex.def)             Requested size: 72.26953pt x 63.35959pt.
-<Images/brock.pdf, id=559, 993.7125pt x 1024.82875pt>
-File: Images/brock.pdf Graphic file (type pdf)
-<use Images/brock.pdf>
-Package pdftex.def Info: Images/brock.pdf  used on input line 1166.
-(pdftex.def)             Requested size: 72.26596pt x 74.52882pt.
-File: Images/brock.pdf Graphic file (type pdf)
-<use Images/brock.pdf>
-Package pdftex.def Info: Images/brock.pdf  used on input line 1166.
-(pdftex.def)             Requested size: 72.26596pt x 74.52882pt.
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 1170.
-(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1172.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1168.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2385,9 +2398,52 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[31
+[31 <./Images/eliot.pdf> <./figures/SWARMCOVER456060BASELINE.pdf> <./figures/SW
+ARMCOVER456060CONCAVE.pdf>]
+<Images/kenda.pdf, id=1104, 146.5475pt x 128.48pt>
+File: Images/kenda.pdf Graphic file (type pdf)
+<use Images/kenda.pdf>
+Package pdftex.def Info: Images/kenda.pdf  used on input line 1168.
+(pdftex.def)             Requested size: 72.26953pt x 63.35959pt.
+File: Images/kenda.pdf Graphic file (type pdf)
+<use Images/kenda.pdf>
+Package pdftex.def Info: Images/kenda.pdf  used on input line 1168.
+(pdftex.def)             Requested size: 72.26953pt x 63.35959pt.
+<Images/brock.pdf, id=1107, 993.7125pt x 1024.82875pt>
+File: Images/brock.pdf Graphic file (type pdf)
+<use Images/brock.pdf>
+Package pdftex.def Info: Images/brock.pdf  used on input line 1172.
+(pdftex.def)             Requested size: 72.26596pt x 74.52882pt.
+File: Images/brock.pdf Graphic file (type pdf)
+<use Images/brock.pdf>
+Package pdftex.def Info: Images/brock.pdf  used on input line 1172.
+(pdftex.def)             Requested size: 72.26596pt x 74.52882pt.
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 1176.
+(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
+File: notaglineLogo.png Graphic file (type png)
+<use notaglineLogo.png>
+Package pdftex.def Info: notaglineLogo.png  used on input line 1178.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
- <./Images/eliot.pdf> <./Images/kenda.pdf> <./Images/brock.pdf>]
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[32
+
+ <./Images/kenda.pdf> <./Images/brock.pdf> <./figures/IdealSwarm.pdf>]
 (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2398,13 +2454,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 6641 strings out of 494847
- 103815 string characters out of 6179080
- 158438 words of memory out of 5000000
- 9746 multiletter control sequences out of 15000+600000
+ 6643 strings out of 494847
+ 104035 string characters out of 6179080
+ 157410 words of memory out of 5000000
+ 9747 multiletter control sequences out of 15000+600000
  109116 words of font info for 159 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 41i,13n,53p,1449b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,53p,1522b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -2425,10 +2481,10 @@ vr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (31 pages, 20455245 bytes).
+Output written on paper.pdf (32 pages, 20931557 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
+ 1195 PDF objects out of 1200 (max. 8388607)
+ 436 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

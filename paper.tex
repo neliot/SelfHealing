@@ -818,8 +818,6 @@ Figure~\ref{voids:ConcavePerimeter4560-DIST} shows that the process of reducing 
 
 The concave reduction algorithm creates a more pronounced variation due to the void having multiple anomalies. The concave reduction process closes the void over a period of 3 seconds and the swarm then settles to a steady average distance with a stable variance. The increased variance up to 3 seconds is the `percolation' of the internal anomalies to the outer perimeter as the void is closed.
 
-%==================== GRAPHS DONE TO HERE ===============================
-
 %SWARMHOLE-DIST-4560.py
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcavePerimeter4560-DIST}
 {Concave reduction stability effect distance\label{voids:ConcavePerimeter4560-DIST}}
@@ -920,7 +918,9 @@ This paper focuses on arbitrary sized, low cost, swarms; this is a similar appro
 
 Consider an oil slick in an environment. This could be a section of open-water or a lake/reservoir. The solution is to deploy a swarm at the perimeter of the known area by a boat or at a shoreline if the area is small enough~(Fig.~\ref{voids:OilSlick}). The deployed agents, using local sensing and the concave reduction algorithm, are enabled. The swarm initially expands to an optimum distribution for the specified field effects. The \textit{concave reduction vector} will then reduce the deliberately created void and the swarm encapsulates the oil spill. If there are multiple spills within the area the void reduction process will still encapsulate the area because the algorithm is not dependant on communications and operates purely by logic.  
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8cm]{figures/OilSlick}
+%==================== GRAPHS DONE TO HERE ===============================
+
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSlick}
 {Concave reduction oil slick surrounding\label{voids:OilSlick}}
 
 %% \begin{figure}
@@ -932,7 +932,7 @@ Consider an oil slick in an environment. This could be a section of open-water o
 
 Figure~\ref{concave:OilSpillSimulation} is a screen shot of the deployment within the simulator for testing this hypothesis. 
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8cm]{figures/OilSpillSimulator}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillSimulator}
 {Oil spill containment simulation\label{concave:OilSpillSimulation}}
 
 %% \begin{figure}
@@ -944,6 +944,7 @@ Figure~\ref{concave:OilSpillSimulation} is a screen shot of the deployment withi
 
 Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave:OilSpillBase3} shows the containment process using the baseline configuration without concave reduction. The swarm expands due to the field effects and then stabilises into a swarm which contains a void area. The swarm stablises and the swarm moves slightly as the cohesion and repulsion fluctuate to maintain the swarm's structure. However the void does not close and the containment process does not occur. The agents that do come in contact with the obstacle are repelled by the obstacle repulsion field.
 
+%COVERBASELINE8060OILSPILL1.py
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase1}
 {Initial\label{concave:OilSpillBase1}}
 
@@ -953,7 +954,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 %% \end{center}
 %% \caption{Initial\label{concave:OilSpillBase1}}
 %% \end{figure}
-
+%COVERBASELINE8060OILSPILL3.py
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase2}
 {Partial\label{concave:OilSpillBase2}}
 
@@ -963,7 +964,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 %% \end{center}
 %% \caption{Partial\label{concave:OilSpillBase2}}
 %% \end{figure}
-
+%COVERBASELINE8060OILSPILL3.py
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase3}
 {End\label{concave:OilSpillBase3}}
 
@@ -976,6 +977,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 
 Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{concave:OilSpillConcave3} shows the same simulation with void-reduction activated. The swarm expands as expected due to the field effects but in addition the concave reduction reduces the void within the swarm. This reduction in the void causes the swarm to shrink around the obstacle completely enclosing it at the obstacle perimeter. On the left hand side of~Fig.~\ref{concave:OilSpillConcave2} the percolation effect can be seen as described in~section~\ref{sec:ApplicationConcavePerimeters}.
 
+%COVERBASELINE8060OILSPILLCONCAVE1.py 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillConcave1}
 {Initial\label{concave:OilSpillConcave1}}
 
@@ -986,6 +988,7 @@ Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{c
 %% \caption{Initial\label{concave:OilSpillConcave1}}
 %% \end{figure}
 
+%COVERBASELINE8060OILSPILLCONCAVE2.py 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillConcave2}
 {Partial\label{concave:OilSpillConcave2}}
 
@@ -996,6 +999,7 @@ Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{c
 %% \caption{Partial\label{concave:OilSpillConcave2}}
 %% \end{figure}
 
+%COVERBASELINE8060OILSPILLCONCAVE3.py 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillConcave3}
 {End\label{concave:OilSpillConcave3}}
 
@@ -1053,6 +1057,8 @@ In the case of the concave reduction swarm the perimeter size is erratic due to 
 A goal based swarm that is travelling between two points can have its path disrupted by an obstacle. This event can cause a swarm to develop an anomaly in the form of a void~(Fig.~\ref{concave:PerimeterObject2}) due to agents temporarily separating as the swarm passes the obstacle or the swarm may split entirely if the obstacle is very large~(Fig.~\ref{concave:PerimeterObject1}). 
 
 When the object is small the cohesion and repulsion fields may make the swarm naturally reform~(Fig.~\ref{concave:PerimeterObject2}), however as the swarm progresses past the obstacle a void is created at the forward edge of the obstacle. If the purpose of the swarm is to deploy fertilizer over crops or carry out a reconnaissance task then the required full area coverage is not achieved. This failure to achieve total coverage reduces the effectiveness of employing a swarm to carry out tasks of this type.
+
+%==================== GRAPHS DONE TO HERE ===============================
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/PerimeterObject2}
 {Swarm distortion via an object creating a void\label{concave:PerimeterObject2}}

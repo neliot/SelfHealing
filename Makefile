@@ -1,5 +1,4 @@
 paper: paper.tex thesis.bib IEEEtran.cls figures
-	./pics.sh
 	pdflatex paper
 	bibtex paper
 	pdflatex paper
