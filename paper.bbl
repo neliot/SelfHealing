@@ -1,0 +1,171 @@
+\begin{thebibliography}{10}
+
+\bibitem{APZDAMC:09}
+Panayiotis Andreou, Demetrios Zeinalipour-Yazti, Maria Andreou, Panos~K
+  Chrysanthis, and George Samaras.
+\newblock Perimeter-based data replication in mobile sensor networks.
+\newblock In {\em Mobile Data Management: Systems, Services and Middleware,
+  2009. MDM'09. Tenth International Conference on}, pages 244--251. IEEE, 2009.
+
+\bibitem{BAFVM:06}
+Laura Barnes, Wendy Alvis, MaryAnne Fields, Kimon Valavanis, and Wilfrido
+  Moreno.
+\newblock Heterogeneous swarm formation control using bivariate normal
+  functions to generate potential fields.
+\newblock In {\em Distributed Intelligent Systems: Collective Intelligence and
+  Its Applications, 2006. DIS 2006. IEEE Workshop on}, pages 85--94. IEEE,
+  2006.
+
+\bibitem{BAF:06}
+Laura Barnes, Wendy Alvis, MaryAnne Fields, Kimon Valavanis, and Wilfrido
+  Moreno.
+\newblock Swarm formation control with potential fields formed by bivariate
+  normal functions.
+\newblock In {\em Control and Automation, 2006. MED'06. 14th Mediterranean
+  Conference on}, pages 1--7. IEEE, 2006.
+
+\bibitem{BM:09}
+{Derek J.} Bennet and C.R. McInnes.
+\newblock Verifiable control of a swarm of unmanned aerial vehicles.
+\newblock {\em Journal of Aerospace Engineering}, 223(7):939--953, 2009.
+
+\bibitem{EP:10}
+Samitha~W Ekanayake and Pubudu~N Pathirana.
+\newblock Formations of robotic swarm: an artificial force based approach.
+\newblock {\em International Journal of Advanced Robotic Systems},
+  7(3):173--190, 2010.
+
+\bibitem{GP:04a}
+V.~Gazi and K.~M. Passino.
+\newblock Stability analysis of social foraging swarms.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, 34(1):539--557, Feb 2004.
+
+\bibitem{GP:02}
+Veysel Gazi and Kevin~M Passino.
+\newblock Stability analysis of swarms in an environment with an
+  attractant/repellent profile.
+\newblock In {\em American Control Conference, 2002. Proceedings of the 2002},
+  volume~3, pages 1819--1824. IEEE, 2002.
+
+\bibitem{GP:04}
+Veysel Gazi and Kevin~M. Passino.
+\newblock A class of attractions/repulsion functions for stable swarm
+  aggregations.
+\newblock {\em International Journal of Control}, 77(18):1567--1579, 2004.
+
+\bibitem{GP:05}
+Veysel Gazi and Kevin~M Passino.
+\newblock Stability of a one-dimensional discrete-time asynchronous swarm.
+\newblock {\em Systems, Man, and Cybernetics, Part B: Cybernetics, IEEE
+  Transactions on}, 35(4):834--841, 2005.
+
+\bibitem{GP:11}
+Veysel Gazi and Kevin~M Passino.
+\newblock {\em Swarm stability and optimization}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{GK:07}
+Pini Gurfil and Elad Kivelevitch.
+\newblock Flock properties effect on task assignment and formation flying of
+  cooperating unmanned aerial vehicles.
+\newblock {\em Proceedings of the Institution of Mechanical Engineers, Part G:
+  Journal of Aerospace Engineering}, 221(3):401--416, 2007.
+
+\bibitem{HER:11}
+J.~Hereford.
+\newblock Analysis of beeclust swarm algorithm.
+\newblock In {\em Swarm Intelligence (SIS), 2011 IEEE Symposium on}, pages
+  1--7, April 2011.
+
+\bibitem{HCS:09}
+S.~P. Hou, C.~C. Cheah, and J.~J.~E. Slotine.
+\newblock Dynamic region following formation control for a swarm of robots.
+\newblock In {\em Robotics and Automation, 2009. ICRA '09. IEEE International
+  Conference on}, pages 1929--1934, May 2009.
+
+\bibitem{IT:10}
+Amelia~Ritahani Ismail and Jon Timmis.
+\newblock Towards self-healing swarm robotic systems inspired by granuloma
+  formation.
+\newblock In {\em Engineering of Complex Computer Systems (ICECCS), 2010 15th
+  IEEE International Conference on}, pages 313--314. IEEE, 2010.
+
+\bibitem{JG:13}
+Shin-Young Jung and Michael~A Goodrich.
+\newblock Multi-robot perimeter-shaping through mediator-based swarm control.
+\newblock In {\em Advanced Robotics (ICAR), 2013 16th International Conference
+  on}, pages 1--6. IEEE, 2013.
+
+\bibitem{GN:08}
+Geunho Lee and Nak~Young Chong.
+\newblock Self-configurable mobile robot swarms with hole repair capability.
+\newblock In {\em Intelligent Robots and Systems, 2008. IROS 2008. IEEE/RSJ
+  International Conference on}, pages 1403--1408, Sept 2008.
+
+\bibitem{MD:09}
+James McLurkin and Erik~D Demaine.
+\newblock A distributed boundary detection algorithm for multi-robot systems.
+\newblock In {\em Intelligent Robots and Systems, 2009. IROS 2009. IEEE/RSJ
+  International Conference on}, pages 4791--4798. IEEE, 2009.
+
+\bibitem{MYP:09}
+Yogeswaran Mohan and SG~Ponnambalam.
+\newblock An extensive review of research in swarm robotics.
+\newblock In {\em Nature \& Biologically Inspired Computing, 2009. NaBIC 2009.
+  World Congress on}, pages 140--145. IEEE, 2009.
+
+\bibitem{SOM:12}
+D.~Salda\ na, D.~Ovalle, and A.~Montoya.
+\newblock Improved algorithm for perimeter tracking in robotic sensor networks.
+\newblock In {\em Informatica (CLEI), 2012 XXXVIII Conferencia Latinoamericana
+  En}, pages 1--7, Oct 2012.
+
+\bibitem{NIM:09}
+Inaki Navarro and F~Mat{\'\i}a.
+\newblock A proposal of a set of metrics for collective movement of robots.
+\newblock {\em Proc. Workshop on Good Experimental Methodology in Robotics},
+  2009.
+
+\bibitem{RMT:15}
+J.~H. Roach, R.~J. Marks, and B.~B. Thompson.
+\newblock Recovery from sensor failure in an evolving multiobjective swarm.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+  45(1):170--174, Jan 2015.
+
+\bibitem{DHMRZ:06}
+Y.~s.~Dai, M.~Hinchey, M.~Madhusoodan, J.~L. Rash, and X.~Zou.
+\newblock A prototype model for self-healing and self-reproduction in swarm
+  robotics system.
+\newblock In {\em 2006 2nd IEEE International Symposium on Dependable,
+  Autonomic and Secure Computing}, pages 3--10, Sept 2006.
+
+\bibitem{DS:15}
+David Smalley.
+\newblock Autonomous warfare : A revolution in military affairs.
+\newblock
+  \url{http://www.onr.navy.mil/Media-Center/Press-Releases/2015/LOCUST-low-cost-UAV-swarm-ONR.aspx},
+  April 2015.
+\newblock [Online; accessed 15-Apr-2016].
+
+\bibitem{VH:09}
+E.~Vassev and M.~Hinchey.
+\newblock Assl specification and code generation of self-healing behavior for
+  nasa swarm-based systems.
+\newblock In {\em 2009 Sixth IEEE Conference and Workshops on Engineering of
+  Autonomic and Autonomous Systems}, pages 77--86, April 2009.
+
+\bibitem{MW:15}
+Maxim Worchester.
+\newblock Autonomous warfare : A revolution in military affairs.
+\newblock \url{https://www.files.ethz.ch/isn/190160/340_Worcester.pdf}, April
+  2015.
+\newblock [Online; accessed 15-Apr-2016].
+
+\bibitem{ZFG:13}
+Guoxian Zhang, Gregory~K Fricke, and Devendra~P Garg.
+\newblock Spill detection and perimeter surveillance via distributed swarming
+  agents.
+\newblock {\em Mechatronics, IEEE/ASME Transactions on}, 18(1):121--129, 2013.
+
+\end{thebibliography}
