@@ -159,7 +159,7 @@ If the short circuit \textit{neighbour count} returns false then further conditi
 % \label{eq:ConcaveVoidPhysics1}
 % \end{equation}
 
-Equation~\eqref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbour's make with the first detected neighbour.
+Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbour's make with the first detected neighbour.
 %% 
 %% \begin{center}
 %% \begin{equation}‎
@@ -168,7 +168,7 @@ Equation~\eqref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the 
 %% \end{equation}‎
 %% \end{center}
 
-Figure~\ref{algo:getNeighbourAngles} shows the logic to produce the sorted neighbour/angle dictionary. $sort(.)$ sorts the dictionary set generated in~\eqref{eq:ConcaveVoidPhysics1} by ascending angle to produce a dictionary of neighbour agents with their relative angle to the first detected neighbour as shown in~Fig.~\ref{reduced:Perimeter1}.
+Figure~\ref{algo:getNeighbourAngles} shows the logic to produce the sorted neighbour/angle dictionary. $sort(.)$ sorts the dictionary set generated in~\ref{eq:ConcaveVoidPhysics1} by ascending angle to produce a dictionary of neighbour agents with their relative angle to the first detected neighbour as shown in~Fig.~\ref{reduced:Perimeter1}.
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -192,7 +192,7 @@ Figure~\ref{algo:getNeighbourAngles} shows the logic to produce the sorted neigh
 
 Using the angular dictionary from Fig.~\ref{algo:getNeighbourAngles} it is possible to identify if adjacent neighbours can detect each other. If the agent is within all of its neighbours boundary then it is not on the perimeter~(Fig.~\ref{algo:CheckVisibility}). 
 
-As all the agents have the same field effects the `visibility' of two neighbours can be determined. The angle and distance of each neighbour pair allows the cosine rule to be used to calculate the distance the neighbours are apart as shown in~\eqref{eq:CosineRule1} and Fig.~\ref{reduced:Triangulate}. The distance is checked against the neighbour range, if the distance is $\leq N_b$ where $N_b$ is the \textit{neighbour field} then it can be assumed that the neighbours have `sight' of each other. 
+As all the agents have the same field effects the `visibility' of two neighbours can be determined. The angle and distance of each neighbour pair allows the cosine rule to be used to calculate the distance the neighbours are apart as shown in~\ref{eq:CosineRule1} and Fig.~\ref{reduced:Triangulate}. The distance is checked against the neighbour range, if the distance is $\leq N_b$ where $N_b$ is the \textit{neighbour field} then it can be assumed that the neighbours have `sight' of each other. 
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=3cm]{figures/Triangulate}
 {Neighbour visibility\label{reduced:Triangulate}}
@@ -209,7 +209,7 @@ As all the agents have the same field effects the `visibility' of two neighbours
 z = \sqrt{x^2 + y^2 - 2xy~\cos(\theta)}
 \end{equation}
 
-The full visibility check~(Fig.~\ref{algo:CheckVisibility}) takes each pair in turn and using the cosine rule~\eqref{eq:CosineRule1} checks for a `visibility gap'. 
+The full visibility check~(Fig.~\ref{algo:CheckVisibility}) takes each pair in turn and using the cosine rule~\ref{eq:CosineRule1} checks for a `visibility gap'. 
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -462,9 +462,9 @@ The purpose of \textit{concave reduction} is to alter the overall structure of t
 %% \end{figure}
 
 \section{Concave reduction mathematical model}\label{concave:ConcaveVoidReduction1}
-As part of identifying a perimter agents a set of agents sorted by angle and a set ($b.gap \equiv G_b$) consisting of the first two agents identified as creating a `gap' in agent $b$'s neighbours. Equation~\eqref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents. 
+As part of identifying a perimter agents a set of agents sorted by angle and a set ($b.gap \equiv G_b$) consisting of the first two agents identified as creating a `gap' in agent $b$'s neighbours. Equation~\ref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents. 
 
-Equation~\eqref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbour's make with the first detected neighbour. $nbr(b)$ returns a set of all an agents neighbours.
+Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbour's make with the first detected neighbour. $nbr(b)$ returns a set of all an agents neighbours.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics1}
@@ -478,14 +478,14 @@ The centroid $D_{pos}(b)$ is then used to calculate the concave reduction vector
 D_{pos}(b) = \frac{1}{2}\mathlarger{\sum_{b' \in G_b}}{b'} 
 \end{equation}
 
-$D(b)$~is a vector derived from the identified centroid of the neighbour gap~($G_b$) to the parent agent~($b$). This new vector is the \textit{concave vector} used to implement the concave reduction movement~\eqref{eq:ConcaveVoidPhysics3a}.
+$D(b)$~is a vector derived from the identified centroid of the neighbour gap~($G_b$) to the parent agent~($b$). This new vector is the \textit{concave vector} used to implement the concave reduction movement~\ref{eq:ConcaveVoidPhysics3a}.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics3a}
 D(b) = bD_{pos}(b) 
 \end{equation}
 
-This derived movement is specifically for reducing the anomaly of which the agent is a part. The concave reduction movement needs to be enhanced to take into consideration an agent's surroundings. Due to proximity it can be assumed that there are no agents in the path between the agent and the gap, however there may be an obstacle. The \textit{concave vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied to the calculated \textit{concave vector}~$k_{cr}$ to allow the model to vary the intensity of the effect. The resultant vector is then normalised to produce the \textit{concave reduction vector} as shown in~\eqref{eq:ConcaveVoidPhysics4}. 
+This derived movement is specifically for reducing the anomaly of which the agent is a part. The concave reduction movement needs to be enhanced to take into consideration an agent's surroundings. Due to proximity it can be assumed that there are no agents in the path between the agent and the gap, however there may be an obstacle. The \textit{concave vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied to the calculated \textit{concave vector}~$k_{cr}$ to allow the model to vary the intensity of the effect. The resultant vector is then normalised to produce the \textit{concave reduction vector} as shown in~\ref{eq:ConcaveVoidPhysics4}. 
 %
 \begin{equation}
 \label{eq:ConcaveVoidPhysics4}
