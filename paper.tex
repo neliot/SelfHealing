@@ -89,7 +89,7 @@ Research has identified several approaches to resolving swarm structure issues. 
 Concave reduction is an extension of the work discussed by Ismail and Timmis in their paper on `self-healing' \cite{IT:10} and Lee and Chong's work on identifying concave edges~\cite{GN:08}. The technique also draws on the work of McLurkin and Demaine who have developed algorithms to detect perimeter types~\cite{MD:09}. The technique employed in this paper does not require the identification of the perimeter type as this would require a communications infrastructure.
 
 \section{Swarm Model}\label{sec:Swarm Model}
-To describe the removal of voids a swarming algorithm needs to be defined. Equation~\ref{eq:BotPhysics1} defines a weighted algorithm that includes cohesion, repulsion, direction and obstacle avoidance ($v_c(b), v_r(b), v_d(b), v_o(b)$). The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled thereby creating an adaptable swarming effect. 
+To describe the removal of voids a swarming model needs to be defined. Equation~\ref{eq:BotPhysics1} defines a weighted algorithm that includes cohesion, repulsion, direction and obstacle avoidance ($v_c(b), v_r(b), v_d(b), v_o(b)$). The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled thereby creating an adaptable swarming effect. 
 
 \begin{equation}\label{eq:BotPhysics1}
   v(b) = k_cv_c(b) + k_rv_r(b) + k_dv_d(b) + k_ov_o(b)
