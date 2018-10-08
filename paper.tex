@@ -40,17 +40,17 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \doi{10.1109/ACCESS.2017.DOI}
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Towards a self healing swarm through the removal of voids and anomalies}
+\title{Towards a self-healing swarm through the removal of voids and anomalies}
 \author{\uppercase{Neil Eliot}\authorrefmark{1},
 \uppercase{David Kendall\authorrefmark{1}, Michael Brockway\authorrefmark{1}, Alun Moon\authorrefmark{1}}}
 \address[1]{Northumbria University, Department of Computing and Information Sciences, Newcastle upon Tyne, NE1 8ST}
 \markboth
-{Eliot \headeretal: Towards a self healing swarm through the removal of voids and anomalies}
-{Eliot \headeretal: Towards a self healing swarm through the removal of voids and anomalies}
+{Eliot \headeretal: Towards a self-healing swarm through the removal of voids and anomalies}
+{Eliot \headeretal: Towards a self-healing swarm through the removal of voids and anomalies}
 \corresp{Corresponding author: Neil Eliot (e-mail: neil.eliot@northumbria.ac.uk).}
 \begin{abstract}
 %\boldmath
-Swarms consist of many agents that interact using a simple set of rules that create emergent behaviours. One such behaviour makes a swarm tolerant of failures. Failures occur for many reasons, for example; resource exhaustion, component failure, or a disruption from an external event. The loss of agents reduces the size of a swarm and may create an irregular structure. A swarm's structure can also be irregular due to initial conditions, loss of agents or due to an obstacle. These changes in the structure or size do not stop a swarm from functioning but can adversely affect the efficience. This paper introduces and demonstrates emergent behaviour that can counter the effect of agent loss or irregular structures. The behaviour causes concave deformities to be removed. This technique is implemented by each agent identifying its position in relation to its neighbours. If the agent meets a defined criterion, based on the local geometry of the agent's neighbours to decide when an anomily is present, the agent's `normal' movement is altered in such a way as to remove a gap between the neighbours. These changes in direction of agents cause the swarm, as a whole, to be reorganised into a more uniform structure with no internal voids.
+Swarms consist of many agents that interact using a simple set of rules that create emergent behaviours. One such behaviour makes a swarm tolerant of failures. Failures occur for many reasons, for example; resource exhaustion, component failure, or a disruption from an external event. The loss of agents reduces the size of a swarm and may create an irregular structure. A swarm's structure can also be irregular due to initial conditions, loss of agents or due to an obstacle. These changes in the structure or size do not stop a swarm from functioning but can adversely affect the efficacy. This paper introduces and demonstrates emergent behaviour that can counter the effect of agent loss or irregular structures. The behaviour causes concave deformities to be removed. This technique is implemented by each agent identifying its position in relation to its neighbours. If the agent meets a defined criterion, based on the local geometry of the agent's neighbours to decide when an anomaly is present, the agent's `normal' movement is altered in such a way as to remove a gap between the neighbours. These changes in direction of agents cause the swarm, as a whole, to be reorganised into a more uniform structure with no internal voids.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -67,10 +67,11 @@ Swarming, Swarm Dynamics, Mobile Sensor Networks, Algorithms.
 \maketitle
 \section{Introduction}\label{sec:ConcaveReduction}
 \textit{Swarming} in the animal kingdom of ants, bees, fish and birds for instance has long been studied by scientists. From these studies mathematical models and algorithms have evolved. The models and algorithms have in turn captured the interest of computing scientists who are interested in applying them to large groups of autonomous mobile \textit{agents} (`robots'). The cooperative coordination of these agents can take many forms such as following a set path~\cite{HCS:09}, existing in a static space~\cite{EP:10, GP:02, GP:04} or foraging as a colony~\cite{HER:11, GK:07}. One of the attributes of swarms that has captured the interest of scientists is that the models and algorithms used to coordinate them are generally sets of simple rules. These simple rules cause the agents to appear to work cooperatively.
-Currently, much swarm research uses field effects as the method of modelling inter-agent interactions~\cite{BAF:06, BAFVM:06, BM:09, APZDAMC:09, GP:02, GP:04, GP:04a, GP:05, GP:11, MYP:09}. The models usually use two \textit{field effects} to implement the swarming characteristic. These effects are \textit{cohesion}, to draw agents closer, and \textit{repulsion} to prevent agents colliding. \textit{Field effects} have ranges around an agent to determine the effect other agents have upon it's movement~(Fig.~\ref{methods:FieldEffects})the effects are derived from these ranges as vectors. All ranges must fall within the sensing capabilities of the agent ($S_b$). It is usual for the cohesion field to have a radius ($C_b$) which is larger than the repulsion radius ($R_b$). When an agent ($b'$) moves into the \textit{neighbour field} of an agent ($b$) then $b'$ is said to be a neighbour of $b$ and is subject to cohesion. When an agent $b'$ moves into the repulsion field of $b$ then $b$ also subjected to repulsion. When the repulsion magnitude exceeds the cohesion magnitude the agent will have a tendency to move away from $b'$, i.e. repelled. When an agent $b$ moves too close to an obstacle, i.e. within the obstacle repulsion range $O_b$, it has it's repulsion vector applied and the agent will tend towards moving away from the obstacle.
+Currently, much swarm research uses field effects as the method of modelling inter-agent interactions~\cite{BAF:06, BAFVM:06, BM:09, APZDAMC:09, GP:02, GP:04, GP:04a, GP:05, GP:11, MYP:09}. The models usually use two \textit{field effects} to implement the swarming characteristic. These effects are \textit{cohesion}, to draw agents closer, and \textit{repulsion} to prevent agents colliding. \textit{Field effects} have ranges around an agent to determine the effect other agents have upon its movement~(Fig.~\ref{methods:FieldEffects}) the effects are derived from these ranges as vectors. All ranges must fall within the sensing capabilities of the agent ($S_b$). It is usual for the cohesion field to have a radius ($C_b$) which is larger than the repulsion radius ($R_b$). When an agent ($b'$) moves into the \textit{neighbour field} of an agent ($b$) then $b'$ is said to be a neighbour of $b$ and is subject to cohesion. When an agent $b'$ moves into the repulsion field of $b$ then $b$ also subjected to repulsion. When the repulsion magnitude exceeds the cohesion magnitude the agent will have a tendency to move away from $b'$, i.e. repelled. When an agent $b$ moves too close to an obstacle, i.e. within the obstacle repulsion range $O_b$, it has its repulsion vector applied and the agent will tend towards moving away from the obstacle.
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/FieldEffects}
 {Agent field effects.\label{methods:FieldEffects}}
-When cohesion and repulsion (\textit{inter-agent vectors}) are the only field effects creating a swarming effect the number of stable structures that can develop is limited. These structures, which are constructed from triangles, are either straight edges or partial lattices. Partial lattices can create concave anomalies (\textit{dents}) and convex anomalies (\textit{peaks}) in a perimeter~(Fig.~\ref{concave:SwarmStableShape1}). An anomaly is any construct within the swarm that is not a hexagonal lattice or an agent distribution that causes the swarm to deviate from having only convex or flat edges. 
+When cohesion and repulsion (\textit{inter-agent vectors}) are the only field effects creating a swarming effect the number of stable structures that can develop is limited. These structures, which are constructed from triangles, are either straight edges or partial lattices. Partial lattices can create concave anomalies (\textit{dents}) and convex anomalies (\textit{peaks}) in a perimeter~(Fig.~\ref{concave:SwarmStableShape1}). An anomaly is any construct within the swarm that is not a hexagonal lattice or an agent distribution that causes the swarm to deviate from having only convex or flat edges. The advantage of creating a well structured swarm can be realised in two classes of swarm application; \textit{Reconnaissance}, by creating a more uniform structure that eliminates blank spots, and \textit{Object Containment}, when using a swarm to surround a target.  
+
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/SwarmStableShape1}
 {Stable swarm edges\label{concave:SwarmStableShape1}}
 %% \begin{figure}
@@ -79,9 +80,22 @@ When cohesion and repulsion (\textit{inter-agent vectors}) are the only field ef
 %% \end{center}
 %% \caption{Stable swarm edges\label{concave:SwarmStableShape1}}
 %% \end{figure}
-The issue with these anomalies is that although they are stable due to the balancing of the \textit{inter-agent vectors} they create non-uniform structures that may be unsuitable for tasks that require a uniform swarm formation.
-\textit{Concave reduction} is a process that causes a swarm to coalesce towards a more geometrically stable shape. This is achieved by removing voids and concave edges to reshape the swarm to a structure with a more hexagonal symmetry.  
-The technique defined in this paper functions without the need for inter-agent or global messaging. It is implemented at the local agent level through proximity detection.
+The problem with these anomalies is that, although they are stable due to the balancing of the \textit{inter-agent vectors}, they create non-uniform structures that may be unsuitable for tasks that require a uniform swarm formation.
+
+\textit{Concave reduction} is a form of self-healing, it is a process that causes a swarm to coalesce towards a more geometrically stable shape. This is achieved by removing voids and concave edges. The technique defined in this paper functions without the need for inter-agent or global messaging. It is implemented at the local agent level through proximity detection.
+
+\section{Related Work}\label{sec:RelatedWork}
+Research has identified several approaches to resolving swarm structure issues. A prototype framework for self-healing swarms was developed by Dai et al. which considered the problem of agent failure in hostile environments~\cite{DHMRZ:06}. This is in line with work carried out by Vassev and Hinchey who model swarm deployment using ASSL (Autonomic System Specification Language)~\cite{VH:09}. This technique was used by NASA (National Aeronautics and Space Administration) when developing their ANTS (Autonomous Nano Technology Swarm) for use in asteroid belt exploration. This line of research is more focused towards an agent's internal systems failure rather than the removal of anomalies in a swarm distribution. Roach et al. takes a different approach and focuses on the effects of sensor failure and the effect that has on agent distribution~\cite{RMT:15}. The closest research to concave reduction, as discussed in this paper, is that of Lee and Chong who identify the issue of concave edges within swarms in an attempt to create regular lattice formations~\cite{GN:08}. The main focus of their paper is the restructuring of the internal distribution of inter-agent formations. The research by Ismail and Timmis used the approach of \textit{bio-inspired} healing using \textit{granuloma formation}, a biological method for encapsulating an antigen~\cite{IT:10}.
+Concave reduction is an extension of the work discussed by Ismail and Timmis in their paper on `self-healing' \cite{IT:10} and Lee and Chong's work on identifying concave edges~\cite{GN:08}. The technique also draws on the work of McLurkin and Demaine who have developed algorithms to detect perimeter types~\cite{MD:09}. The technique employed in this paper does not require the identification of the perimeter type as this would require a communications infrastructure.
+
+\section{Swarm Model}\label{sec:Swarm Model}
+To describe the removal of voids a swarming algorithm needs to be defined. Equation~\ref{eq:BotPhysics1} defines a weighted algorithm that includes cohesion, repulsion, direction and obstacle avoidance ($v_c(b), v_r(b), v_d(b), v_o(b)$). The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled thereby creating an adaptable swarming effect. 
+
+\begin{equation}\label{eq:BotPhysics1}
+  v(b) = k_cv_c(b) + k_rv_r(b) + k_dv_d(b) + k_ov_o(b)
+\end{equation}
+
+\textit{Repulsion} $v_{r}(b)$, as defined in Equation~\ref{eq:Repulsion1} is the resultant directional movement required to prevent agents colliding.
 
 \begin{equation}\label{eq:Repulsion1}
 v_{r}(b) = 
@@ -93,30 +107,21 @@ v_{r}(b) =
 \right)
 \end{equation}
 
+\textit{Cohesion} $v_{c}(b)$, as defined in Equation~\ref{eq:FlyToCentre1} is the resultant movement that makes the agent move towards each other to form a cohesive structure.
+
 \begin{equation}\label{eq:FlyToCentre1}
 v_{c}(b) = \frac{1}{|nbr(b)|}\left({\mathlarger{\sum_{b' \in nbr(b)}}{bb'}}\right)
 \end{equation}
 
-\begin{equation}\label{eq:AgentMovement}
-b_{pos}=s_{b}t\big(v(b)\big)\string^ 
-\end{equation}
-
-If a swarm is goal-based, the addition of a \emph{directional vector} will prevent all agents simultaneously producing null vectors. Here, $k_dv_{d}(b)$ is the calculated directional vector to be applied to an agent.
-
-\begin{equation}\label{eq:InterAgentMovementDirectional1}
-v(b) = k_cv_{c}(b) + k_rv_{r}(b) + k_dv_{d}(b)
-\end{equation}
+\textit{Direction} $v_d(b)$, as shown in Equation~\ref{eq:Direction} is the directional vector for an agent. Where $d$ is the goal.
 
 \begin{equation}
-\label{eq:CohesionRepulsion}
-P(b) = \left\{\begin{array}{lll}
-   |v(b)|& \mathrm{if} & |k_cv_c(b)| > |k_r v_r(b)|\\
-  -|v(b)|& \mathrm{otherwise}
-  \end{array}\right.
+\label{eq:Direction}
+v_d(b) = bd
 \end{equation}
 
-Obstacles, like agents, can be represented as a point in the system. As an agent moves it may enter an obstacle's \textit{obstacle repulsion field} causing the agent to move away.
-In this thesis agents are modelled with a fixed obstacle repulsion distance $O_b$ where a repulsion vector is applied. The repulsion is then a vector of magnitude $O_b$. If more than one obstacle is within the field effect agent the total repulsion vector is the sum of the repulsion vectors due to each obstacle~Figure~\ref{methods:Obstacle1}. The result is normalised and scaled such that the magnitude is the same as the field distance~$O_b$.
+Obstacles, like agents, can be represented as a point in the system. As an agent moves it may enter an obstacle's \textit{obstacle repulsion field} ($O_b$) causing the agent to move away. In this paper agents are modelled with a fixed \textit{obstacle repulsion field} ($O_b$). If an agent enters the field range a vector of magnitude $O_b$ is applied. If more than one obstacle is within the field effect the applied repulsion vector is the sum of the repulsion vectors due to each obstacle~Figure~\ref{methods:Obstacle1}. The result is normalised and scaled such that the magnitude is the same as the field distance~$O_b$ as shown in Equation~\ref{eq:Obstacle2}.
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=6cm]{figures/Obstacle1}
@@ -124,41 +129,40 @@ In this thesis agents are modelled with a fixed obstacle repulsion distance $O_b
 \caption{Obstacle repulsion \label{methods:Obstacle1}}
 \end{figure}
 
-Equation~\ref{eq:Obstacle2} shows the resultant repulsion vector $v_o(b)$ for an agent. $\{o~\in~O~:~\magn{bo}~<=~O_b\}$ is the set of obstacles that are within range of agent $b$. $O$ is the set of obstacles. The obstacles are identified using the distance between an agent and an obstacle $\magn{bo}$ and comparing the result to the fixed obstacle repulsion range~$O_b$. The result is calculated by scaling the normalised sum of the normalised vectors $(ob)\string^$ by $O_b$. Note that \string^ is the equivalent of $\hat{v} = \frac{v}{\magn{v}}$ the normalised vector.
+Equation~\ref{eq:Obstacle2} shows the resultant repulsion vector $v_o(b)$ for an agent. $\{o~\in~O~:~\magn{ob}~\leq~O_b\}$ is the set of obstacles that are within range of agent $b$. $O$ is the set of obstacles. The obstacles are identified using the distance between an agent and an obstacle $\magn{ob}$ and comparing the result to the fixed obstacle repulsion range~$O_b$. The applied repulsion is calculated by scaling the normalised sum of the normalised vectors $\widehat{ob}$ by $O_b$. Note that $\string^$ is the equivalent of $\hat{v} = \frac{v}{\magn{v}}$ the normalised vector.
 
-\begin{equation}\label{eq:Obstacle2}
-v_o(b) =
- O_b\Bigg(\mathlarger{\mathlarger{\mathlarger{\sum}}}_{o \in O~:~\magn{ob} <= O_b}(ob)\string^\Bigg)\string^
+% \begin{equation}\label{eq:Obstacle2}
+% v_o(b) =
+%  O_b\Bigg(\mathlarger{\mathlarger{\mathlarger{\sum}}}_{o \in O~:~\magn{ob} <= O_b}(ob)\string^\Bigg)\string^
+% \end{equation}
+
+\begin{eqnarray}\label{eq:Obstacle2}
+  v_o(b) & = & O_b \widehat{d_o} \\
+  \mathrm{where~}  d_o & = & \sum_{\lefteqn{o\in O : \|ob\| \leq O_b}} \widehat{ob}
+  \nonumber
+\end{eqnarray}
+
+An agent's \textit{movement vector} is the sum of all the component vectors as shown in Equation~\ref{eq:BotPhysics1}. This is a similar technique as used by Hashimoto et. al.~\cite{HAY:08}. For a vector to be used for movement it be normalised before the agent's speed can be applied. The resultant \textit{movement vector} $b_{pos}$, as defined in Equation~\ref{eq:AgentMovement}, is calculated using unit time, speed and the normalised \textit{movement vector}.
+
+\begin{equation}\label{eq:AgentMovement}
+  b_{pos}=s_{b}t\widehat{v(b)} 
 \end{equation}
 
-An agent's \textit{movement-destination vector} is the sum of all the component vectors ($v_c, v_r, v_d, v_o$) (Equation~\ref{eq:BotDirection1})~\cite{HAY:08}. For a vector to be used for movement it must have a magnitude of 1 before the agent's speed can be applied.
-%%  as shown in~(\autoref{eq:BotDirection1}).
-
-\begin{equation}
-\label{eq:BotDirection1}
-v(b) = v_{c}(b) + v_{r}(b) + v_{d}(b) + v_{o}(b)
-\end{equation}
-
-\begin{equation}\label{eq:BotPhysics1}
-v(b) = k_cv_c(b) + k_rv_r(b) + k_dv_d(b) + k_ov_o(b)
-\end{equation}
-
-\section{Related Work}\label{sec:RelatedWork}
-Research have identified several approaches to resolving swarm structure issues. A prototype framework for self healing swarms was developed by Dai et al. which considered the problem of agent failure in hostile environments~\cite{DHMRZ:06}. This is in line with work carried out by Vassev and Hinchey who model swarm deployment using ASSL (Autonomic System Specification Language)~\cite{VH:09}. This technique was used by NASA (National Aeronautics and Space Administration) when developing their ANTS (Autonomous Nano Technology Swarm) for use in asteroid belt exploration. This line of research is more focused towards an agent's internal systems failure rather than the removal of anomalies in a swarm distribution. Roach et al. takes a different approach and focuses on the effects of sensor failure and the effect that has on agent distribution~\cite{RMT:15}. The closest research to concave reduction, as discussed in this paper, is that of Lee and Chong who identify the issue of concave edges within swarms in an attempt to create regular lattice formations~\cite{GN:08}. The main focus of their paper is the restructuring of the internal distribution of inter-agent formations. The research by Ismail and Timmis used the approach of \textit{bio-inspired} healing using \textit{granuloma formation}, a biological method for encapsulating an antigen~\cite{IT:10}.
-Concave reduction is an extension of the work discussed by Ismail and Timmis in their paper on `self-healing' \cite{IT:10} and Lee and Chong's work on identifying concave edges~\cite{GN:08}. The technique also draws on the work of McLurkin and Demaine who have developed algorithms to detect perimeter types~\cite{MD:09}, although this paper does not identify the perimeter types as this would require a communications infrastructure.
-
+Applying the calculations described in this section to all agents in turn creates the swarming effect. 
+  
 \section{Perimeter Detection}\label{sec:PerimeterDetection}
 %In a 2D Euclidean plane a circle provides the maximum area with the minimum perimeter size. A circles perimeter is convex in nature. 
-In a disorganised swarm agents that are on a perimeter edge need to be identified as the starting point of coordinating the structure. The edges can form part of an outer (green) or inner edge (red) (Fig.~\ref{fig:PerimeterBots1}) or be part of an island~(Fig.~\ref{fig:PerimeterBots2}).
+To restructure a disorganised swarm the perimeter agents need to be identified. These agents form part of an outer ({\color{green}green}) or inner edge ({\color{red}red}) (Fig.~\ref{fig:PerimeterBots1}) or are part of an island~(Fig.~\ref{fig:PerimeterBots2}).
+
 Agents are identified as being perimeter-based if they comply with a set of conditions. These conditions are: 
 \begin{itemize}
-  \item There are at least two adjacent neighbours that cannot detect each other.
+  \item There are at least two adjacent neighbours that cannot detect each other~(Fig.~\ref{fig:Perimeter1}).
   \item The agent has less than 4 neighbours.
   \item The angle between two neighbours is $> 180^\circ$.
 \end{itemize} 
 
 These conditions create an identifiable set of agents that create a perimeter.
-This process detects both the outer edge of a swarm and any internal features~(voids) that satisfy the same set of conditions. It is therefore possible to have both voids and islands of agents within the same swarm~(Fig.~\ref{fig:PerimeterBots2}). Voids are best defined as perimeters that are concave in nature and inside another perimeter. McLurkin describes two types of perimeters convex and concave~\cite{MD:09}. A convex perimeter is an edge where the average angle of the agent's exposed faces are~$< 180^\circ$. A concave perimeter is where the average exposed angle is~$> 180^\circ$.
+This process detects both the outer edge of a swarm and any internal features~(voids) that satisfy the same set of conditions. It is therefore possible to have both voids and islands of agents within the same swarm~(Fig.~\ref{fig:PerimeterBots2}). Voids are best defined as perimeters that are concave in nature and inside another perimeter. McLurkin describes two types of perimeters convex and concave~\cite{MD:09}. A convex perimeter is an edge where the average angle of the agent's exposed faces are~$> 180^\circ$. A concave perimeter is where the average exposed angle is~$< 180^\circ$.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/PerimeterBots1}
 {Outer Perimeter\label{fig:PerimeterBots1}}
@@ -167,16 +171,17 @@ This process detects both the outer edge of a swarm and any internal features~(v
 {Inner Island Perimeter\label{fig:PerimeterBots2}}
 %\subsection{Full-perimeter detection}\label{sec:PerimeterAgentDetection} 
 
-The process of detecting perimeter agents involves several steps. Primarily it involves identifying agents that are not surrounded by interconnected neighbours, as shown in Fig.~\ref{reduced:Perimeter1}, where $b^0$ and $b^1$ are outside of each others cohesion range and are neighbours of $b$. These processes are discussed in more detail here. 
+The process of detecting perimeter agents involves several steps. 
+%Primarily it involves identifying agents that are not surrounded by interconnected neighbours, as shown in Fig.~\ref{reduced:Perimeter1}, where $b^0$ and $b^1$ are outside of each others cohesion range and are neighbours of $b$. These processes are discussed in more detail here. 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=4cm]{figures/Perimeter1}
-{Agent with detected neighbours\label{reduced:Perimeter1}}
+{Agent with detected neighbours\label{fig:Perimeter1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=4cm]{figures/Perimeter1}
 %% \end{center}
 %% \caption{Complex multifaceted agents \label{reduced:Perimeter1}}
 %% \end{figure}
-The first check is a short circuit count of the number of neighbours. If an agent has $\leq 4$ neighbours and the swarm parameters are for a hexagonal swarm configuration then the agent is a perimeter agent. This identification process is shown in~Fig.~\ref{algo:SmallNeighbourCount}. 
+The first check is a short circuit count of the number of neighbours. If an agent has $\leq 4$ neighbours and the swarm parameters are for a hexagonal swarm configuration then the agent is a perimeter agent. This identification process is shown in~Fig.~\ref{algo:SmallNeighbourCount}. This process could produce a false positive in a highly compressed section of a swarm but it would not impede the effect of the swarm restructuring as no gap would be detected. 
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -197,6 +202,7 @@ If the short circuit \textit{neighbour count} returns false then further conditi
 % S_b \buildrel \Delta \over = \{(b',\angle\{(b'~b~b^0)) : b' \in nbr(b)\}\}
 % \label{eq:ConcaveVoidPhysics1}
 % \end{equation}
+
 Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbour's make with the first detected neighbour.
 %% \begin{center}
 %% \begin{equation}
@@ -205,7 +211,7 @@ Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the ne
 %% \end{equation}
 %% \end{center}
 
-Figure~\ref{algo:getNeighbourAngles} shows the logic to produce the sorted neighbour/angle dictionary. $sort(.)$ sorts the dictionary set generated in~\ref{eq:ConcaveVoidPhysics1} by ascending angle to produce a dictionary of neighbour agents with their relative angle to the first detected neighbour as shown in~Fig.~\ref{reduced:Perimeter1}.
+Figure~\ref{algo:getNeighbourAngles} shows the logic to produce the sorted neighbour/angle dictionary. $sort(.)$ sorts the dictionary set generated in Fig.~\ref{eq:ConcaveVoidPhysics1} by ascending angle to produce a dictionary of neighbour agents with their relative angle to the first detected neighbour as shown in~Fig.~\ref{fig:Perimeter1}.
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -1031,17 +1037,21 @@ This paper demonstrates by experiment that by altering the vector calculations f
 \bibliography{thesis}
 \newpage
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/eliot}}]{Neil Eliot}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/eliot.pdf}}]{Neil Eliot}
 has been a Senior Lecturer at Northumbria University since 1998.  Neil was awarded his Ph.D. from Northumbria in 2017, his Pg.C. in 1994, and his B.Sc. in 1989 all in Computing. His research areas include swarm theory and cybersecurity. Prior to this Neil worked in the chemical industry and the NHS. 
 \end{IEEEbiography}
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/kenda}}]{David Kendall}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/kenda.pdf}}]{David Kendall}
 has been a Senior Lecturer in Computing at Northumbria University since 1989, except for a brief period as a Lecturer in Computer Science at Durham University (2001-02). Previously, he was a Research Associate at Newcastle University (1987-89), following experience as a Senior Software Engineer in industry (1983-86). He has an M.A. degree in Literae Humaniores from Oxford University, where he studied at New College. He received M.Sc. and Ph.D. degrees in Computing Science from Newcastle University. His research interests are in the area of formal modelling and analysis of embedded systems. 
 \end{IEEEbiography}
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/brock}}]{Michael Brockway}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/brock.pdf}}]{Michael Brockway}
 has been a Senior Lecturer at Northumbria University for 17 years. His first degree is in pure and applied mathematics (1973-4), his Masters in mathematics (mathematical logic, category theory, 1975), and he has a PhD in computer science (formal methods for distributed embedded systems, 2010) from Northumbria University. Before that Michael worked in teaching and the computing industry.
 \end{IEEEbiography}
 
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/moon.pdf}}]{Alun Moon}
+  has been a Senior Lecturer at Northumbria University for 17 years. His first degree is in pure and applied mathematics (1973-4), his Masters in mathematics (mathematical logic, category theory, 1975), and he has a PhD in computer science (formal methods for distributed embedded systems, 2010) from Northumbria University. Before that Alun worked in teaching and the computing industry.
+  \end{IEEEbiography}  
+  
 \EOD
 \end{document}

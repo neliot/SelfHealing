@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex paper"] 1538424696 "paper.aux" "paper.bbl" "paper" 1538425418
+["bibtex paper"] 1539005496 "paper.aux" "paper.bbl" "paper" 1539005574
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "paper.aux" 1538425418 14568 dcadc68c6287e865f9cf3fe9b54a7dbe ""
+  "paper.aux" 1539005574 14641 14f498f25ecde83cc49da641efaba88e ""
   "paper.bcf" 0 -1 0 ""
   "thesis.bib" 1528029126 170800 413c3f6d2dd0dd80d0bc0c6dd710baef ""
   (generated)
-  "paper.blg"
   "paper.bbl"
-["pdflatex"] 1538425417 "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" "paper.pdf" "paper" 1538425418
+  "paper.blg"
+["pdflatex"] 1539005573 "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" "paper.pdf" "paper" 1539005574
   "/etc/texmf/web2c/texmf.cnf" 1531921153 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" 1538425417 85811 4377ab2caee9ce84afaa02b8987281b7 ""
+  "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" 1539005572 87588 1fc93217efb274fc86715b94eff1b98e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1480098688 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -35,7 +35,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm" 1480098689 6944 94c55ad86e6ea2826f78ba2240d50df9 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1480098698 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1480098698 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1480098698 928 2dc8d444221b7a635bb58038579b861a ""
@@ -47,7 +46,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1480098701 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1480098701 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1480098701 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1480098701 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1480098701 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1480098701 1124 6c73e740cf17375f03eec0ee63599741 ""
@@ -144,6 +142,7 @@
   "Images/brock.pdf" 1519301226 167845 87dfb3b7d2be0c4e5e51bc5f500c86d2 ""
   "Images/eliot.pdf" 1519301226 9324 a224462daecf690d1842d74712292003 ""
   "Images/kenda.pdf" 1519301225 10091 912fcf733a2542d351e31a947dc9e4a4 ""
+  "Images/moon.pdf" 1538999530 28361 3b10e11e1910579b08b196b9f2c20d4a ""
   "Logo.png" 1519301226 9705 6ba9f1039498f006286d6457f067dc20 ""
   "bullet.png" 1519301226 430 e52d8fe748259de33fa611fdd6a099c1 ""
   "figures/Baseline4560End.pdf" 1531642687 155662 a67d3ae023665211f9f8c177cbbf4769 ""
@@ -210,10 +209,10 @@
   "figures/VoidConcave1.pdf" 1531642731 13541 125c5a212ecd266f71faaf51326a7c93 ""
   "ieeeaccess.cls" 1519301226 43839 3abf959902254cbaf82e6ce14f087bf5 ""
   "notaglineLogo.png" 1519301226 3150 e273b7aed356b5f76c6d0b072166d68c ""
-  "paper.aux" 1538425418 14568 dcadc68c6287e865f9cf3fe9b54a7dbe ""
-  "paper.bbl" 1538424696 6968 81b25c1c664a6dc19dd4d575a0f34bb5 "bibtex paper"
-  "paper.tex" 1538425417 85811 4377ab2caee9ce84afaa02b8987281b7 ""
+  "paper.aux" 1539005574 14641 14f498f25ecde83cc49da641efaba88e ""
+  "paper.bbl" 1539005496 6968 81b25c1c664a6dc19dd4d575a0f34bb5 "bibtex paper"
+  "paper.tex" 1539005572 87588 1fc93217efb274fc86715b94eff1b98e ""
   (generated)
-  "paper.aux"
   "paper.pdf"
+  "paper.aux"
   "paper.log"
