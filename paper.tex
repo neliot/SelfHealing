@@ -82,20 +82,20 @@ When cohesion and repulsion (\textit{inter-agent vectors}) are the only field ef
 %% \end{figure}
 The problem with these anomalies is that, although they are stable due to the balancing of the \textit{inter-agent vectors}, they create non-uniform structures that may be unsuitable for tasks that require a uniform swarm formation.
 
-\textit{Concave reduction} is a form of self-healing, it is a process that causes a swarm to coalesce towards a more geometrically stable shape. This is achieved by removing voids and concave edges. The technique defined in this paper functions without the need for inter-agent or global messaging. It is implemented at the local agent level through proximity detection.
+\textit{Concave reduction} is a form of self-healing, it is a process that creates a movement that makes a swarm coalesce towards a more geometrically stable shape. This is achieved by removing voids and concave edges. The techniques defined in this paper function without the need for inter-agent or global messaging using only local proximity detection.
 
 \section{Related Work}\label{sec:RelatedWork}
 Research has identified several approaches to resolving swarm structure issues. A prototype framework for self-healing swarms was developed by Dai et al. which considered the problem of agent failure in hostile environments~\cite{DHMRZ:06}. This is in line with work carried out by Vassev and Hinchey who model swarm deployment using ASSL (Autonomic System Specification Language)~\cite{VH:09}. This technique was used by NASA (National Aeronautics and Space Administration) when developing their ANTS (Autonomous Nano Technology Swarm) for use in asteroid belt exploration. This line of research is more focused towards an agent's internal systems failure rather than the removal of anomalies in a swarm distribution. Roach et al. takes a different approach and focuses on the effects of sensor failure and the effect that has on agent distribution~\cite{RMT:15}. The closest research to concave reduction, as discussed in this paper, is that of Lee and Chong who identify the issue of concave edges within swarms in an attempt to create regular lattice formations~\cite{GN:08}. The main focus of their paper is the restructuring of the internal distribution of inter-agent formations. The research by Ismail and Timmis used the approach of \textit{bio-inspired} healing using \textit{granuloma formation}, a biological method for encapsulating an antigen~\cite{IT:10}.
 Concave reduction is an extension of the work discussed by Ismail and Timmis in their paper on `self-healing' \cite{IT:10} and Lee and Chong's work on identifying concave edges~\cite{GN:08}. The technique also draws on the work of McLurkin and Demaine who have developed algorithms to detect perimeter types~\cite{MD:09}. The technique employed in this paper does not require the identification of the perimeter type as this would require a communications infrastructure.
 
 \section{Swarm Model}\label{sec:Swarm Model}
-To describe the removal of voids a swarming model needs to be defined. Equation~\ref{eq:BotPhysics1} defines a weighted algorithm that includes cohesion, repulsion, direction and obstacle avoidance ($v_c(b), v_r(b), v_d(b), v_o(b)$). The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled thereby creating an adaptable swarming effect. 
+To describe the removal of voids a swarming model needs to be defined. Equation~\ref{eq:BotPhysics1} defines a weighted model that includes cohesion, repulsion, direction and obstacle avoidance ($v_c(b), v_r(b), v_d(b), v_o(b)$). The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled to tailor the swarming effect. 
 
 \begin{equation}\label{eq:BotPhysics1}
   v(b) = k_cv_c(b) + k_rv_r(b) + k_dv_d(b) + k_ov_o(b)
 \end{equation}
 
-\textit{Repulsion} $v_{r}(b)$, as defined in Equation~\ref{eq:Repulsion1} is the resultant directional movement required to prevent agents colliding where $rep(b)$ is a function that returns a set of agents that are within the agent $b$ repulsion range.
+\textit{Repulsion} $v_{r}(b)$, defined in Equation~\ref{eq:Repulsion1}, is the directional movement required to prevent agents colliding. $rep(b)$ is a function that returns a set of agents that are within an agent's $b$ repulsion range.
 
 \begin{equation}\label{eq:Repulsion1}
 v_{r}(b) = 
@@ -107,20 +107,20 @@ v_{r}(b) =
 \right)
 \end{equation}
 
-\textit{Cohesion} $v_{c}(b)$, as defined in Equation~\ref{eq:FlyToCentre1} is the resultant movement that makes the agent move towards each other to form a cohesive structure where $nbr(b)$ is a function that returns set of all agents that are within agent $b$ cohesion range.
+\textit{Cohesion} $v_{c}(b)$, defined in Equation~\ref{eq:FlyToCentre1}, calculates the movement that makes an agent move towards other agents to form a cohesive structure. $nbr(b)$ is a function that returns a set of agents that are within an agent's ($b$) cohesion range.
 
 \begin{equation}\label{eq:FlyToCentre1}
 v_{c}(b) = \frac{1}{|nbr(b)|}\left({\mathlarger{\sum_{b' \in nbr(b)}}{bb'}}\right)
 \end{equation}
 
-\textit{Direction} $v_d(b)$, as shown in Equation~\ref{eq:Direction} is the directional vector for an agent. Where $d$ is the goal.
+\textit{Direction} $v_d(b)$, defined in Equation~\ref{eq:Direction}, generates a directional vector for an agent to move towards a destination defined as $d$.
 
 \begin{equation}
 \label{eq:Direction}
 v_d(b) = bd
 \end{equation}
 
-Obstacles, like agents, can be represented as a point in the system. As an agent moves it may enter an obstacle's \textit{obstacle repulsion field} ($O_b$) causing the agent to move away. In this paper agents are modelled with a fixed \textit{obstacle repulsion field} ($O_b$). If an agent enters the field range a vector of magnitude $O_b$ is applied. If more than one obstacle is within the field effect, the applied repulsion vector is the sum of the repulsion vectors due to each obstacle~(Figure~\ref{fig:Obstacle1}). The result is normalised and scaled such that the magnitude is the same as the field distance~$O_b$ as shown in Equation~\ref{eq:Obstacle2}.
+Obstacles, like agents, can be represented as a point. As an agent moves it may enter an obstacle's \textit{repulsion field}. If this occurs then the agent should move away. In this paper agents are modelled with a fixed \textit{obstacle repulsion field} ($O_b$). If an agent enters the field a vector of magnitude $O_b$ is applied. If more than one obstacle is within the field, the applied repulsion vector is the sum of the repulsion vectors~(Figure~\ref{fig:Obstacle1}). The resultant vector is normalised and scaled such that the magnitude is the same as the field distance~$O_b$ as shown in Equation~\ref{eq:Obstacle2}.
 
 \begin{figure}[H]
 \begin{center}
@@ -129,7 +129,7 @@ Obstacles, like agents, can be represented as a point in the system. As an agent
 \caption{Obstacle repulsion \label{fig:Obstacle1}}
 \end{figure}
 
-Equation~\ref{eq:Obstacle2} shows the resultant repulsion vector $v_o(b)$ for an agent. $\{o~\in~O~:~\magn{ob}~\leq~O_b\}$ is the set of obstacles that are within range of agent $b$. $O$ is the set of obstacles. The obstacles are identified using the distance between an agent and an obstacle $\magn{ob}$ and comparing the result to the fixed obstacle repulsion range~$O_b$. The applied repulsion is calculated by scaling the normalised sum of the normalised vectors $\widehat{ob}$ by $O_b$. Note that $\string^$ is the equivalent of $\hat{v} = \frac{v}{\magn{v}}$ the normalised vector.
+Equation~\ref{eq:Obstacle2} shows the repulsion vector $v_o(b)$ for an agent. $\{o~\in~O~:~\magn{ob}~\leq~O_b\}$ is the set of obstacles that are within the range of agent $b$. $O$ is the set of obstacles. The obstacles are identified using the distance between an agent and an obstacle $\magn{ob}$ and comparing the result to the fixed obstacle repulsion field~$O_b$. The applied repulsion is calculated by scaling the normalised sum of the normalised vectors $\widehat{ob}$ by $O_b$. Note that $\string^$ is the equivalent of $\hat{v} = \frac{v}{\magn{v}}$ the normalised vector.
 
 % \begin{equation}\label{eq:Obstacle2}
 % v_o(b) =
@@ -1049,9 +1049,9 @@ has been a Senior Lecturer in Computing at Northumbria University since 1989, ex
 has been a Senior Lecturer at Northumbria University for 17 years. His first degree is in pure and applied mathematics (1973-4), his Masters in mathematics (mathematical logic, category theory, 1975), and he has a PhD in computer science (formal methods for distributed embedded systems, 2010) from Northumbria University. Before that Michael worked in teaching and the computing industry.
 \end{IEEEbiography}
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/moon.pdf}}]{Alun Moon}
-  has been a Senior Lecturer at Northumbria University for 17 years. His first degree is in pure and applied mathematics (1973-4), his Masters in mathematics (mathematical logic, category theory, 1975), and he has a PhD in computer science (formal methods for distributed embedded systems, 2010) from Northumbria University. Before that Alun worked in teaching and the computing industry.
-  \end{IEEEbiography}  
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/moon.pdf}}]{Alun Moon} has been a Senior Lecturer in Computing at Northumbria Universiy since 2001. He has a PhD from Newcastle University in Electronic Engineering, a MSc from Hull University in Mechatronics, a PgDip in Astronomical Technology from Edinburgh University, and a BEng in Materials Science from Liverpool University.
+Prior experience as a research associate at Newcastle University included, embedded systems, engineering system modelling, and engineering visualisation.
+\end{IEEEbiography}  
   
 \EOD
 \end{document}
