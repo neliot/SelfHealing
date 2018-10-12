@@ -281,7 +281,7 @@ There is one exception to the neighbour visibility check. Due to compression of 
 %% \caption{Convex multifaceted agents \label{reduced:Perimeter2}}
 %% \end{figure}
 
-This phenomenon requires the detection process to identify the angles that all the agents create from an arbitrary point, in this case the first identified neighbour. The neighbours must then be checked to determine if any neighbour pair create an angle $> 180^\circ$~(Fig.~\ref{reduced:Perimeter2}~and~Fig.~\ref{algo:CheckConvex}). This process includes a short circuit in that as soon as a gap is found the check terminates. 
+This phenomenon requires the detection process to identify the angles that all the agents create from an arbitrary point, in this case the first identified neighbour. The neighbours must then be checked to determine if any neighbour pair create an angle $> 180^\circ$~(Figs.~\ref{reduced:Perimeter2}~and~\ref{algo:CheckConvex}). This process includes a short circuit in that as soon as a gap is found the check terminates. 
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -304,7 +304,7 @@ This phenomenon requires the detection process to identify the angles that all t
 \label{algo:CheckConvex}
 \end{figure}
 
-The complete perimeter detection algorithm using this `cyclic-angular-neighbour-check' methodology is show in~Fig.~\ref{algo:CheckPerimeter}. The first part of the algorithm is the short circuit check~(\textit{SmallNeighbourCount(b)}). This is only followed by the visibility check (\textit{CheckVisibility(b,angles)}) if the short circuit fails. If the visibility check is confirmed, which is another short circuit method, the convex check is carried out~(\textit{CheckConvex(angles)}). This sequence ensures the minimum computational overhead for the agent check. 
+The complete perimeter detection algorithm using this \textit{cyclic-angular-neighbour-check} methodology is show in~Fig.~\ref{algo:CheckPerimeter}. The first part of the algorithm is the short circuit check~(\textit{SmallNeighbourCount(b)}). This is only followed by the visibility check (\textit{CheckVisibility(b,angles)}) if the short circuit fails. If the visibility check is confirmed, which is a second short circuit method, the convex check is carried out~(\textit{CheckConvex(angles)}). This sequence ensures the minimum computational overhead for the agent check. 
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -327,10 +327,10 @@ The complete perimeter detection algorithm using this `cyclic-angular-neighbour-
 \end{figure}
 
 \section{Concave Reduction Application}\label{sec:ConcaveReductionApplication}
-In a static swarm, where there are no \textit{destination vectors}, concave reduction will result in a restructuring motion that creates a more `rounded' swarm~(Fig.~\ref{fig:OuterPerimeter3}). Concave reduction also creates a surround effect as it removes voids from a swarm~(Section~\ref{voids:ObjectSurrounding}). When concave reduction is applied to a mobile swarm the void closing effect can be used to improve reconnaissance coverage as a swarm passes around obstacles~(Section~\ref{concave:mobileSwarm1}).
-Although these effects improve the potential applications of swarms there is a negative impact introduced by concave reduction. In some circumstances concave reduction can create an artificial aggregate \textit{destination vector}. 
-To implement void reduction full perimeter detection is required. Concave reduction does not require the perimeter type to be identified and therefore no communications infrastructure is required~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The main limitation a communications infrastructure imposes on a swarm is the number of agents a swarm can contain. This is due to the propagation time of agent positions throughout the swarm. 
-The identification of candidate agents on the perimeter is incorporated into the perimeter detection algorithm as shown in Fig.~\ref{algo:checkVisibility2}.\\
+In a static swarm, where there are no \textit{destination vectors}, concave reduction will result in a restructuring motion that creates a more `rounded' swarm as shown in Fig.~\ref{fig:OuterPerimeter3}. Concave reduction also creates a surround effect as it removes voids from a swarm. This is discussed in more detail in section~\ref{voids:ObjectSurrounding}. When concave reduction is applied to a mobile swarm the void closing effect can be used to improve reconnaissance coverage as a swarm passes around an obstacles. This is discussed in section~\ref{concave:mobileSwarm1}.
+Although these effects improve the potential applications of swarms there is a negative impact introduced by concave reduction. In some circumstances concave reduction can create an artificial \textit{destination vector} in that the swarm will appear to have a directional movement. 
+
+To implement void reduction full perimeter detection is required. The identification of candidate agents on the perimeter is incorporated into the perimeter detection algorithm as shown in Fig.~\ref{algo:checkVisibility2}. The addition is to set a status flag to highlight when gap has been detected and to record the agent's \textit{neighbour pair} that create the concave gap. Concave reduction does not require the perimeter type to be identified and therefore no communications infrastructure is required. Many coordination algorithms require inter-agent communications~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The disadvantage of requiring a communications infrastructure is that the size of a swarm is limited by message propogation.
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -363,8 +363,6 @@ The identification of candidate agents on the perimeter is incorporated into the
 \label{algo:checkVisibility2}
 \end{figure}
 
-The addition is to set a status flag to highlight a gap has been detected and to record the agent's \textit{neighbour pair} that create the concave gap.
-
 \subsection{Perimeter Exceptions}\label{concave:Exceptions}
 When a swarm is forming or disrupted through either agent failures, catastrophic events or interactions with obstacles sections of the swarm may become isolated. When this occurs the sections can be considered as being a separate sub-swarms. It is also possible for sections of the swarm to remain connected through tenuous links of either 1 or 2 agents as shown in Fig.~\ref{fig:Connector1} and \ref{fig:Connector2}. In the case of a link connection~(Fig.~\ref{fig:Connector1}) concave reduction can be applied as normal. In the case of a `bridge' link (Fig.~\ref{fig:Connector2}) there is an issue in that there is more than one concave gap. As there is no communications infrastructure in swarm models there are limited options for handling this situation. One option is allow the swarming algorithm to apply as usual and no concave reduction takes place; the reasoning being that the overall structure of the swarm is unknown therefore the movement cannot be optimised. An alternative would be to select either the largest or the smallest gap; again as the structure of the swarm is unknown this may not be beneficial. A third option would be to select one of the gaps in some way (randomly, first seen, last seen) and implement the concave reduction at that point. The approach taken in this paper is to select the first gap that is detected. Selecting the first gap reduces the computational overhead of the algorithm.
 
@@ -385,13 +383,6 @@ When a swarm is forming or disrupted through either agent failures, catastrophic
 
 \section{Concave reduction agent movement}\label{concave:AgentMovement}
 Adding a further characteristic to the motion of a swarm necessitates a revision to the existing agent model~(Equation.~\ref{eq:InterAgentMovement2}). With concave reduction this revision is based upon the identification of the concave perimeter edges as shown in~Fig.~\ref{concave:VoidConcave1} as $(b^{'},b,b^{''})$. 
-Equation~\ref{eq:InterAgentMovement2} identifies the \textit{inter-agent vector} for agent $b$ with respect to its neighbours.
-
-\begin{equation}\label{eq:InterAgentMovement2}
-v(b) = k_cv_{c}(b) + k_rv_{r}(b)
-\end{equation}
-
-Where $k_c$ and $k_r$ are weightings to change the effect of each vector as shown in Table~\ref{tab:BaselineConcaveReduction}.\\
 % \begin{figure}
 % \begin{center}
 % \includegraphics[width=5cm]{figures/VoidConcave1}
@@ -401,7 +392,7 @@ Where $k_c$ and $k_r$ are weightings to change the effect of each vector as show
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/VoidConcave1}{Agent concave motion\label{concave:VoidConcave1}}
 
-When an agent is identified as being a component of a concave characteristic~(Fig.~\ref{algo:checkVisibility2}) the normal \textit{movement-direction vector}~Equation~\ref{eq:InterAgentMovement2} is replaced by a \textit{concave reduction vector}. This new vector causes the agent to move in a direction that will reduce or remove a concave edge by moving the agent towards the identified gap. The effect of this will be to either straighten an outer perimeter or reduce/remove a void. This change in direction effect the distance and magnitude variances due to the magnitude changes induced in the neighbours. Figures~\ref{fig:InterAgentEffect1} and \ref{fig:InterAgentEffect2} shows this effect in more detail. Figure~\ref{fig:InterAgentEffect1}~shows the initial positions of the agents before the concave reduction is applied to the agent. Figure~\ref{fig:InterAgentEffect2}~shows the positive and negative effects on the inter-agent neighbours. The aggregate change is an increase in the inter-agent distances and an increase in the resultant magnitude effect.
+When an agent is identified as being a component of a concave characteristic~(Fig.~\ref{algo:checkVisibility2}) the normal \textit{movement-direction vector} is replaced by a \textit{concave reduction vector}. This new vector causes the agent to move in a direction that will reduce or remove a concave edge by moving the agent towards the identified gap. The effect of this will be to either straighten an outer perimeter or reduce/remove a void. This change in direction effect the distance and magnitude variances due to the magnitude changes induced in the neighbours. Figures~\ref{fig:InterAgentEffect1} and \ref{fig:InterAgentEffect2} shows this effect in more detail. Figure~\ref{fig:InterAgentEffect1}~shows the initial positions of the agents before the concave reduction is applied to the agent. Figure~\ref{fig:InterAgentEffect2}~shows the positive and negative effects on the inter-agent neighbours. The aggregate change is an increase in the inter-agent distances and an increase in the resultant magnitude effect.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/InterAgentEffect1}{Initial Position\label{fig:InterAgentEffect1}}
 %% \begin{figure}
