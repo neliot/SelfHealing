@@ -327,10 +327,10 @@ The complete perimeter detection algorithm using this \textit{cyclic-angular-nei
 \end{figure}
 
 \section{Concave Reduction Application}\label{sec:ConcaveReductionApplication}
-In a static swarm, where there are no \textit{destination vectors}, concave reduction will result in a restructuring motion that creates a more `rounded' swarm as shown in Fig.~\ref{fig:OuterPerimeter3}. Concave reduction also creates a surround effect as it removes voids from a swarm. This is discussed in more detail in section~\ref{voids:ObjectSurrounding}. When concave reduction is applied to a mobile swarm the void closing effect can be used to improve reconnaissance coverage as a swarm passes around an obstacles. This is discussed in section~\ref{concave:mobileSwarm1}.
-Although these effects improve the potential applications of swarms there is a negative impact introduced by concave reduction. In some circumstances concave reduction can create an artificial \textit{destination vector} in that the swarm will appear to have a directional movement. 
+In a static swarm, where there are no \textit{destination vectors}, concave reduction will result in a restructuring motion that creates a more `rounded' swarm as shown in Fig.~\ref{fig:OuterPerimeter3}. Concave reduction also creates a surround effect as it removes voids from a swarm. This is discussed in more detail in section~\ref{voids:ObjectSurrounding}. When concave reduction is applied to a mobile swarm the void closing effect can be used to improve reconnaissance coverage as the swarm passes obstacles. This is discussed in section~\ref{concave:mobileSwarm1}.
+Although these effects improve the potential applications of swarms there are negative effects that can be impact introduced. In some circumstances concave reduction can create an artificial \textit{destination vector} in that the swarm will appear to have a directional movement. 
 
-To implement void reduction full perimeter detection is required. The identification of candidate agents on the perimeter is incorporated into the perimeter detection algorithm as shown in Fig.~\ref{algo:checkVisibility2}. The addition is to set a status flag to highlight when gap has been detected and to record the agent's \textit{neighbour pair} that create the concave gap. Concave reduction does not require the perimeter type to be identified and therefore no communications infrastructure is required. Many coordination algorithms require inter-agent communications~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The disadvantage of requiring a communications infrastructure is that the size of a swarm is limited by message propogation.
+To implement void reduction full perimeter detection is required. The identification of candidate agents is incorporated into the perimeter detection algorithm as shown in Fig.~\ref{algo:checkVisibility2}. The addition is to set a status flag to highlight when a gap is detected and to record the agent's that create the gap. Concave reduction does not require the perimeter type to be identified and no communications infrastructure is required. Many coordination algorithms require inter-agent communications~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The disadvantage of requiring a communications infrastructure is that the size of a swarm is limited through message propagation.
 
 \begin{figure}
 \begin{algorithmic}[1]
@@ -364,7 +364,7 @@ To implement void reduction full perimeter detection is required. The identifica
 \end{figure}
 
 \subsection{Perimeter Exceptions}\label{concave:Exceptions}
-When a swarm is forming or disrupted through either agent failures, catastrophic events or interactions with obstacles sections of the swarm may become isolated. When this occurs the sections can be considered as being a separate sub-swarms. It is also possible for sections of the swarm to remain connected through tenuous links of either 1 or 2 agents as shown in Fig.~\ref{fig:Connector1} and \ref{fig:Connector2}. In the case of a link connection~(Fig.~\ref{fig:Connector1}) concave reduction can be applied as normal. In the case of a `bridge' link (Fig.~\ref{fig:Connector2}) there is an issue in that there is more than one concave gap. As there is no communications infrastructure in swarm models there are limited options for handling this situation. One option is allow the swarming algorithm to apply as usual and no concave reduction takes place; the reasoning being that the overall structure of the swarm is unknown therefore the movement cannot be optimised. An alternative would be to select either the largest or the smallest gap; again as the structure of the swarm is unknown this may not be beneficial. A third option would be to select one of the gaps in some way (randomly, first seen, last seen) and implement the concave reduction at that point. The approach taken in this paper is to select the first gap that is detected. Selecting the first gap reduces the computational overhead of the algorithm.
+When a swarm is forming or disrupted through either agent failures, catastrophic events or interactions with obstacles, sections of the swarm may become isolated. When this occurs the sections can be considered to be separate sub-swarms. It is also possible for sections of the swarm to remain connected through tenuous links of either 1 or 2 agents as shown in Figs.~\ref{fig:Connector1} and \ref{fig:Connector2}. In the case of a link connection~(Fig.~\ref{fig:Connector1}) concave reduction can be applied as normal. In the case of a `bridge' link (Fig.~\ref{fig:Connector2}) there is an issue in that there is more than one concave gap. As there is no communications infrastructure in swarm model. One option is allow the swarming algorithm to be applied; this is a reasonable approach as the overall structure of the swarm is unknown therefore the movement cannot be optimised. An alternative approach would be to select either the largest or the smallest gap; again as the structure of the swarm is unknown this may not be beneficial. A third option would be to select one of the gaps (randomly, first seen, last seen) and implement the concave reduction at that point. The approach taken in this paper is to select the first gap that is detected. Selecting the first gap reduces the computational overhead of the algorithm.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=4cm]{figures/PerimeterBots4}{Link\label{fig:Connector1}}
 %% \begin{figure}
@@ -382,7 +382,7 @@ When a swarm is forming or disrupted through either agent failures, catastrophic
 %% \end{figure}
 
 \section{Concave reduction agent movement}\label{concave:AgentMovement}
-Adding a further characteristic to the motion of a swarm necessitates a revision to the existing agent model~(Equation.~\ref{eq:InterAgentMovement2}). With concave reduction this revision is based upon the identification of the concave perimeter edges as shown in~Fig.~\ref{concave:VoidConcave1} as $(b^{'},b,b^{''})$. 
+Adding a further characteristic to the motion of a swarm necessitates a revision to the existing agent model~(Equation.~\ref{eq:BotPhysics1}). With concave reduction this revision is based upon the identification of the concave perimeter edges as shown in~Fig.~\ref{concave:VoidConcave1} as $(b^{'},b,b^{''})$. 
 % \begin{figure}
 % \begin{center}
 % \includegraphics[width=5cm]{figures/VoidConcave1}
@@ -392,7 +392,7 @@ Adding a further characteristic to the motion of a swarm necessitates a revision
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/VoidConcave1}{Agent concave motion\label{concave:VoidConcave1}}
 
-When an agent is identified as being a component of a concave characteristic~(Fig.~\ref{algo:checkVisibility2}) the normal \textit{movement-direction vector} is replaced by a \textit{concave reduction vector}. This new vector causes the agent to move in a direction that will reduce or remove a concave edge by moving the agent towards the identified gap. The effect of this will be to either straighten an outer perimeter or reduce/remove a void. This change in direction effect the distance and magnitude variances due to the magnitude changes induced in the neighbours. Figures~\ref{fig:InterAgentEffect1} and \ref{fig:InterAgentEffect2} shows this effect in more detail. Figure~\ref{fig:InterAgentEffect1}~shows the initial positions of the agents before the concave reduction is applied to the agent. Figure~\ref{fig:InterAgentEffect2}~shows the positive and negative effects on the inter-agent neighbours. The aggregate change is an increase in the inter-agent distances and an increase in the resultant magnitude effect.
+When an agent is identified as being a component of a concave characteristic~(Fig.~\ref{algo:checkVisibility2}) the normal \textit{movement-direction vector} is replaced by a \textit{concave reduction vector}. This new vector causes the agent to move in a direction that will reduce or remove a concave edge by moving the agent towards the identified gap. The effect of this will be to either straighten an outer perimeter or reduce/remove a void. This change in direction effects the distance and magnitude variances due to the changes induced. Figures~\ref{fig:InterAgentEffect1} and \ref{fig:InterAgentEffect2} shows this effect in more detail. Figure~\ref{fig:InterAgentEffect1}~shows the initial positions of the agents before the concave reduction is applied to the agent. Figure~\ref{fig:InterAgentEffect2}~shows the effects on the relationship with the agent's neighbours. The aggregate change is an increase in the inter-agent distances and an increase in the resultant magnitude effects.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/InterAgentEffect1}{Initial Position\label{fig:InterAgentEffect1}}
 %% \begin{figure}
@@ -411,7 +411,7 @@ When an agent is identified as being a component of a concave characteristic~(Fi
 %% \end{figure}
 
 \section{Concave Reduction Perimeter Effect}\label{sec:ConcaveReductionPerimeterEffect}
-A swarm's perimeter can be used to modify its behaviour, such as reducing the sensor requirements to coordinate a swarm to a destination. When discussing \textit{concave reduction} the concave angle of interest is the relationship between an agent and two of its adjacent neighbours such that the neighbours have no visibility of each other and the neighbour-agent-neighbour relationship produces an angle~$< 180^\circ$. This is unrelated to the aggregate angle used to identify the perimeter type that an agent is a member of i.e. inner or outer. Concave reduction therefore affects both inner~(Fig.~\ref{fig:InnerPerimeter1}) and outer~(Fig.~\ref{fig:OuterPerimeter1}) perimeter agents. Figures~\ref{fig:OuterPerimeter1} and \ref{fig:InnerPerimeter1} show candidate agents, in black, identified by this process. 
+A swarm's perimeter can be used to modify its behaviour, such as reducing sensor requirements by reducing the need for GPS sensors and coordinating a swarm to a destination. When discussing \textit{concave reduction} the angle of interest is the relationship between an agent and two of its adjacent neighbours such that the neighbours have no visibility of each other and the \textit{neighbour-agent-neighbour} relationship produces an angle~$< 180^\circ$. This is unrelated to the aggregate angle used to identify the perimeter type that an agent is a member of i.e. inner or outer perimeter. Concave reduction therefore affects both inner~(Fig.~\ref{fig:InnerPerimeter1}) and outer~(Fig.~\ref{fig:OuterPerimeter1}) perimeter agents. Figures~\ref{fig:OuterPerimeter1} and \ref{fig:InnerPerimeter1} show candidate agents, in black, identified by this process. 
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=4cm]{figures/OuterPerimeter1}{Outer Perimeter\label{fig:OuterPerimeter1}}
 %% \begin{figure}
@@ -429,7 +429,7 @@ A swarm's perimeter can be used to modify its behaviour, such as reducing the se
 %% \caption{Inner Perimeter\label{fig:InnerPerimeter1}}
 %% \end{figure}
 
-The purpose of \textit{concave reduction} is to alter the overall structure of the swarm by replacing the calculated \textit{movement-direction vector} on anomalous perimeter agents. These perimeter based changes cause a cascading movement within the swarm as non-perimeter based agent's \textit{interaction vectors} attempting to move towards a position of equilibrium to their neighbours. The movement on a concave perimeter~(internal void) creates a movement that closes the void by percolating it out of the swarm~(Figs.~\ref{fig:InnerPerimeter2}~and~\ref{fig:InnerPerimeter3}). The movement on the convex perimeter's (outer perimeter) deformities (indents) creates a convex or straight edge~(Figs.~\ref{fig:OuterPerimeter2}~and~\ref{fig:OuterPerimeter3}).
+The purpose of \textit{concave reduction} is to alter the overall structure of the swarm by replacing the calculated \textit{movement-direction vector} on anomalous perimeter agents. These perimeter based changes cause a cascading movement within the swarm as a non-perimeter based agent's attempt to move towards a position of equilibrium with respect to its neighbours. The movement on a concave perimeter~(internal void) creates a movement that closes a void by \textit{percolating} it out of the swarm~(Figs.~\ref{fig:InnerPerimeter2}~and~\ref{fig:InnerPerimeter3}). The movement on the convex perimeter's (outer perimeter) deformities (indents) creates a convex or straight edge as shown in Figs.~\ref{fig:OuterPerimeter2}~and~\ref{fig:OuterPerimeter3}.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=4cm]{figures/PerimeterBotsCircle3}
 {Concave reduction effect on perimeters\label{fig:InnerPerimeter2}}
@@ -462,29 +462,29 @@ The purpose of \textit{concave reduction} is to alter the overall structure of t
 %% \end{figure}
 
 \section{Concave reduction mathematical model}\label{concave:ConcaveVoidReduction1}
-As part of identifying a perimeter each agent's neighbours must be identified and sorted by angle. A pair of agents are identified as a set ($b.gap \equiv G_b$). Equation~\ref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents. 
+As part of identifying a perimeter each agent's neighbours must be sorted by angle. A pair of agents are identified as a set $b.gap$ ($b.gap \equiv G_b$). Equation~\ref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents. 
 
-Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbour's make with the first detected neighbour. $nbr(b)$ returns a set of all an agents neighbours.
+Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbours make with the first detected neighbour. $nbr(b)$ returns a set consisting of an agent's ($b$) neighbours.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics1}
-S_b \buildrel \Delta \over = \{(b',\angle\{(b'~b~b^0)) : b' \in nbr(b)\}
+S_b \buildrel \Delta \over = \{(b',\angle(b'~b~b^0)) : b' \in nbr(b)\}
 \end{equation}
 
-The centroid $D_{pos}(b)$ is then used to calculate the concave reduction vector~(\ref{eq:ConcaveVoidPhysics3a}).
+The centroid $D_{pos}(b)$ is then used to calculate the concave reduction vector as shown in Equation~\ref{eq:ConcaveVoidPhysics3}.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics3}
 D_{pos}(b) = \frac{1}{2}\mathlarger{\sum_{b' \in G_b}}{b'} 
 \end{equation}
 
-$D(b)$~is a vector derived from the identified centroid of the neighbour gap~($G_b$) to the parent agent~($b$). This new vector is the \textit{concave vector} used to implement the concave reduction movement~\ref{eq:ConcaveVoidPhysics3a}.
+$D(b)$~is a vector derived from the identified centroid of the neighbour gap~($G_b$) to the parent agent~($b$). This new vector is the \textit{concave vector} used to implement the concave reduction movement~(Equation~\ref{eq:ConcaveVoidPhysics3a}).
 
 \begin{equation}\label{eq:ConcaveVoidPhysics3a}
 D(b) = bD_{pos}(b) 
 \end{equation}
 
-This derived movement-vector is reduces the anomaly. The concave reduction movement needs to be modified to accomodate an agent's surroundings. Due to proximity it can be assumed that there are no agents in the path between the agent and the gap, however, there may be an obstacle in the agent's path. The \textit{concave vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied to the calculated \textit{concave vector}~$k_{cr}$ to allow the model to vary the intensity of the effect. The resultant vector is then normalised to produce the \textit{concave reduction vector} as shown in~\ref{eq:ConcaveVoidPhysics4}. 
+This derived \textit{movement-vector} reduces the anomaly. The concave reduction movement needs to be modified to accommodate an agent's surroundings. Due to agent proximity it can be assumed that there are no agents in the path between the agent and the gap, however, there may be an obstacle in the agent's path. The \textit{concave reduction vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied $k_{cr}$ to allow the model to vary the intensity of the effects. The resultant vector is normalised to produce the \textit{concave reduction vector} as shown in~Equation~\ref{eq:ConcaveVoidPhysics4}. 
 
 \begin{equation}\label{eq:ConcaveVoidPhysics4}
 V(b) = (k_{cr}D(b) + k_ov_o(b))\string^
