@@ -411,7 +411,7 @@ When an agent is identified as being a component of a concave characteristic~(Fi
 %% \end{figure}
 
 \section{Concave Reduction Perimeter Effect}\label{sec:ConcaveReductionPerimeterEffect}
-A swarm's perimeter can be used to modify its behaviour, such as reducing sensor requirements by reducing the need for GPS sensors and coordinating a swarm to a destination. When discussing \textit{concave reduction} the angle of interest is the relationship between an agent and two of its adjacent neighbours such that the neighbours have no visibility of each other and the \textit{neighbour-agent-neighbour} relationship produces an angle~$< 180^\circ$. This is unrelated to the aggregate angle used to identify the perimeter type that an agent is a member of i.e. inner or outer perimeter. Concave reduction therefore affects both inner~(Fig.~\ref{fig:InnerPerimeter1}) and outer~(Fig.~\ref{fig:OuterPerimeter1}) perimeter agents. Figures~\ref{fig:OuterPerimeter1} and \ref{fig:InnerPerimeter1} show candidate agents, in black, identified by this process. 
+A swarm's perimeter can be used to modify its behaviour, such as reducing sensor requirements by reducing the need for GPS sensors or coordinating a swarm to a destination. Generally when discussing agent angles in relation to a perimeter it refers to the average angle or all the agents on a boundary i.e. to detect inner or outer perimeters. When discussing \textit{concave reduction} the angle of interest is the relationship between an agent and two of its adjacent neighbours such that the neighbours have no visibility of each other and the \textit{neighbour-agent-neighbour} relationship produces an angle~$< 180^\circ$. Concave reduction affects both inner~(Fig.~\ref{fig:InnerPerimeter1}) and outer~(Fig.~\ref{fig:OuterPerimeter1}) perimeter agents. Figures~\ref{fig:OuterPerimeter1} and \ref{fig:InnerPerimeter1} show candidate agents, in black, identified by this process. 
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=4cm]{figures/OuterPerimeter1}{Outer Perimeter\label{fig:OuterPerimeter1}}
 %% \begin{figure}
@@ -471,28 +471,28 @@ Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the ne
 S_b \buildrel \Delta \over = \{(b',\angle(b'~b~b^0)) : b' \in nbr(b)\}
 \end{equation}
 
-The centroid $D_{pos}(b)$ is then used to calculate the concave reduction vector as shown in Equation~\ref{eq:ConcaveVoidPhysics3}.
+The mid-point $D_{pos}(b)$ is then calculated as below in Equation~\ref{eq:ConcaveVoidPhysics3}.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics3}
 D_{pos}(b) = \frac{1}{2}\mathlarger{\sum_{b' \in G_b}}{b'} 
 \end{equation}
 
-$D(b)$~is a vector derived from the identified centroid of the neighbour gap~($G_b$) to the parent agent~($b$). This new vector is the \textit{concave vector} used to implement the concave reduction movement~(Equation~\ref{eq:ConcaveVoidPhysics3a}).
+$D(b)$~is the \textit{concave reduction} vector is derived from the identified mid-point of the neighbour gap~($G_b$) to the parent agent~($b$) as shown in Equation~\ref{eq:ConcaveVoidPhysics3a}.
 
 \begin{equation}\label{eq:ConcaveVoidPhysics3a}
 D(b) = bD_{pos}(b) 
 \end{equation}
 
-This derived \textit{movement-vector} reduces the anomaly. The concave reduction movement needs to be modified to accommodate an agent's surroundings. Due to agent proximity it can be assumed that there are no agents in the path between the agent and the gap, however, there may be an obstacle in the agent's path. The \textit{concave reduction vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied $k_{cr}$ to allow the model to vary the intensity of the effects. The resultant vector is normalised to produce the \textit{concave reduction vector} as shown in~Equation~\ref{eq:ConcaveVoidPhysics4}. 
+The final vector needs to accommodate an agent's surroundings. Due to agent proximity it can be assumed that there are no agents in the path between the agent and the gap, however, there may be an obstacle in the agent's path. The \textit{concave-reduction-vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied $k_{cr}$ to allow the model to vary the intensity of the effects. The resultant vector is normalised to produce the \textit{unit-movement-vector} as shown in~Equation~\ref{eq:ConcaveVoidPhysics4}. 
 
 \begin{equation}\label{eq:ConcaveVoidPhysics4}
 V(b) = (k_{cr}D(b) + k_ov_o(b))\string^
 \end{equation}
 
 \section{Effect of concave reduction on swarm structure}
-If there is a `gap' on a perimeter then the \textit{concave reduction vector} is applied instead of the normal \textit{interaction vector}. To test this effect a baseline is established for a comparison.
-The baseline allows a comparison to identify the changes created by the introduction of the \textit{concave reduction vectors}. The comparison takes into consideration not just the jitter identified by the distance and magnitude metrics but also the effect on the number of identifiable perimeter agents. One of the effects of concave reduction on an unstructured swarm's structure is to reduce the size of the perimeter. Table \ref{tab:BaselineConcaveReduction} shows the simulation parameters for both the baseline and the concave reduction experiments.
+If there is a `gap' on a perimeter then the \textit{concave-reduction-vector} is applied instead of the normal \textit{interaction-vector}. To test this effect a baseline is established for a comparison.
+The comparison takes into consideration not just the jitter identified by the distance and magnitude metrics but also the effect on the number of identifiable perimeter agents. One of the effects of concave reduction on an unstructured swarm is to reduce the size of the perimeter. Table \ref{tab:BaselineConcaveReduction} shows the simulation parameters for both the baseline and the concave reduction experiments.
 
 \begin{table}
 \caption{Baseline comparison for concave reduction}\label{tab:BaselineConcaveReduction}
