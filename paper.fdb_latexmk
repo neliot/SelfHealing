@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex paper"] 1539608761 "paper.aux" "paper.bbl" "paper" 1539608763
+["bibtex paper"] 1539686616 "paper.aux" "paper.bbl" "paper" 1539686617
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "paper.aux" 1539608763 14592 9b34260fb29ebc6510c8fca3940c72d9 ""
+  "paper.aux" 1539686617 15401 9e9d3d06aa415519f2e916fdfbaa5abf ""
   "paper.bcf" 0 -1 0 ""
   "thesis.bib" 1528029126 170800 413c3f6d2dd0dd80d0bc0c6dd710baef ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1539608761 "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" "paper.pdf" "paper" 1539608763
+["pdflatex"] 1539686616 "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" "paper.pdf" "paper" 1539686617
   "/etc/texmf/web2c/texmf.cnf" 1531921153 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" 1539608760 86953 a6b41c6d36a34a7a658482502970fc2c ""
+  "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" 1539686614 91249 acd9f8745eb7e15670c93578f9dfa8e9 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1480098688 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -162,6 +162,7 @@
   "figures/Concave4560-3.pdf" 1531642701 244725 35fd14653d96681ddd957e72580fa832 ""
   "figures/Concave4560End.pdf" 1531642701 248848 ef08c065ad0796a54f7ff66c57f7ff3b ""
   "figures/Concave8060End.pdf" 1531642703 207258 c07964cf64df46feab5d18f4f8593afe ""
+  "figures/ConcaveInitial.pdf" 1539681024 35901 a2b262d54368465966361cfe62ae5385 ""
   "figures/ConcavePerimeter4560-1.pdf" 1531649207 17667 825af37324be7ab7ebc3263be9cc0e60 ""
   "figures/ConcavePerimeter4560-DIST-2.pdf" 1531642707 826704 3d9ee80f2dc0db6999d558f89472e2b3 ""
   "figures/ConcavePerimeter4560-DIST.pdf" 1531642931 84431 3810a8dd1e3dc7a4c06f2bd4f38a04d7 ""
@@ -209,10 +210,10 @@
   "figures/VoidConcave1.pdf" 1531642731 13541 125c5a212ecd266f71faaf51326a7c93 ""
   "ieeeaccess.cls" 1519301226 43839 3abf959902254cbaf82e6ce14f087bf5 ""
   "notaglineLogo.png" 1519301226 3150 e273b7aed356b5f76c6d0b072166d68c ""
-  "paper.aux" 1539608763 14592 9b34260fb29ebc6510c8fca3940c72d9 ""
-  "paper.bbl" 1539608761 6968 81b25c1c664a6dc19dd4d575a0f34bb5 "bibtex paper"
-  "paper.tex" 1539608760 86953 a6b41c6d36a34a7a658482502970fc2c ""
+  "paper.aux" 1539686617 15401 9e9d3d06aa415519f2e916fdfbaa5abf ""
+  "paper.bbl" 1539686616 6968 81b25c1c664a6dc19dd4d575a0f34bb5 "bibtex paper"
+  "paper.tex" 1539686614 91249 acd9f8745eb7e15670c93578f9dfa8e9 ""
   (generated)
-  "paper.pdf"
   "paper.aux"
   "paper.log"
+  "paper.pdf"

@@ -490,9 +490,83 @@ The final vector needs to accommodate an agent's surroundings. Due to agent prox
 V(b) = (k_{cr}D(b) + k_ov_o(b))\string^
 \end{equation}
 
+\section{Swarm Metrics}
+
+\subsection{Distance Metric}
+
+Equation~\ref{eq:SwarmStabilityDistance1} calculates the mean distance of an agent to its neighbours $nbr(b)$. 
+%% The relative position vector generated for an agent $b$ to its neighbour $b'$, $bb'$, is shown in~(\ref{eq:FlyToCentre1}). The magnitude of that vector gives the distance between two agents. For an individual agent the average magnitude $\mu_d(b)$ is calculated as \ref{eq:SwarmStabilityDistance1} where $b$ is the agent and $|nbr(b)|$ is the number of neighbours.
+
+\begin{equation}
+\label{eq:SwarmStabilityDistance1}
+\mu_d(b) = \frac{1}{\mathlarger{|nbr(b)|}}\left({\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}\right)
+\end{equation}
+
+The mean distance for a swarm is calculated by~Equation~\ref{eq:SwarmStabilityDistance2}. All the inter-agent distances are included for the swarm ($S$). 
+
+%% $\sum_{b \in S}|nbr(b)|$ calculates how many inter-agent relationships exist in the swarm and $\sum_{b' \in nbr(b)}|bb'|$ calculates the total distance between each agent and its neighbours. $\sum_{b \in S}$ iterates over all the agents in the swarm~($S$).
+
+\begin{equation}
+\label{eq:SwarmStabilityDistance2}
+\mu_d(S) = \frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}{\mathlarger{\sum_{b \in S}|nbr(b)|}}
+\end{equation}
+
+%\section{Standard deviation in distance metric}\label{Section:VarianceInDistance}
+The mean distance provides a indication of the large scale structure of the swarm. However it is not sufficient to give an indication of the internal distribution of the agents. The standard deviation clarifies the distribution within the swarm as shown in~Equation~\ref{eq:SwarmStabilityDistance3}. 
+
+%% $(|bb'| - \mu(S))^2$ is the square of the difference in a distance to the mean and $\sum_{b \in S}~\sum_{b' \in nbr(b)}$ calculates the number of inter-agent interactions.
+
+\begin{equation}
+\label{eq:SwarmStabilityDistance3}
+\sigma_d(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}\Big(|bb'| - \mu_d(S)\Big)^2}{\mathlarger{\sum_{b \in S}|nbr(b)|}}}
+\end{equation}
+
+The distance-based metric for the internal distribution of the agents is therefore $\mu_d(S)$ and $\sigma_d(S)$. This can be written informally as:
+
+\begin{equation}
+\label{eq:SwarmDistanceMetric}
+\psi_d(S) = \mu_d(S)\pm \sigma_d(S)
+\end{equation}
+
+\subsection{Magnitude Metric}
+
+Now, we define for each agent $b$ a \textit{cohesion/repulsion scalar}, $P(b)$, to measure the influence of the neighbours of $b$ as cohesive (positive) or repulsive (negative); shown in Equation~\ref{eq:CohesionRepulsion}.
+
+\begin{equation}
+\label{eq:CohesionRepulsion}
+P(b) = \left\{\begin{array}{lll}
+               |v(b)|& \mathrm{if} & |k_cv_c(b)| > |k_r v_r(b)|\\
+              -|v(b)|& \mathrm{otherwise}
+              \end{array}\right.
+\end{equation}
+
+Although it is possible for $v(b)$ to be null there could still be variation in the constituent components. The variation calculation (standard deviation) as shown in Equation~\ref{eq:SwarmStabilityQuotientT}. 
+
+The mean cohesion/repulsion scalar for the swarm is now given by~(\ref{eq:SwarmStabilityMetricT3}).  
+
+\begin{equation}
+\label{eq:SwarmStabilityMetricT3}
+\mu_p(S) = \frac{\mathlarger{\sum_{b \in S} P(b)}}{\mathlarger{\sum_{b \in S}}|nbr(b)| + \mathlarger{\sum_{b \in S}}|rep(b)|}
+\end{equation}
+
+The standard deviation associated with this mean is calculated as Equation~\ref{eq:SwarmStabilityQuotientT}.
+
+\begin{equation}
+\label{eq:SwarmStabilityQuotientT}
+\sigma_p(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}\Big(P(b)-\mu_p(S)\Big)^2}{\mathlarger{\sum_{b \in S}}|nbr(b)| + \mathlarger{\sum_{b \in S}}|rep(b)|}}
+\end{equation}
+
+The metric for the internal movement is this pair of numbers, the mean and standard deviation of the swarm's internal \textit{cohesion/repulsion}. The pair $\mu_p(S)$, $\sigma_p(S)$ may be written informally as: 
+
+\begin{equation}
+\label{eq:SwarmPotentialMagnitude}
+\psi_p(S) = \mu_p(S)\pm \sigma_p(S)
+\end{equation}
+
 \section{Effect of concave reduction on swarm structure}
 If there is a `gap' on a perimeter then the \textit{concave-reduction-vector} is applied instead of the normal \textit{interaction-vector}. To test this effect a baseline is established for a comparison.
-The comparison takes into consideration not just the jitter identified by the distance and magnitude metrics but also the effect on the number of identifiable perimeter agents. One of the effects of concave reduction on an unstructured swarm is to reduce the size of the perimeter. Table \ref{tab:BaselineConcaveReduction} shows the simulation parameters for both the baseline and the concave reduction experiments.
+
+The comparison takes into consideration not just the jitter identified by the distance and magnitude metrics but also the effect on the number of identifiable perimeter agents. One of the effects of concave reduction on an unstructured swarm is to reduce the size of the perimeter. Table \ref{tab:BaselineConcaveReduction} shows the simulation parameters for both the baseline and the concave reduction experiments. Figure~\ref{fig:ConcaveInitial} shows the initial deployment of the swarm used for both the baseline and the concave reduction evaluation.
 
 \begin{table}
 \caption{Baseline comparison for concave reduction}\label{tab:BaselineConcaveReduction}
@@ -511,6 +585,9 @@ Speed & 20 & 20 & units/s\\  \hline
 \end{tabular}
 \end{center}
 \end{table}
+
+%COVERBASELINESTART.py
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcaveInitial}{Initial Swarm Deployment\label{fig:ConcaveInitial}}
 
 Figure~\ref{concave:BaselineConcaveEffectDist} shows the changes in the inter-agent distances that result from the concave reduction. The experiment demonstrates that with concave reduction the average distance increases and the variance of the distances increases. This is due to the `pulling' effect of the \textit{concave reduction vector} on the perimeter. The algorithm distorts the distribution of the agents as discussed in section~\ref{concave:AgentMovement}. The initial expansion of the swarm is similar for the baseline and the concave reduction however at 9 seconds into the simulation the \textit{concave reduction vectors} affects the swarm sufficiently to prevent the average distance reducing to the same level as the baseline. Once the swarm has stabilised with the concave reduction enabled the average distance and variance remain constant but above the baseline.
 %BASELINE-CONCAVE-DIST.py
@@ -869,7 +946,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 %% \caption{Initial\label{concave:OilSpillBase1}}
 %% \end{figure}
 %COVERBASELINE8060OILSPILL3.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase2}{Partial\label{concaveOilSpillBase2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase2}{Partial\label{concave:OilSpillBase2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/OilSpillBase2}
