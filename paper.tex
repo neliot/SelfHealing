@@ -40,13 +40,13 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \doi{10.1109/ACCESS.2017.DOI}
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Towards a self-healing swarm through the removal of voids and anomalies}
+\title{Concave reduction in Self-healing swarms}
 \author{\uppercase{Neil Eliot}\authorrefmark{1},
 \uppercase{David Kendall\authorrefmark{1}, Michael Brockway\authorrefmark{1}, Alun Moon\authorrefmark{1}}}
 \address[1]{Northumbria University, Department of Computing and Information Sciences, Newcastle upon Tyne, NE1 8ST}
 \markboth
-{Eliot \headeretal: Towards a self-healing swarm through the removal of voids and anomalies}
-{Eliot \headeretal: Towards a self-healing swarm through the removal of voids and anomalies}
+{Eliot \headeretal: Concave reduction in Self-healing swarms}
+{Eliot \headeretal: Concave reduction in Self-healing swarms}
 \corresp{Corresponding author: Neil Eliot (e-mail: neil.eliot@northumbria.ac.uk).}
 \begin{abstract}
 %\boldmath
@@ -587,12 +587,12 @@ Speed & 20 & 20 & units/s\\  \hline
 \end{table}
 
 %COVERBASELINESTART.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcaveInitial}{Initial Swarm Deployment\label{fig:ConcaveInitial}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/ConcaveInitial}{Initial Swarm Deployment\label{fig:ConcaveInitial}}
 
 Figure~\ref{concave:BaselineConcaveEffectDist} shows the changes in the inter-agent distances that result from the concave reduction. The experiment demonstrates that with concave reduction the average distance increases and the variance of the distances increases. This is due to the `pulling' effect of the \textit{concave reduction vector} on the perimeter. The algorithm distorts the distribution of the agents as discussed in section~\ref{concave:AgentMovement}. The initial expansion of the swarm is similar for the baseline and the concave reduction however at 9 seconds into the simulation the \textit{concave reduction vectors} affects the swarm sufficiently to prevent the average distance reducing to the same level as the baseline. Once the swarm has stabilised with the concave reduction enabled the average distance and variance remain constant but above the baseline.
 %BASELINE-CONCAVE-DIST.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectDist}{Baseline/Concave effect using distance metric\label{concave:BaselineConcaveEffectDist}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectDist}{Baseline/Concave effect using distance metric\label{concave:BaselineConcaveEffectDist}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectDist}
@@ -604,7 +604,7 @@ Figure~\ref{concave:BaselineConcaveEffectMag} shows the change in the \textit{in
 The \textit{inter-agent vector magnitude} calculations in these experiments are based on the positions of the agents and the cohesion and repulsion field effects. The \textit{concave reduction vector} is not part of the metric calculation. The \textit{concave reduction vector} is only applied to an agent for movement calculation. 
 %BASELINE-CONCAVE-MAG.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectMag}{Baseline/Concave effect using cohesion/repulsion\label{concave:BaselineConcaveEffectMag}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectMag}{Baseline/Concave effect using cohesion/repulsion\label{concave:BaselineConcaveEffectMag}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectMag}
@@ -614,7 +614,7 @@ The \textit{inter-agent vector magnitude} calculations in these experiments are 
 
 Figure~\ref{concave:BaselineConcavePerimeter} shows the effect on the number of perimeter agents. Initially the perimeter size is minimally affected due to the swarms compression however after the expansion phase of the swarm (8 seconds) more perimeter agents are identified as concave edges are formed. As these concave edges are `straightened' they create further anomalies that ripple through the swarm. This rippling is identified by the erratic changes in the number of perimeter agents. After approximately 30 seconds the swarm has been forced into a less angular structure with curved edges and the number of perimeter agents falls below the minimum of the baseline. The shape of the swarm is still undergoing change following this and the perimeter count continues to fluctuate.
 %PERIMETER8070CONCAVE.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcavePerimeter}{Baseline/Concave perimeter size\label{concave:BaselineConcavePerimeter}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcavePerimeter}{Baseline/Concave perimeter size\label{concave:BaselineConcavePerimeter}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcavePerimeter}
@@ -640,7 +640,7 @@ The effect on the structure of the swarm caused by the concave perimeter agents 
 Figure~\ref{concave:BaselineConcaveEffectPath1} shows the paths of the agents in the swarm with concave reduction (red) and the baseline (black). The paths of the agents are initially very similar as the swarm expands but as the \textit{interaction vector magnitudes} rise and the swarm stabilises the effect of the \textit{concave reduction vectors} start to noticeably influence the swarm structure. The most noticeable effect is on the perimeter where the agents have expanded then instead of stabalising to relatively stable fixed position there is drifting effect occurring due to the imbalance of the initial deployment structure (more anomalies on one side). The swarm also becomes more `rounded' in appearance. 
 %COVERBASELINE1.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectPath1}{Baseline/Concave path effect (Full)\label{concave:BaselineConcaveEffectPath1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectPath1}{Baseline/Concave path effect (Full)\label{concave:BaselineConcaveEffectPath1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectPath1}
@@ -651,7 +651,7 @@ Figure~\ref{concave:BaselineConcaveEffectPath1} shows the paths of the agents in
 Figure~\ref{concave:BaselineConcaveEffectPath2} shows a more detailed view of the structure within the swarm. The baseline (black) paths show the swarm expanding and then settling to a hexagonal pattern which appears to oscillate slightly (jitter) when the swarm has reached its optimum distribution. The concave reduction swarm agents paths (red) show the swarm expanding in a similar way but once fully expanded the concave reduction causes the swarm to move with a slight directional bias.
 %COVERBASELINE1.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectPath2}{Baseline/Concave path effect (Zoomed)\label{concave:BaselineConcaveEffectPath2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectPath2}{Baseline/Concave path effect (Zoomed)\label{concave:BaselineConcaveEffectPath2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectPath2}
@@ -683,7 +683,7 @@ Speed & 20 & 20 & units/s\\  \hline
 Figure~\ref{concave:BaselineConcaveEffectDist8060} shows a comparison of the agent movements based on distance for the revised field effects. The graph shows that the swarm settles to a distance that is closer due to the reduced repulsion field. The graph also shows that the concave reduction still induces additional jitter as the variance is still greater than the baseline but due to the reduced snapping the perimeter agent count shows greater stability~(\ref{concave:BaselineConcavePerimeter8060}). 
 %BASELINE-COMPRESS-DIST-8060.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectDist8060}{Baseline/Concave effect distance (80/60)\label{concave:BaselineConcaveEffectDist8060}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectDist8060}{Baseline/Concave effect distance (80/60)\label{concave:BaselineConcaveEffectDist8060}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectDist8060}
@@ -694,7 +694,7 @@ Figure~\ref{concave:BaselineConcaveEffectDist8060} shows a comparison of the age
 Figure~\ref{concave:BaselineConcaveEffectMag8060} shows that the \textit{inter-agent vector magnitude} is reduced due to the reduced cohesion from the agent proximity and the \textit{concave reduction vector magnitude} impact is reduced due to less anomalies occurring on the perimeter.
 %BASELINE-COMPRESS-MAG-8060.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectMag8060}{Baseline/Concave effect magnitude (80/60)\label{concave:BaselineConcaveEffectMag8060}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectMag8060}{Baseline/Concave effect magnitude (80/60)\label{concave:BaselineConcaveEffectMag8060}}
 % \begin{figure}
 % \begin{center}
 % \includegraphics[width=8cm]{figures/BaselineConcaveEffectMag8060}
@@ -705,7 +705,7 @@ Figure~\ref{concave:BaselineConcaveEffectMag8060} shows that the \textit{inter-a
 Figure~\ref{concave:BaselineConcavePerimeter8060} shows the changes in the perimeter size from the baseline and the concave reduction swarms. The concave reduction still creates an erratic perimeter count but the variation is reduced. On aggregate for the run the concave reduction has reduced the perimeter size. The revised effects also reduce the snapping effect and the swarm has an improved structure. The concave reduction creates a perimeter which fluctuates between 45-50 agents where as the baseline swarm settles to 49 agents.
 %PERIMETER8060CONCAVE.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcavePerimeter8060}{Baseline/Concave perimeter size (80/60)\label{concave:BaselineConcavePerimeter8060}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcavePerimeter8060}{Baseline/Concave perimeter size (80/60)\label{concave:BaselineConcavePerimeter8060}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcavePerimeter8060}
@@ -716,7 +716,7 @@ Figure~\ref{concave:BaselineConcavePerimeter8060} shows the changes in the perim
 For the period of the simulation the baseline had 19049 perimeter agents and the concave reduction had 18940 which is an improvement of 0.5\% overall for the whole simulation. This is only a small change in the perimeter size but the impact on the swarm structure is significant. The \textit{concave reduction vectors} have `pulled' the swarm into a more circular shape~\ref{fig:ConcaveEndPoint}.
 %COVERBASELINE8060END.py
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Baseline8060End}{Baseline end\label{fig:BaselineEndPoint}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Baseline8060End}{Baseline end\label{fig:BaselineEndPoint}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/Baseline8060End}
@@ -724,7 +724,7 @@ For the period of the simulation the baseline had 19049 perimeter agents and the
 %% \caption{Baseline end\label{fig:BaselineEndPoint}}
 %% \end{figure}
 %COVERBASELINE8060COMPRESSEND.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Concave8060End}{Concave reduction end\label{fig:ConcaveEndPoint}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Concave8060End}{Concave reduction end\label{fig:ConcaveEndPoint}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/Concave8060End}
@@ -735,7 +735,7 @@ For the period of the simulation the baseline had 19049 perimeter agents and the
 Figure~\ref{concave:BaselineConcaveEffectPath80601} shows the paths of the agents in the swarm with concave reduction (red) and without (black). The paths are similar as the swarm expands due to the \textit{repulsion vectors} being large and masking the \textit{concave reduction vectors} due to the resultant \textit{movement vector} directing the agents in a similar direction. Once the swarm has expanded the \textit{concave reduction vectors} create a more spherical appearance to the swarm. The \textit{concave reduction vector magnitudes} are significantly large enough now to create a slight directional bias as shown in both~Fig.~\ref{concave:BaselineConcaveEffectPath80601} and~\ref{concave:BaselineConcaveEffectPath80602}. This effect is the result of the \textit{concave reduction vectors} pushing the anomalies on the left of the swarm resulting in the swarm moving slightly to the right due to the swarm having fewer anomalies on the opposite side of the swarm. The anomalies can be seen in~Fig.~\ref{concave:BaselineConcaveEffectPath80601}.
 
 %COVERBASELINE8060.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectPath80601}{Baseline/Concave path effect (80/60)\label{concave:BaselineConcaveEffectPath80601}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectPath80601}{Baseline/Concave path effect (80/60)\label{concave:BaselineConcaveEffectPath80601}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectPath80601}
@@ -744,7 +744,7 @@ Figure~\ref{concave:BaselineConcaveEffectPath80601} shows the paths of the agent
 %% \end{figure}
 
 %COVERBASELINE8060.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/BaselineConcaveEffectPath80602}{Baseline/Concave path effect (80/60)\label{concave:BaselineConcaveEffectPath80602}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/BaselineConcaveEffectPath80602}{Baseline/Concave path effect (80/60)\label{concave:BaselineConcaveEffectPath80602}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/BaselineConcaveEffectPath80602}
@@ -793,7 +793,7 @@ Speed & 20 & 20 & units/s\\  \hline
 Figure~\ref{fig:BaselineEndPoint4560} and \ref{fig:ConcaveEndPoint4560} shows the end points for the simulations for the concave reduction experiments. Figure~\ref{fig:BaselineEndPoint4560} shows the end point for the baseline. It shows that at the end of the simulation the void within the swarm persists. This is due to the distribution of the agents being optimal for the given simulation parameters and the structures within the swarm being `stable'. Figure~\ref{fig:ConcaveEndPoint4560} shows the end point for the simulation with concave reduction enabled using the same swarm and configuration parameters. The concave reduction algorithm has removed the void from the swarm completely and the outer perimeter has been `smoothed'. 
 
 %COVERBASELINE4560-BASEEND.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Baseline4560End}{Baseline end\label{fig:BaselineEndPoint4560}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Baseline4560End}{Baseline end\label{fig:BaselineEndPoint4560}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/Baseline4560End}
@@ -802,7 +802,7 @@ Figure~\ref{fig:BaselineEndPoint4560} and \ref{fig:ConcaveEndPoint4560} shows th
 %% \end{figure}
 
 %COVERBASELINE4560END3.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Concave4560End}{Concave end\label{fig:ConcaveEndPoint4560}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Concave4560End}{Concave end\label{fig:ConcaveEndPoint4560}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/Concave4560End}
@@ -813,7 +813,7 @@ Figure~\ref{fig:BaselineEndPoint4560} and \ref{fig:ConcaveEndPoint4560} shows th
 Figure~\ref{fig:VoidConcaveReduction1}, \ref{fig:VoidConcaveReduction2} and \ref{fig:VoidConcaveReduction3} shows the stages that the swarm goes through when the concave reduction closes the void. The initial deployment of the baseline and concave reduction swarm are the same~(Fig.~\ref{fig:VoidConcaveReduction1}). The concave reduction slowly reduces the void~(Fig.~\ref{fig:VoidConcaveReduction2}) and smooths the outer perimeter. Once the smoothing begins the internal anomaly is filled from behind as the inner agents are drawn into the void. This causes small voids to `percolate' outwards through the swarm until they meet an outer perimeter. Two of these `percolating voids' can be seem in~Fig.~\ref{fig:VoidConcaveReduction2} to the left of the void and above the void. Once the `percolation' process has completed the void is closed~(Fig.~\ref{fig:VoidConcaveReduction3}). The swarm edges also take on a more `rounded' appearance caused by the edges of the swarm being `pulled' to create a convex edge.
 
 %COVERBASELINE4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Concave4560-1}{Initial\label{fig:VoidConcaveReduction1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Concave4560-1}{Initial\label{fig:VoidConcaveReduction1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/Concave4560-1}
@@ -822,7 +822,7 @@ Figure~\ref{fig:VoidConcaveReduction1}, \ref{fig:VoidConcaveReduction2} and \ref
 %% \end{figure}
 
 %COVERBASELINE4560END2.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Concave4560-2}{Partial\label{fig:VoidConcaveReduction2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Concave4560-2}{Partial\label{fig:VoidConcaveReduction2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/Concave4560-2}
@@ -831,7 +831,7 @@ Figure~\ref{fig:VoidConcaveReduction1}, \ref{fig:VoidConcaveReduction2} and \ref
 %% \end{figure}
 
 %COVERBASELINE4560END3.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/Concave4560-3}{Complete\label{fig:VoidConcaveReduction3}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/Concave4560-3}{Complete\label{fig:VoidConcaveReduction3}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/Concave4560-3}
@@ -844,7 +844,7 @@ Figure~\ref{voids:ConcavePerimeter4560-DIST} shows that the process of reducing 
 The concave reduction algorithm creates a more pronounced variation due to the void having multiple anomalies. The concave reduction process closes the void over a period of 3 seconds and the swarm then settles to a steady average distance with a stable variance. The increased variance up to 3 seconds is the `percolation' of the internal anomalies to the outer perimeter as the void is closed.
 
 %SWARMHOLE-DIST-4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcavePerimeter4560-DIST}{Concave reduction stability effect distance\label{voids:ConcavePerimeter4560-DIST}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/ConcavePerimeter4560-DIST}{Concave reduction stability effect distance\label{voids:ConcavePerimeter4560-DIST}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/ConcavePerimeter4560-DIST}
@@ -855,7 +855,7 @@ The concave reduction algorithm creates a more pronounced variation due to the v
 The residual jitter from 3.5 seconds on-wards~(Fig.~\ref{voids:ConcavePerimeter4560-DIST-2}) is the algorithm's effect on the outer perimeter of the swarm. The baseline shows a steadier average with a reduced variance as the basic swarming algorithm allows the agents to settle to a formation that is more structurally stable.
 
 %SWARMHOLE-DIST-4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcavePerimeter4560-DIST-2}{Concave reduction stability effect distance\label{voids:ConcavePerimeter4560-DIST-2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/ConcavePerimeter4560-DIST-2}{Concave reduction stability effect distance\label{voids:ConcavePerimeter4560-DIST-2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/ConcavePerimeter4560-DIST-2}
@@ -864,7 +864,7 @@ The residual jitter from 3.5 seconds on-wards~(Fig.~\ref{voids:ConcavePerimeter4
 %% \end{figure}
 Figure~\ref{voids:ConcavePerimeter4560-MAG} shows that although the algorithm has introduced jitter and therefore increased both the average \textit{inter-agent magnitude} and the variance the resultant changes have not caused the swarm to become cohesively unstable. The magnitude and the variance never take the magnitude below 0. From 3.5 seconds the \textit{inter-agent magnitude} fluctuates slightly with an increased variance caused by the re-positioning of the concave agents. Although the agents are less structured the increased resultant magnitude ensures the swarm remains cohesive. 
 %SWARMHOLE-MAG-4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcavePerimeter4560-MAG}{Concave reduction stability effect magnitude\label{voids:ConcavePerimeter4560-MAG}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/ConcavePerimeter4560-MAG}{Concave reduction stability effect magnitude\label{voids:ConcavePerimeter4560-MAG}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/ConcavePerimeter4560-MAG}
@@ -873,7 +873,7 @@ Figure~\ref{voids:ConcavePerimeter4560-MAG} shows that although the algorithm ha
 %% \end{figure}
 Once the void is removed the swarm settles to a more stable phase 3.5 seconds on-wards~(Fig.~\ref{voids:ConcavePerimeter4560-MAG-2}), there is a slightly higher variance than the baseline which is caused by the concave reduction affected agents `pulling' the swarm. This `pulling' causes the agents to be slightly more distributed and therefore increases the inter-agent cohesion. There is also the addition of the `snapping' effect which increases the variance. 
 %SWARMHOLE-MAG-4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcavePerimeter4560-MAG-2}{Concave reduction stability effect magnitude\label{voids:ConcavePerimeter4560-MAG-2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/ConcavePerimeter4560-MAG-2}{Concave reduction stability effect magnitude\label{voids:ConcavePerimeter4560-MAG-2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/ConcavePerimeter4560-MAG-2}
@@ -883,7 +883,7 @@ Once the void is removed the swarm settles to a more stable phase 3.5 seconds on
 The effect on the swarm of removing the void is to reduce the overall number of perimeter agents. Figure~\ref{methods:ConcavePerimeter4560-1} shows that as the void is removed from the swarm the number of perimeter agents falls. The change in size is caused by two processes. The swarm structure is being altered on the outer perimeter as the agents move towards a more circular formation and the internal agents identified as perimeter agents of a void move to reduce the internal anomaly. 
 Once the initial distributions chaotic phase settles, which takes approximately 1.2 seconds, the effect of the concave reduction starts to take effect. The perimeter size starts to reduce. The majority of the reduction is the void shrinking. The swarm then goes through a settling period where the overall perimeter size of the swarm stabalises and eventually the residual snapping effect is left at the outer perimeter. This occurs at approximately 3.5 seconds into the simulation. 
 %PERIMETER4560HOLE.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/ConcavePerimeter4560-1}{Concave reduction perimeter effect\label{methods:ConcavePerimeter4560-1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/ConcavePerimeter4560-1}{Concave reduction perimeter effect\label{methods:ConcavePerimeter4560-1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/ConcavePerimeter4560-1}
@@ -892,7 +892,7 @@ Once the initial distributions chaotic phase settles, which takes approximately 
 %% \end{figure}
 The effect on the swarms structure is shown in Fig.~\ref{voids:SwarmCoverage4560-1} and~\ref{voids:SwarmCoverage4560-2}. Figure~\ref{voids:SwarmCoverage4560-1} shows the agents positions during the simulation for the baseline and the concave reduction enabled swarms. The baseline swarm is shown in black. The red traces are for the swarm using concave reduction. Figure~\ref{voids:SwarmCoverage4560-2} is a more detailed view highlighting the baseline lattice structure.
 %COVERBASELINE4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/SwarmCoverage4560-1}{Agent movement comparison\label{voids:SwarmCoverage4560-1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/SwarmCoverage4560-1}{Agent movement comparison\label{voids:SwarmCoverage4560-1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/SwarmCoverage4560-1}
@@ -901,7 +901,7 @@ The effect on the swarms structure is shown in Fig.~\ref{voids:SwarmCoverage4560
 %% \end{figure}
 The overall effect of the concave reduction on the swarms movement can be seen in~Fig.~\ref{voids:SwarmCoverage4560-1}. The void is closed by the reduction and the overall area of the swarm is reduced. There is however a negative effect with respect to the concave reduction; the swarm has a directional bias due to the large straight edge which causes the swarm to `drift'. When looking closely at the positions (Fig.~\ref{voids:SwarmCoverage4560-2}) the baseline agents remain relatively static in their positions vibrating slightly to maintain the equilibrium of the internal magnitudes. 
 %COVERBASELINE4560.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/SwarmCoverage4560-2}{Agent movement comparison\label{voids:SwarmCoverage4560-2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/SwarmCoverage4560-2}{Agent movement comparison\label{voids:SwarmCoverage4560-2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/SwarmCoverage4560-2}
@@ -914,7 +914,7 @@ One problem with the above approach is that the swarm may not find the spillage 
 This paper focuses on arbitrary sized, low cost, swarms; this is a similar approach to the US Navy in the LOCUST project~\cite{MW:15, DS:15}. Also the approach of using concave reduction removes the need for a communications infrastructure. 
 Consider an oil slick in an environment. This could be a section of open-water or a lake/reservoir. The solution is to deploy a swarm at the perimeter of the known area by a boat or at a shoreline if the area is small enough~(Fig.~\ref{voids:OilSlick}). The deployed agents, using local sensing and the concave reduction algorithm, are enabled. The swarm initially expands to an optimum distribution for the specified field effects. The \textit{concave reduction vector} will then reduce the deliberately created void and the swarm encapsulates the oil spill. If there are multiple spills within the area the void reduction process will still encapsulate the area because the algorithm is not dependant on communications and operates purely by logic.  
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=10cm]{figures/OilSlick}{Concave reduction oil slick surrounding\label{voids:OilSlick}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSlick}{Concave reduction oil slick surrounding\label{voids:OilSlick}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/OilSlick}
@@ -926,7 +926,7 @@ Figure~\ref{concave:OilSpillSimulation} is a screen shot of the deployment withi
 
 %==================== GRAPHS DONE TO HERE ===============================
 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=10cm]{figures/OilSpillSimulator}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillSimulator}
 {Oil spill containment simulation\label{concave:OilSpillSimulation}}
 %% \begin{figure}
 %% \begin{center}
@@ -938,7 +938,7 @@ Figure~\ref{concave:OilSpillSimulation} is a screen shot of the deployment withi
 Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave:OilSpillBase3} shows the containment process using the baseline configuration without concave reduction. The swarm expands due to the field effects and then stabilises into a swarm which contains a void area. The swarm stablises and the swarm moves slightly as the cohesion and repulsion fluctuate to maintain the swarm's structure. However the void does not close and the containment process does not occur. The agents that do come in contact with the obstacle are repelled by the obstacle repulsion field.
 
 %COVERBASELINE8060OILSPILL1.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase1}{Initial\label{concave:OilSpillBase1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillBase1}{Initial\label{concave:OilSpillBase1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[with=5cm]{figures/OilSpillBase1}
@@ -946,7 +946,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 %% \caption{Initial\label{concave:OilSpillBase1}}
 %% \end{figure}
 %COVERBASELINE8060OILSPILL3.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase2}{Partial\label{concave:OilSpillBase2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillBase2}{Partial\label{concave:OilSpillBase2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/OilSpillBase2}
@@ -954,7 +954,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 %% \caption{Partial\label{concave:OilSpillBase2}}
 %% \end{figure}
 %COVERBASELINE8060OILSPILL3.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillBase3}{End\label{concave:OilSpillBase3}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillBase3}{End\label{concave:OilSpillBase3}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/OilSpillBase3}
@@ -965,7 +965,7 @@ Figure~\ref{concave:OilSpillBase1}, \ref{concave:OilSpillBase2} and \ref{concave
 Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{concave:OilSpillConcave3} shows the same simulation with void-reduction activated. The swarm expands as expected due to the field effects but in addition the concave reduction reduces the void within the swarm. This reduction in the void causes the swarm to shrink around the obstacle completely enclosing it at the obstacle perimeter. On the left hand side of~Fig.~\ref{concave:OilSpillConcave2} the percolation effect can be seen as described in~section~\ref{sec:ApplicationConcavePerimeters}.
 
 %COVERBASELINE8060OILSPILLCONCAVE1.py 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillConcave1}{Initial\label{concave:OilSpillConcave1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillConcave1}{Initial\label{concave:OilSpillConcave1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/OilSpillConcave1}
@@ -974,7 +974,7 @@ Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{c
 %% \end{figure}
 
 %COVERBASELINE8060OILSPILLCONCAVE2.py 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillConcave2}{Partial\label{concave:OilSpillConcave2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillConcave2}{Partial\label{concave:OilSpillConcave2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/OilSpillConcave2}
@@ -983,7 +983,7 @@ Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{c
 %% \end{figure}
 
 %COVERBASELINE8060OILSPILLCONCAVE3.py 
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillConcave3}{End\label{concave:OilSpillConcave3}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillConcave3}{End\label{concave:OilSpillConcave3}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=5cm]{figures/OilSpillConcave3}
@@ -993,7 +993,7 @@ Figure~\ref{concave:OilSpillConcave1}, \ref{concave:OilSpillConcave2} and \ref{c
 Figure~\ref{concave:OilSpillPerimeter8060-DIST-1} and \ref{concave:OilSpillPerimeter8060-MAG-1} show the effect of the concave reduction on the swarm's agent distribution compared to the baseline for the oil spillage scenario. 
 Figure~\ref{concave:OilSpillPerimeter8060-DIST-1} shows distance distribution of the swarm for both the baseline (grey/black) and the concave reduction (red). The baseline expands then settles at approximately 6 seconds. This is also the case for the the concave reduction swarm. The baseline swarm, following the initial expansion, remains relatively slow changing with respect to distance and magnitude. The concave reduction swarm is affected more significantly, at approximately 10 seconds into the simulation the swarm's internal void perimeter makes contact with the oil spillage (obstacle). This has the effect of disrupting the average distance and average \textit{inter-agent magnitudes}. This effect diminishes slightly at approximately 18 seconds where the swarm's \textit{concave reduction vectors} cause the swarm to surround the spillage. The surrounding is followed by a few remaining changes caused by the agents at the spillage perimeter `snapping', the surrounding process is complete.
 %BASELINE-CONCAVE-OIL-DIST.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillPerimeter8060-DIST-1}{Oil spill containment distance\label{concave:OilSpillPerimeter8060-DIST-1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillPerimeter8060-DIST-1}{Oil spill containment distance\label{concave:OilSpillPerimeter8060-DIST-1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/OilSpillPerimeter8060-DIST-1}
@@ -1002,7 +1002,7 @@ Figure~\ref{concave:OilSpillPerimeter8060-DIST-1} shows distance distribution of
 %% \end{figure}
 Figure~\ref{concave:OilSpillPerimeter8060-MAG-1} shows the comparison of the \textit{inter-agent magnitudes} for the baseline and concave reduction swarms. The initial deployment of the swarm is so condensed that the average \textit{inter-agent magnitude} is negative which indicates a high level of expansion. Within 2 seconds the expansion has reached a point where the average magnitude is positive which indicates the swarm is cohesive and will therefore remain as a single entity and be capable of surrounding an object without breaking apart.
 %BASELINE-CONCAVE-OIL-MAG.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillPerimeter8060-MAG-1}{Oil spill containment magnitude\label{concave:OilSpillPerimeter8060-MAG-1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillPerimeter8060-MAG-1}{Oil spill containment magnitude\label{concave:OilSpillPerimeter8060-MAG-1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/OilSpillPerimeter8060-MAG-1}
@@ -1013,7 +1013,7 @@ When the swarm `shrinks' to surround the obstacle there is an erratic change in 
 In the case of the concave reduction swarm the perimeter size is erratic due to the snapping effect~(Fig.~\ref{fig:OuterPerimeterJitter1} and \ref{fig:OuterPerimeterJitter2}). When the swarm encounters the obstacle at approximately 10 seconds there is a change due to `snapping' as the agents `fold' around the obstacle. The perimeter size then continues to fall gradually as the void is percolated out of the system, the perimeter size then stabilises as the obstacle is fully surrounded.
 
 %PERIMETEROILSPILL.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/OilSpillPerimeter8060-1}{Swarm perimeter size comparison\label{concave:OilSpillPerimeter8060-1}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/OilSpillPerimeter8060-1}{Swarm perimeter size comparison\label{concave:OilSpillPerimeter8060-1}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/OilSpillPerimeter8060-1}
@@ -1074,7 +1074,7 @@ Speed & 20 & units/s\\  \hline
 The experiment was run for 60 seconds to determine how the swarm is affected by the obstacle. The experiment is executed twice once with and once without concave reduction enabled. For Fig.~\ref{voids:ObstacleTest2} and \ref{voids:ObstacleTest3} the blue lines are generated by plotting the position of each agent as they progress towards the goal. Figure~\ref{voids:ObstacleTest2} is a path trace of the swarm as it propagates around the obstacle without concave reduction. The agents are repelled by the obstacle and the leading edge `flows' around the perimeter. Due to the compression caused by the agents passing around the obstacles an expansion is experienced at the trailing side and the agents are `pushed' such that the swarm reforms. However the time it takes for the compression to be removed causes the swarm to create a void at the forward side of the obstacle.  
 
 %SWARMCOVER456060BASELINE.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/SWARMCOVER456060BASELINE}{Swarm without concave reduction (60 Obstacle)\label{voids:ObstacleTest2}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/SWARMCOVER456060BASELINE}{Swarm without concave reduction (60 Obstacle)\label{voids:ObstacleTest2}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/SWARMCOVER456060BASELINE}
@@ -1084,7 +1084,7 @@ The experiment was run for 60 seconds to determine how the swarm is affected by 
 Figure~\ref{voids:ObstacleTest3} shows the path trace for the same environment settings with concave reduction enabled. In a similar way to the baseline experiment the leading edge agents approach the obstacle and through the repulsion effect of the obstacle the agents travel around the outer edge. Once the agents have passed the mid point of the obstacle the swarm splits in a similar way to the original experiment. The void is created in a similar way but when the split segments converge a change occurs. The meeting edges create a concave edge and the \textit{concave reduction vectors} affect the agents by `pulling' the `edges' together. This effect propagates back along the edges until the concave perimeter is reduced back to the obstacles forward edge. This effect slows the progress of the swarm's internal movement but closes the void. As the swarm progresses towards the destination the back portion of the swarm moves around the obstacle and swarm continues onto the destination.
 
 %SWARMCOVER456060CONCAVE.py
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=18cm]{figures/SWARMCOVER456060CONCAVE}{Swarm with concave reduction (60 Obstacle)\label{voids:ObstacleTest3}}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=8.3cm]{figures/SWARMCOVER456060CONCAVE}{Swarm with concave reduction (60 Obstacle)\label{voids:ObstacleTest3}}
 %% \begin{figure}
 %% \begin{center}
 %% \includegraphics[width=8cm]{figures/SWARMCOVER456060CONCAVE}
