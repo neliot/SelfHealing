@@ -1,0 +1,231 @@
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{relsize}
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\usepackage{array}
+%\usepackage{caption}
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%\usepackage{fixltx2e}
+\usepackage{float}
+\usepackage{url}
+%\usepackage{becs}
+\usepackage{listings}
+\lstset{%
+  basicstyle=\normalsize,
+  numbers=left,
+  numberstyle=\normalsize,
+  stepnumber=1,
+  xleftmargin=2em
+}
+\usepackage{color}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\let\latexvec=\vec
+\let\vec=\latexvec
+\interdisplaylinepenalty=2500
+\newtheorem{definition}{Definition}
+\newtheorem{exampleb}{Example}
+\newcommand{\subsubsubsection}[1]{\medskip\par\textit{#1:}}
+\newcommand{\card}[1]{\vert{#1}\vert}
+\newcommand{\magn}[1]{\Vert{#1}\Vert}
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+\renewcommand{\caption}[1]{}
+\history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
+\doi{10.1109/ACCESS.2017.DOI}
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Concave reduction in Self-Healing Swarms}
+\author{\uppercase{Neil Eliot}\authorrefmark{1},
+\uppercase{David Kendall\authorrefmark{1}, Michael Brockway\authorrefmark{1}, Alun Moon\authorrefmark{1}}}
+\address[1]{Northumbria University, Department of Computing and Information Sciences, Newcastle upon Tyne, NE1 8ST}
+
+\begin{tabular}{p{.7\columnwidth}c}
+	Swarm & $\mathcal{S}$ \\
+	Neighbours of $b\in\mathcal{S}$ &
+	$\mathcal{N}_b,\mathcal{N}\subset\mathcal{S}$ \\ \hline
+	Neighbour count of $b$ & $\#\mathcal{N}_b$ \\
+	Angle subtended by two neighbors of $b$ $j,k \in\mathcal{N}_b$ & $\angle jk$ \\
+\end{tabular}
+
+\newtheorem{defn}{Definition}
+\newtheorem{algor}{Algorithm/Expression}
+\begin{defn}
+	The set of neighbours $\mathcal{N}_b$ maps to a set of tuples:
+	\[
+		\mathcal{N}_b \mapsto \{a\in\mathcal{N}_b : (a,\alpha, r)\}
+	\]
+where $\alpha$ is the bearing of the neighbour and $r$ is its distance.
+\end{defn}
+
+\begin{defn}
+	The ordered set of neighbours $\mathcal{N}^O$ is  sequence  where the bearing field
+	increases.
+	\[
+		\langle(a_1,\alpha_1,r_1),\ldots,(a_n,\alpha_n,r_n)\rangle\
+		\mathrm{where}\ \alpha_i\leq\alpha_{i+1}
+	\]
+\end{defn}
+
+\begin{algor}
+	The set/sequence of adjacent angles between neighbours is
+	\[
+	\mathcal{A}=\langle \theta_i=\alpha_{(i+1)\mathrm{mod}n}-\alpha_i \rangle
+	\]
+	where $n=\#\mathcal{N}_b$
+\end{algor}
+\begin{algor}
+	The set/sequence of distances between neighbours is found by applying the
+	cosine rule.
+	\[
+		\langle d_{ij}^2 = r_i^2+r_j^2 -2r_ir_j\cos\angle jk\rangle
+	\]
+\end{algor}
+
+\begin{algor}
+	An agent $b$ is on the perimeter iff
+	\[
+		\#\mathcal{N}_b<4 \vee \exists \theta \in \mathcal{A} :
+		\theta \geq 180
+	\]
+\end{algor}
+
+\clearpage
+\begin{figure}
+\begin{algorithmic}[1]
+%\tiny
+\Procedure{SmallNeighbourCount}{$b$}
+\If{$|nbr(b)| \leq 4$}
+   \State\textbf{return} $True$
+\EndIf
+\State\textbf{return} $False$
+\EndProcedure
+\end{algorithmic}
+\caption{Small Neighbour Count}
+\label{algo:SmallNeighbourCount}
+What is \textit{nbr}
+\end{figure}
+
+\begin{figure}
+\begin{algorithmic}[1]
+%\tiny
+\Procedure{NeighbourAngle}{$b$}
+\State $angles \gets \emptyset$
+\For{$b^{'}\in b.neighbours$}
+\If{$b.neighbours[0] = b^{'}$}
+  \State $angles[b^{'}] \gets 0$
+\Else
+   \State $angles[b^{'}] \gets $ \hfill
+  \Statex \hfill $b.getAngle(b.neighbours[0], b^{'})$ 
+\EndIf
+\EndFor
+\State\textbf{return} $sort(angles)$ 
+\EndProcedure
+\end{algorithmic}
+\caption{NeighbourAngle: Sorted by angle}
+\label{algo:getNeighbourAngles}
+
+\end{figure}
+
+\begin{figure}
+\begin{algorithmic}[1]
+%\tiny
+\Procedure{CheckVisibility}{$b,angles$}
+\For{$i \gets 0~\texttt{To}~size(angles)-1$}
+\If{i = size(angles)-1}
+\If{$cosrule(b,angles[size(angles)-1][0],angles[i][0])$}
+\State\textbf{return} $True$
+   \EndIf
+\ElsIf{$cosrule(b,angles[i + 1][0],angles[i][0])$}
+\State\textbf{return} $True$
+\EndIf
+\EndFor
+\State\textbf{return} $False$
+\EndProcedure
+\end{algorithmic}
+\caption{Check Visibility}
+\label{algo:CheckVisibility}
+\end{figure}
+
+\begin{figure}
+\begin{algorithmic}[1]
+%\tiny
+\Procedure{CheckConvex}{$angles$}
+\For{$i \gets 0~\texttt{To}~size(angles)-1$}
+\If{i = size(angles)-1}
+\If{$360 - angles[loop][1] \geq 180$}
+\State\textbf{return} $True$
+\EndIf
+\EndIf
+\If{$angles[loop + 1][1] - angles[loop][1] \geq 180$}
+\State\textbf{return} $True$
+\EndIf
+\EndFor
+\State\textbf{return} $False$
+\EndProcedure
+\end{algorithmic}
+\caption{Check Convex}
+\label{algo:CheckConvex}
+\end{figure}
+
+\begin{figure}
+\begin{algorithmic}[1]
+%\tiny
+\Procedure{CheckPerimeter}{$b,S$}
+\If{SmallNeighbourCount(b,S)}
+\State\textbf{return} $True$
+\EndIf
+\State$angles = NeighbourAngle(b)$
+\If{CheckVisibility(b,angles)}
+\If{CheckConvex(angles)}
+\State\textbf{return} $True$
+\EndIf
+\EndIf
+\State\textbf{return} $False$
+\EndProcedure
+\end{algorithmic}
+\caption{Check Perimeter}
+\label{algo:CheckPerimeter}
+\end{figure}
+
+\begin{figure}
+\begin{algorithmic}[1]
+\Procedure{CheckVisibility}{$b,angles$}
+\State $b.gap \gets \emptyset$
+\State $b.concave = False$
+\For{$i \gets 0~\texttt{To}~size(angles)-1$}
+\If{i = size(angles)-1}
+\If
+{$cosrule(b,angles[size(angles)-1][0], angles[i][0])$}
+\If{$angle(b,angles[size(angles)-1][0], angles[i][0]) < 180)$}
+\State $b.concave = True$
+\State $b.gap = (angles[size(angles)-1][1], angles[i][1])$
+\EndIf
+   \State\textbf{return} $True$
+   \EndIf
+\EndIf
+\If{$cosrule(b,angles[i + 1][0],angles[i][0])$}
+  \If{$angle(b,angles[i + 1][0],angles[i][0]) < 180$}
+\State $b.concave = True$\;
+\State $b.gap = (angles[i + 1][1],angles[i][1])$
+  \EndIf
+  \State\textbf{return} $True$
+\EndIf
+\EndFor
+\State\textbf{return} $False$
+\EndProcedure
+\end{algorithmic}
+\caption{Check Visibility}
+\label{algo:checkVisibility2}
+\end{figure}
+
+\EOD
+
+\end{document}
