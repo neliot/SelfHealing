@@ -24,6 +24,7 @@
   xleftmargin=2em
 }
 \usepackage{color}
+\usepackage{tabularx}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \let\latexvec=\vec
@@ -47,56 +48,71 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \uppercase{David Kendall\authorrefmark{1}, Michael Brockway\authorrefmark{1}, Alun Moon\authorrefmark{1}}}
 \address[1]{Northumbria University, Department of Computing and Information Sciences, Newcastle upon Tyne, NE1 8ST}
 
-\begin{tabular}{p{.7\columnwidth}c}
-	Swarm & $\mathcal{S}$ \\
-	Neighbours of $b\in\mathcal{S}$ &
-	$\mathcal{N}_b,\mathcal{N}\subset\mathcal{S}$ \\ \hline
-	Neighbour count of $b$ & $\#\mathcal{N}_b$ \\
-	Angle subtended by two neighbors of $b$ $j,k \in\mathcal{N}_b$ & $\angle jk$ \\
-\end{tabular}
+\begin{enumerate}
+	\item Let the swarm be the set of agents $a\in\mathcal{S}$
 
-\newtheorem{defn}{Definition}
-\newtheorem{algor}{Algorithm/Expression}
-\begin{defn}
-	The set of neighbours $\mathcal{N}_b$ maps to a set of tuples:
-	\[
-		\mathcal{N}_b \mapsto \{a\in\mathcal{N}_b : (a,\alpha, r)\}
-	\]
-where $\alpha$ is the bearing of the neighbour and $r$ is its distance.
-\end{defn}
+	\item For an agent $b\in\mathcal{S}$ the set of neighbours is $\mathcal{N}_b$.
+		The number of neighbours is $\#\mathcal{N}_b$
+	
+	\item Each neighbour has a tuple $(I,\beta,r)$ where $I$ is the identity of the agent,
+		$\beta$ is the `\emph{bearing}', and $r$ the distance to the neighbour.
+	
+	\item We can list the tuples in s sequence 
+		\[ \mathcal{Q}_b = \langle \ldots (I_n,\beta_n,r_n) \ldots \rangle \]
+		such that $\beta_n<\beta_{n+1}$ these are the encircling neighbours.
+	
+	\item We can write a corresponding sequecnce of perimeter edges
+		\[ \mathcal{P}_b = \langle \ldots (\theta_n,d_n) \ldots \rangle \]
+		$\theta$ is the angle subtended at $b$ by the edge and $d$ is the length of the edge
+		\[ \theta_i = (\beta_{(i+1)\mathrm{mod} \#\mathcal{N}_b} - \beta_i)\mathrm{mod}2\pi \]
+		The $\mathrm{mod}\#\mathcal{N}_b$ wraps the sequence round connecting the ends.
+		The $\mathrm{mod}2\pi$ ensures that $\forall i : \theta_i>0$, 
+		and that $\sum\theta_i = 2\pi$
 
-\begin{defn}
-	The ordered set of neighbours $\mathcal{N}^O$ is  sequence  where the bearing field
-	increases.
-	\[
-		\langle(a_1,\alpha_1,r_1),\ldots,(a_n,\alpha_n,r_n)\rangle\
-		\mathrm{where}\ \alpha_i\leq\alpha_{i+1}
-	\]
-\end{defn}
+		From the cosine rule
+		\[ d_i^2 = r_i^2 + r_{(i+1)\mathrm{mod}\#\mathcal{N}_b}^2 - 2 r_i 
+			r_{(i+1)\mathrm{mod}\#\mathcal{N}_b} \cos \theta_i
+		\]
 
-\begin{algor}
-	The set/sequence of adjacent angles between neighbours is
-	\[
-	\mathcal{A}=\langle \theta_i=\alpha_{(i+1)\mathrm{mod}n}-\alpha_i \rangle
-	\]
-	where $n=\#\mathcal{N}_b$
-\end{algor}
-\begin{algor}
-	The set/sequence of distances between neighbours is found by applying the
-	cosine rule.
-	\[
-		\langle d_{ij}^2 = r_i^2+r_j^2 -2r_ir_j\cos\angle jk\rangle
-	\]
-\end{algor}
+	\item An agent is on the perimeter if
+		\[
+			\exists d_n \in \mathcal{P}_b : d_n>d_v
+		\]
+		where $d_v$ is the range over which agents are `\emph{visible}' to each other.
+	
+	\item An agent is on the perimeter $p$ if
+		\[
+			\exists \theta_n \in \mathcal{P}_b : \theta_n\geq\pi
+		\]
+		This includes the cases where the edges form a straight section of the perimeter
 
-\begin{algor}
-	An agent $b$ is on the perimeter iff
-	\[
-		\#\mathcal{N}_b<4 \vee \exists \theta \in \mathcal{A} :
-		\theta \geq 180
-	\]
-\end{algor}
+	\item An agent is at the apex of a concave section of perimeter $v$ if
+		\[ 
+			\exists (\theta_i,d_i) \in \mathcal{P}_b : d_n>d_v \vee \theta_i<\pi
+		\]
+\end{enumerate}
 
+\paragraph{Some properties:}
+\begin{tabularx}{\columnwidth}{cccX}
+	$\#\mathcal{N}_b$ & $p$ & $c$ & condition \\
+	1 & T & F & $\theta_1=2\pi\geq\pi$ \\
+	2 & T & F & $\theta_1+\theta_2=2\pi \therefore \theta_n\geq\pi$ \\
+	3 & T & T & if $\theta_n=2\pi/3$ then $d_n>d_v$ \\
+	3 & T & F & if $\forall d_n: d_n<d_v$ then $\exists\theta_i:\theta_i>\pi$
+\end{tabularx}
+
+\paragraph{Orientation independent}  If the agent $b$ is rotated through an angle of $\gamma$ then 
+the bearings are rotated by $-\gamma$, \[ \beta_i\mapsto\beta_i-\gamma \]
+The subtended angle is now
+\[
+	\theta_i  =  ( (\beta_{(i+1)\mathrm{mod}\#\mathcal{N}_b}-\gamma) - (\beta_i-\gamma))\mathrm{mod}2\pi 
+\]
+\[
+	\theta_i = (\beta_{(i+1)\mathrm{mod}\#\mathcal{N}_b}-\beta_i-\gamma+\gamma)\mathrm{mod}2\pi
+\]
+\[
+	\theta_i = (\beta_{(i+1)\mathrm{mod}\#\mathcal{N}_b}-\beta_i )\mathrm{mod}2\pi
+\]
 \clearpage
 \begin{figure}
 \begin{algorithmic}[1]
