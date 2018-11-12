@@ -1,0 +1,14 @@
+@article{TIMMIS201660,
+title = "An immune-inspired swarm aggregation algorithm for self-healing swarm robotic systems",
+journal = "Biosystems",
+volume = "146",
+pages = "60 - 76",
+year = "2016",
+note = "Information Processing in Cells and Tissues",
+issn = "0303-2647",
+doi = "https://doi.org/10.1016/j.biosystems.2016.04.001",
+url = "http://www.sciencedirect.com/science/article/pii/S030326471630034X",
+author = "J. Timmis and A.R. Ismail and J.D. Bjerknes and A.F.T. Winfield",
+keywords = "Swarm robotics, Artificial immune systems, Self-repair",
+abstract = "Swarm robotics is concerned with the decentralised coordination of multiple robots having only limited communication and interaction abilities. Although fault tolerance and robustness to individual robot failures have often been used to justify the use of swarm robotic systems, recent studies have shown that swarm robotic systems are susceptible to certain types of failure. In this paper we propose an approach to self-healing swarm robotic systems and take inspiration from the process of granuloma formation, a process of containment and repair found in the immune system. We use a case study of a swarm performing team work where previous works have demonstrated that partially failed robots have the most detrimental effect on overall swarm behaviour. We have developed an immune inspired approach that permits the recovery from certain failure modes during operation of the swarm, overcoming issues that effect swarm behaviour associated with partially failed robots."
+}
