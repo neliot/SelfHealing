@@ -23,18 +23,21 @@
   stepnumber=1,
   xleftmargin=2em
 }
-\usepackage{color}
+%\usepackage{color}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-\let\latexvec=\vec
-\let\vec=\latexvec
+%\let\latexvec=\vec
+%\let\vec=\latexvec
 \interdisplaylinepenalty=2500
 \newtheorem{definition}{Definition}
 \newtheorem{exampleb}{Example}
 \newcommand{\subsubsubsection}[1]{\medskip\par\textit{#1:}}
 \newcommand{\card}[1]{\vert{#1}\vert}
-\newcommand{\magn}[1]{\Vert{#1}\Vert}
+\newcommand{\magn}[1]{\vert{#1}\vert}
 \hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage{xcolor}
+\usepackage{standalone}
+
 \begin{document}
 \history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
 \doi{10.1109/ACCESS.2017.DOI}
@@ -48,6 +51,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 {Eliot \headeretal: Concave reduction in Self-Healing Swarms}
 {Eliot \headeretal: Concave reduction in Self-Healing Swarms}
 \corresp{Corresponding author: Neil Eliot (e-mail: neil.eliot@northumbria.ac.uk).}
+
 \begin{abstract}
 %\boldmath
 Swarms consist of many agents that interact using a simple set of rules that create emergent behaviours. One such behaviour makes a swarm tolerant of failures. Failures occur for many reasons, for example; resource exhaustion, component failure, or a disruption from an external event. The loss of agents reduces the size of a swarm and may create an irregular structure. A swarm's structure can also be irregular due to initial conditions, loss of agents or due to an obstacle. These changes in the structure or size do not stop a swarm from functioning but can adversely affect the efficacy. This paper introduces and demonstrates emergent behaviour that can counter the effect of agent loss or irregular structures. The behaviour causes concave deformities to be removed. This technique is implemented by each agent identifying its position in relation to its neighbours. If the agent meets a defined criterion, based on the local geometry of the agent's neighbours to decide when an anomaly is present, the agent's `normal' movement is altered in such a way as to remove a gap between the neighbours. These changes in direction of agents cause the swarm, as a whole, to be reorganised into a more uniform structure with no internal voids.
@@ -63,13 +67,21 @@ Swarms consist of many agents that interact using a simple set of rules that cre
 \begin{IEEEkeywords}
 Swarming, Swarm Dynamics, Mobile Sensor Networks, Algorithms.
 \end{IEEEkeywords}
+
 \titlepgskip=-15pt
 \maketitle
+
 \section{Introduction}\label{sec:ConcaveReduction}
 \textit{Swarming} in the animal kingdom of ants, bees, fish and birds for instance has long been studied by scientists. From these studies mathematical models and algorithms have evolved. The models and algorithms have in turn captured the interest of computing scientists who are interested in applying them to large groups of autonomous mobile \textit{agents} (`robots'). The cooperative coordination of these agents can take many forms such as following a set path~\cite{HCS:09}, existing in a static space~\cite{EP:10, GP:02, GP:04} or foraging as a colony~\cite{HER:11, GK:07}. One of the attributes of swarms that has captured the interest of scientists is that the models and algorithms used to coordinate them are generally sets of simple rules. These simple rules cause the agents to appear to work cooperatively.
 Currently, much swarm research uses field effects as the method of modelling inter-agent interactions~\cite{BAF:06, BAFVM:06, BM:09, APZDAMC:09, GP:02, GP:04, GP:04a, GP:05, GP:11, MYP:09}. The models usually use two \textit{field effects} to implement the swarming characteristic. These effects are \textit{cohesion}, to draw agents closer, and \textit{repulsion} to prevent agents colliding. \textit{Field effects} have ranges around an agent to determine the effect other agents have upon its movement~(Fig.~\ref{methods:FieldEffects}) the effects are derived from these ranges as vectors. All ranges must fall within the sensing capabilities of the agent ($S_b$). It is usual for the cohesion field to have a radius ($C_b$) which is larger than the repulsion radius ($R_b$). When an agent ($b'$) moves into the \textit{neighbour field} of an agent ($b$) then $b'$ is said to be a neighbour of $b$ and is subject to cohesion. When an agent $b'$ moves into the repulsion field of $b$ then $b$ also subjected to repulsion. When the repulsion magnitude exceeds the cohesion magnitude the agent will have a tendency to move away from $b'$, i.e. repelled. When an agent $b$ moves too close to an obstacle, i.e. within the obstacle repulsion range $O_b$, it has its repulsion vector applied and the agent will tend towards moving away from the obstacle.
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/FieldEffects}
 {Agent field effects.\label{methods:FieldEffects}}
+\begin{figure}
+%\begin{tikzpicture}
+%	\node at (0,0) [circle,fill=black!50]{};
+%\end{tikzpicture}
+	\includegraphics{stableswarm}
+\end{figure}
 When cohesion and repulsion (\textit{inter-agent vectors}) are the only field effects creating a swarming effect the number of stable structures that can develop is limited. These structures, which are constructed from triangles, are either straight edges or partial lattices. Partial lattices can create concave anomalies (\textit{dents}) and convex anomalies (\textit{peaks}) in a perimeter~(Fig.~\ref{concave:SwarmStableShape1}). An anomaly is any construct within the swarm that is not a hexagonal lattice or an agent distribution that causes the swarm to deviate from having only convex or flat edges. The advantage of creating a well structured swarm can be realised in two classes of swarm application; \textit{Reconnaissance}, by creating a more uniform structure that eliminates blank spots, and \textit{Object Containment}, when using a swarm to surround a target.  
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/SwarmStableShape1}
@@ -89,40 +101,70 @@ Research has identified several approaches to resolving swarm structure issues. 
 Concave reduction is an extension of the work discussed by Ismail and Timmis in their paper on `self-healing' \cite{IT:10} and Lee and Chong's work on identifying concave edges~\cite{GN:08}. The technique also draws on the work of McLurkin and Demaine who have developed algorithms to detect perimeter types~\cite{MD:09}. The technique employed in this paper does not require the identification of the perimeter type as this would require a communications infrastructure.
 
 \section{Swarm Model}\label{sec:Swarm Model}
-To describe the removal of voids a swarming model needs to be defined. Equation~\ref{eq:BotPhysics1} defines a weighted model that includes cohesion, repulsion, direction and obstacle avoidance ($v_c(b), v_r(b), v_d(b), v_o(b)$). The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled to tailor the swarming effect. 
+To describe the removal of voids a swarming model needs to be defined.
 
-\begin{equation}\label{eq:BotPhysics1}
-  v(b) = k_cv_c(b) + k_rv_r(b) + k_dv_d(b) + k_ov_o(b)
+An agent $b$ in the swarm ($b\in\mathcal S$) has a sensor ($S_b$) that detects other agents
+($b'$)in the swarm
+determining their range $r$  and direction $\beta$.  From this data the agent generates a
+set of neighbours ($\mathcal N_b$) that are within a specific range.  Usually the range of the
+cohesion field $C_b$.
+
+The Agent creates a set of neighbours containing range and bearing pairs
+$(r,\beta)$ as shown in equation
+\ref{set:Nb}
+\begin{equation}
+\mathcal N_b = \{ (r,\beta) \ldots \}
+\label{set:Nb}
+\end{equation}
+These range and bearing pairs are the relative position vector for each
+neighbour $b'$ with respect to the sensor reference frame of agent $b$.
+Alternative notations are given in equation \ref{notation}
+\begin{equation}
+	\mathcal N_b = \{(r,\beta) \ldots \} = \{ (r_{b'}, \beta_{b'}) \ldots \} = \{
+	\vec{b'} \ldots \}
+	\label{notation}
 \end{equation}
 
-\textit{Repulsion} $v_{r}(b)$, defined in Equation~\ref{eq:Repulsion1}, is the
-directional movement required to prevent agents colliding. $\mathcal{R}_b$ is
+Equation~\ref{eq:BotPhysics1} defines a weighted model that includes cohesion,
+repulsion, direction and obstacle avoidance ($\vec v_c(b), \vec v_r(b),
+\vec v_d(b), \vec v_o(b)$). 
+The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled to tailor the swarming effect. 
+
+\begin{equation}\label{eq:BotPhysics1}
+  \vec v(b) = k_c\vec v_c(b) + k_r\vec v_r(b) + k_d\vec v_d(b) + k_o\vec v_o(b)
+\end{equation}
+
+\textit{Repulsion} $\vec v_r(b)$, defined in Equation~\ref{eq:Repulsion1}, is the
+directional movement required to prevent agents colliding. $\mathcal R_b$ is
 the set of agents that are within an agent's $b$ repulsion range.
 
 \begin{equation}\label{eq:Repulsion1}
-v_{r}(b) = 
-\frac{1}{|\mathcal{R}_b|}
+\vec v_r(b) = 
+\frac{1}{\card{\mathcal R_b}}
 \left(
-	\mathlarger{\mathlarger{\sum_{b' \in \mathcal{R}_b}}}
-{\left( 1-\frac{|bb'|}{R_b} \right)}
-{bb'}
+	\mathlarger{\mathlarger{\sum_{\vec b' \in \mathcal R_b}}}
+	{\left( 1-\frac{r_{b'}}{R_b} \right)}
+	\vec b'
 \right)
 \end{equation}
 
-\textit{Cohesion} $v_{c}(b)$, defined in Equation~\ref{eq:FlyToCentre1},
+\textit{Cohesion} $\vec v_{c}(b)$, defined in Equation~\ref{eq:FlyToCentre1},
 calculates the movement that makes an agent move towards other agents to form
-a cohesive structure. $\mathcal{C}_b$ is the set of agents that are within an agent's ($b$) cohesion range.
+a cohesive structure. $\mathcal C_b$ is the set of agents that are within an agent's ($b$) cohesion range.
 
 \begin{equation}\label{eq:FlyToCentre1}
-	v_{c}(b) = \frac{1}{|\mathcal{C}_b|}\left({\mathlarger{\sum_{b' \in
-	\mathcal{C}_b}}{bb'}}\right)
+	\vec v_c(b) =
+	\frac{1}{\card{\mathcal C_b}}\left({\mathlarger{\sum_{\vec b' \in
+	\mathcal C_b}}{\vec b'}}\right)
 \end{equation}
 
-\textit{Direction} $v_d(b)$, defined in Equation~\ref{eq:Direction}, generates a directional vector for an agent to move towards a destination defined as $d$.
+\textit{Direction} $\vec v_d(b)$, defined in Equation~\ref{eq:Direction},
+generates a directional vector for an agent to move towards a destination
+defined as $\vec d$.
 
 \begin{equation}
 \label{eq:Direction}
-v_d(b) = bd
+\vec v_d(b) = \vec d
 \end{equation}
 
 Obstacles, like agents, can be represented as a point. As an agent moves it may enter an obstacle's \textit{repulsion field}. If this occurs then the agent should move away. In this paper agents are modelled with a fixed \textit{obstacle repulsion field} ($O_b$). If an agent enters the field a vector of magnitude $O_b$ is applied. If more than one obstacle is within the field, the applied repulsion vector is the sum of the repulsion vectors~(Figure~\ref{fig:Obstacle1}). The resultant vector is normalised and scaled such that the magnitude is the same as the field distance~$O_b$ as shown in Equation~\ref{eq:Obstacle2}.
@@ -134,12 +176,14 @@ Obstacles, like agents, can be represented as a point. As an agent moves it may 
 \caption{Obstacle repulsion \label{fig:Obstacle1}}
 \end{figure}
 
-Equation~\ref{eq:Obstacle2} shows the repulsion vector $v_o(b)$ for an agent.
-$\mathcal{O}_b$ is the set of obstacles that are within the range of agent $b$.
+Equation~\ref{eq:Obstacle2} shows the repulsion vector $\vec v_o(b)$ for an agent.
+$\mathcal O_b$ is the set of obstacles that are within the range of agent $b$.
 The obstacles are identified using the distance between an agent and an
-obstacle $\magn{ob}$ and comparing the result to the fixed obstacle repulsion
-field~$O_b$, so $\forall o \in \mathcal{O}_b : \magn{ob}\leq O_b$.
-The applied repulsion is calculated by scaling the normalised sum of the normalised vectors $\widehat{ob}$ by $O_b$. Note that $\string^$ is the equivalent of $\hat{v} = \frac{v}{\magn{v}}$ the normalised vector.
+obstacle $o_r$ and comparing the result to the fixed obstacle repulsion
+field~$O_b$, so $\forall \vec o \in \mathcal O_b : \magn{\vec o}\leq O_b$.
+The applied repulsion is calculated by scaling the normalised sum of the
+normalised vectors $\hat o$ by $O_b$.  Note that $\string^$ is the equivalent
+of $\hat v = \frac{\vec v}{\magn{\vec v}}$ the normalised vector.
 
 % \begin{equation}\label{eq:Obstacle2}
 % v_o(b) =
@@ -147,15 +191,20 @@ The applied repulsion is calculated by scaling the normalised sum of the normali
 % \end{equation}
 
 \begin{eqnarray}\label{eq:Obstacle2}
-  v_o(b) & = & O_b \widehat{d_o} \\
-	\mathrm{where~}  d_o & = & \sum_{o\in \mathcal{O}_b } \widehat{ob}
-  \nonumber
+  \vec v_o(b) & = & O_b \hat q_o \\
+	\mathrm{where~}  \vec q_o & = & \sum_{\vec o\in \mathcal O_b } \hat o
+	\nonumber \\
+	\vec v_o(b) & = & O_b \widehat{\sum_{\vec o\in \mathcal O_b }} \hat o \nonumber
 \end{eqnarray}
 
-An agent's \textit{movement vector} is the sum of all the component vectors as shown in Equation~\ref{eq:BotPhysics1}. This is a similar technique as used by Hashimoto et. al.~\cite{HAY:08}. For a vector to be used for movement it be normalised before the agent's speed can be applied. The resultant \textit{movement vector} $b_{pos}$, as defined in Equation~\ref{eq:AgentMovement}, is calculated using unit time, speed and the normalised \textit{movement vector}.
+An agent's \textit{movement vector} is the sum of all the component vectors as
+shown in Equation~\ref{eq:BotPhysics1}. This is a similar technique as used by
+Hashimoto et. al.~\cite{HAY:08}. For a vector to be used for movement it be
+normalised before the agent's speed ($s_b$)  can be applied. The resultant
+\textit{movement vector} $\vec m_b$, as defined in Equation~\ref{eq:AgentMovement}, is calculated using unit time, speed and the normalised \textit{movement vector}.
 
 \begin{equation}\label{eq:AgentMovement}
-  b_{pos}=s_{b}t\widehat{v(b)} 
+\vec m_b = s_b  \hat v(b)  t
 \end{equation}
 
 Applying the calculations described in this section to all agents in turn creates the swarming effect. 
@@ -164,7 +213,11 @@ Applying the calculations described in this section to all agents in turn create
 %In a 2D Euclidean plane a circle provides the maximum area with the minimum perimeter size. A circles perimeter is convex in nature. 
 To restructure a disorganised swarm the perimeter agents need to be identified. These agents form part of an outer ({\color{green}green}) or inner edge ({\color{red}red}) (Fig.~\ref{fig:PerimeterBots1}) or are part of an island~(Fig.~\ref{fig:PerimeterBots2}).
 
-The detection mechanism detects both the outer edge of a swarm and any internal features~(voids) that satisfy the same set of conditions. It is therefore possible to have both voids and islands of agents within the same swarm~(Fig.~\ref{fig:PerimeterBots2}). Voids are best defined as perimeters that are concave in nature and inside another perimeter. McLurkin describes two types of perimeters convex and concave~\cite{MD:09}. A convex perimeter is an edge where the average angle of the agent's exposed faces are~$> 180^\circ$. A concave perimeter is where the average exposed angle is~$< 180^\circ$.
+The detection mechanism detects both the outer edge of a swarm (equation
+\ref{perimeter-predicate})  and any internal features~(voids) that satisfy the same
+set of conditions. It is therefore possible to have both voids and islands of
+agents within the same swarm~(Fig.~\ref{fig:PerimeterBots2}). Voids are best
+defined as perimeters that are concave (equation \ref{concave-predicate}) in nature and inside another perimeter. McLurkin describes two types of perimeters convex and concave~\cite{MD:09}. A convex perimeter is an edge where the average angle of the agent's exposed faces are~$> 180^\circ$. A concave perimeter is where the average exposed angle is~$< 180^\circ$.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/PerimeterBots1}
 {Outer Perimeter\label{fig:PerimeterBots1}}
@@ -174,23 +227,11 @@ The detection mechanism detects both the outer edge of a swarm and any internal 
 %\subsection{Full-perimeter detection}\label{sec:PerimeterAgentDetection} 
 
 
-
-An agent $b$ in the swarm has a sensor that detects other agents in the swarm
-determining their range $r$  and direction $\beta$.  From this data the agent generates a
-set of neighbours that are within a specific range.  Usually the range of the
-cohesion field $C_b$.
-
-The Agent creates a set of neighbours containing range and bearing pairs
-$(\beta,r)$ as shown in equation
-\ref{set:Nb}
-\begin{equation}
-\mathcal{N} = \{ (r,\beta) \ldots \}
-\label{set:Nb}
-\end{equation}
-This set is sorted into a sequence $\mathcal{P}_A$ with the bearing values
+The set of neighbours $\mathcal N_b$ (eqn \ref{set:Nb}) is sorted into a
+sequence $\mathcal P_a$ with the bearing values
 increasing
 \begin{equation}
-	\mathcal{P}_a = \langle (r_0,\beta_0),\ldots,(r_n,\beta_n) \rangle
+	\mathcal P_a = \langle (r_0,\beta_0),\ldots,(r_n,\beta_n) \rangle
 \end{equation}
 such that $\forall i \in \{0\ldots n-1\}: \beta_i<\beta_{i+1}$
 
@@ -206,7 +247,7 @@ where
 \begin{equation}
 	\theta_i = \beta_{i+1} - \beta_i
 \end{equation}
-the index addition is modulo $|\mathcal{N}|$ making $\beta_0$ the successor
+the index addition is modulo $|\mathcal N_b|$ making $\beta_0$ the successor
 bearing to $\beta_n$ ($n+1 = 0$).  The angles $\theta$ must lie in the range
 $0<\theta\leq2\pi$.
 This restriction on the values of $\theta$ enforce a condition that
@@ -220,7 +261,7 @@ The length of a perimeter edge is given by the cosine rule
 
 An agent is on the perimeter of the swarm if it is not enclosed by the polygon
 defined in $\mathcal{P}_e$.  Simple geometry shows that this is the case given
-by the predicate \ref{enclosing}
+by the predicate in equation \ref{enclosing}
 \begin{equation}
 	\exists \theta_i \in \mathcal{P}_e : \theta_i\geq\pi
 	\label{enclosing}
@@ -231,15 +272,16 @@ attractive field.  An open polygon does not enclose the agent $b$ so it
 considered to be on the perimeter.
 
 The agent $b$ is on the perimeter of the swarm if the predicate in equation
-\ref{perimeter} is true.
+\ref{perimeter-predicate} is true.
 \begin{equation}
-	\exists d_i\in\mathcal{P}_e:d_i>d_a \vee
+	\exists d_i\in\mathcal{P}_e:d_i>C_b \vee
 	\exists\theta\-i\in\mathcal{P}_e:\theta_i\geq\pi
-	\label{perimeter}
+	\label{perimeter-predicate}
 \end{equation}
 An agent is at the apex of a concave region of the perimeter if
 \begin{equation}
-	\exists(\theta_i,d_i)\in\mathcal{P}_e : d_i>d_a\wedge\theta_i<\pi
+	\exists(\theta_i,d_i)\in\mathcal{P}_e : d_i>C_b\wedge\theta_i<\pi
+	\label{concave-predicate}
 \end{equation}
 
 
@@ -251,44 +293,13 @@ The  angle between successive agents is now
 	 = \beta_{i+1}-\beta_i-\gamma+\gamma
 	 = \beta_{i+1}-\beta_i
 \]
-
+The predicates are independent of the orientation of the sensing agent.
 
 \section{Concave Reduction Application}\label{sec:ConcaveReductionApplication}
 In a static swarm, where there are no \textit{destination vectors}, concave reduction will result in a restructuring motion that creates a more `rounded' swarm as shown in Fig.~\ref{fig:OuterPerimeter3}. Concave reduction also creates a surround effect as it removes voids from a swarm. This is discussed in more detail in section~\ref{voids:ObjectSurrounding}. When concave reduction is applied to a mobile swarm the void closing effect can be used to improve reconnaissance coverage as the swarm passes obstacles. This is discussed in section~\ref{concave:mobileSwarm1}.
 Although these effects improve the potential applications of swarms there are negative effects that can be impact introduced. In some circumstances concave reduction can create an artificial \textit{destination vector} in that the swarm will appear to have a directional movement. 
 
 To implement void reduction full perimeter detection is required. The identification of candidate agents is incorporated into the perimeter detection algorithm as shown in Fig.~\ref{algo:checkVisibility2}. The addition is to set a status flag to highlight when a gap is detected and to record the agent's that create the gap. Concave reduction does not require the perimeter type to be identified and no communications infrastructure is required. Many coordination algorithms require inter-agent communications~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The disadvantage of requiring a communications infrastructure is that the size of a swarm is limited through message propagation.
-
-\begin{figure}
-\begin{algorithmic}[1]
-%\tiny
-\Procedure{CheckVisibility}{$b,angles$}
-\State $b.gap \leftarrow \emptyset$
-\State $b.concave = False$
-\For{$i \leftarrow 0~\texttt{To}~size(angles)-1$}
-\If{i == size(angles)-1}
-\If{$cosrule(b,angles[size(angles)-1][0],angles[i][0])$}
-\If{$angle(b,angles[size(angles)-1][0],angles[i][0]) < 180)$}
-\State $b.concave = True$
-\State $b.gap = (angles[size(angles)-1][1],angles[i][1])$
-\EndIf
-   \State\textbf{return} $True$
-   \EndIf
-\EndIf
-\If{$cosrule(b,angles[i + 1][0],angles[i][0])$}
-  \If{$angle(b,angles[i + 1][0],angles[i][0]) < 180$}
-\State $b.concave = True$\;
-\State $b.gap = (angles[i + 1][1],angles[i][1])$
-  \EndIf
-  \State\textbf{return} $True$
-\EndIf
-\EndFor
-\State\textbf{return} $False$
-\EndProcedure
-\end{algorithmic}
-\caption{Check Visibility}
-\label{algo:checkVisibility2}
-\end{figure}
 
 \subsection{Perimeter Exceptions}\label{concave:Exceptions}
 When a swarm is forming or disrupted through either agent failures, catastrophic events or interactions with obstacles, sections of the swarm may become isolated. When this occurs the sections can be considered to be separate sub-swarms. It is also possible for sections of the swarm to remain connected through tenuous links of either 1 or 2 agents as shown in Figs.~\ref{fig:Connector1} and \ref{fig:Connector2}. In the case of a link connection~(Fig.~\ref{fig:Connector1}) concave reduction can be applied as normal. In the case of a `bridge' link (Fig.~\ref{fig:Connector2}) there is an issue in that there is more than one concave gap. As there is no communications infrastructure in swarm model. One option is allow the swarming algorithm to be applied; this is a reasonable approach as the overall structure of the swarm is unknown therefore the movement cannot be optimised. An alternative approach would be to select either the largest or the smallest gap; again as the structure of the swarm is unknown this may not be beneficial. A third option would be to select one of the gaps (randomly, first seen, last seen) and implement the concave reduction at that point. The approach taken in this paper is to select the first gap that is detected. Selecting the first gap reduces the computational overhead of the algorithm.
@@ -319,7 +330,8 @@ Adding a further characteristic to the motion of a swarm necessitates a revision
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/VoidConcave1}{Agent concave motion\label{concave:VoidConcave1}}
 
-When an agent is identified as being a component of a concave characteristic~(Fig.~\ref{algo:checkVisibility2}) the normal \textit{movement-direction vector} is replaced by a \textit{concave reduction vector}. This new vector causes the agent to move in a direction that will reduce or remove a concave edge by moving the agent towards the identified gap. The effect of this will be to either straighten an outer perimeter or reduce/remove a void. This change in direction effects the distance and magnitude variances due to the changes induced. Figures~\ref{fig:InterAgentEffect1} and \ref{fig:InterAgentEffect2} shows this effect in more detail. Figure~\ref{fig:InterAgentEffect1}~shows the initial positions of the agents before the concave reduction is applied to the agent. Figure~\ref{fig:InterAgentEffect2}~shows the effects on the relationship with the agent's neighbours. The aggregate change is an increase in the inter-agent distances and an increase in the resultant magnitude effects.
+When an agent is identified as being a component of a concave
+characteristic~(eqn.~\ref{concave-predicate}) the normal \textit{movement-direction vector} is replaced by a \textit{concave reduction vector}. This new vector causes the agent to move in a direction that will reduce or remove a concave edge by moving the agent towards the identified gap. The effect of this will be to either straighten an outer perimeter or reduce/remove a void. This change in direction effects the distance and magnitude variances due to the changes induced. Figures~\ref{fig:InterAgentEffect1} and \ref{fig:InterAgentEffect2} shows this effect in more detail. Figure~\ref{fig:InterAgentEffect1}~shows the initial positions of the agents before the concave reduction is applied to the agent. Figure~\ref{fig:InterAgentEffect2}~shows the effects on the relationship with the agent's neighbours. The aggregate change is an increase in the inter-agent distances and an increase in the resultant magnitude effects.
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=5cm]{figures/InterAgentEffect1}{Initial Position\label{fig:InterAgentEffect1}}
 %% \begin{figure}
@@ -389,53 +401,77 @@ The purpose of \textit{concave reduction} is to alter the overall structure of t
 %% \end{figure}
 
 \section{Concave reduction mathematical model}\label{concave:ConcaveVoidReduction1}
-As part of identifying a perimeter each agent's neighbours must be sorted by angle. A pair of agents are identified as a set $b.gap$ ($b.gap \equiv G_b$). Equation~\ref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents. 
+% As part of identifying a perimeter each agent's neighbours must be sorted by angle. A pair of agents are identified as a set $b.gap$ ($b.gap \equiv G_b$). 
+When an agent is on the perimeter, equation \ref{concave-predicate} is
+satisifed, it is subject to concave reduction.
+The pair of neighbours that form the concave element is $\mathcal G_b$, the
+gap in the perimeter.
+Equation~\ref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents. 
 
-Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbours make with the first detected neighbour. $nbr(b)$ returns a set consisting of an agent's ($b$) neighbours.
+% Equation~\ref{eq:ConcaveVoidPhysics1} generates the dictionary set of all the neighbours along with an angle that each of the agent's neighbours make with the first detected neighbour. $nbr(b)$ returns a set consisting of an agent's ($b$) neighbours.
 
-\begin{equation}
-\label{eq:ConcaveVoidPhysics1}
-S_b \buildrel \Delta \over = \{(b',\angle(b'~b~b^0)) : b' \in nbr(b)\}
-\end{equation}
+%\begin{equation}
+%\label{eq:ConcaveVoidPhysics1}
+%S_b \buildrel \Delta \over = \{(b',\angle(b'~b~b^0)) : b' \in nbr(b)\}
+%\end{equation}
 
-The mid-point $D_{pos}(b)$ is then calculated as below in Equation~\ref{eq:ConcaveVoidPhysics3}.
+The mid-point $\vec D(b)$ is then calculated as below in Equation~\ref{eq:ConcaveVoidPhysics3}.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics3}
-D_{pos}(b) = \frac{1}{2}\mathlarger{\sum_{b' \in G_b}}{b'} 
+\vec D(b) = \frac{1}{2}\sum_{\vec b' \in \mathcal G_b}\vec b' 
 \end{equation}
 
-$D(b)$~is the \textit{concave reduction} vector is derived from the identified mid-point of the neighbour gap~($G_b$) to the parent agent~($b$) as shown in Equation~\ref{eq:ConcaveVoidPhysics3a}.
+$\vec D(b)$~is the \textit{concave reduction} vector is derived from the identified
+mid-point of the neighbour gap~($\mathcal{G}_b$) to the parent agent~($b$) as
+shown in Equation~\ref{eq:ConcaveVoidPhysics3}.
 
-\begin{equation}\label{eq:ConcaveVoidPhysics3a}
-D(b) = bD_{pos}(b) 
-\end{equation}
+%%\begin{equation}\label{eq:ConcaveVoidPhysics3a}
+%%D(b) = bD_{pos}(b) 
+%%\end{equation}
+%%\fbox{\textit{do we mean product of $b$ and $D_{pos}$?}}
 
-The final vector needs to accommodate an agent's surroundings. Due to agent proximity it can be assumed that there are no agents in the path between the agent and the gap, however, there may be an obstacle in the agent's path. The \textit{concave-reduction-vector} must include an obstacle avoidance component~$v_o(b)$. As with all the previous vector based calculations a weighting is applied $k_{cr}$ to allow the model to vary the intensity of the effects. The resultant vector is normalised to produce the \textit{unit-movement-vector} as shown in~Equation~\ref{eq:ConcaveVoidPhysics4}. 
+The final vector needs to accommodate an agent's surroundings. Due to agent
+proximity it can be assumed that there are no agents in the path between the
+agent and the gap, however, there may be an obstacle in the agent's path. The
+\textit{concave-reduction-vector} must include an obstacle avoidance
+component~$\vec v_o(b)$.  As with all the previous vector based calculations a 
+weighting is applied $k_{cr}$ to allow the model to vary the intensity of the effects.  
+The resultant vector $\vec V(b)$ as shown
+in~Equation~\ref{eq:ConcaveVoidPhysics4}  is normalised to produce the \textit{unit-movement-vector}
+$\hat V(b)$.
 
 \begin{equation}\label{eq:ConcaveVoidPhysics4}
-V(b) = (k_{cr}D(b) + k_ov_o(b))\string^
+\vec V(b) = (k_{cr}\vec D(b) + k_o\vec v_o(b))
 \end{equation}
 
 \section{Swarm Metrics}
 
 \subsection{Distance Metric}
 
-Equation~\ref{eq:SwarmStabilityDistance1} calculates the mean distance of an agent to its neighbours $nbr(b)$. 
+Equation~\ref{eq:SwarmStabilityDistance1} calculates the mean distance of an
+agent to its neighbours $\mathcal{N}_b$. 
 %% The relative position vector generated for an agent $b$ to its neighbour $b'$, $bb'$, is shown in~(\ref{eq:FlyToCentre1}). The magnitude of that vector gives the distance between two agents. For an individual agent the average magnitude $\mu_d(b)$ is calculated as \ref{eq:SwarmStabilityDistance1} where $b$ is the agent and $|nbr(b)|$ is the number of neighbours.
 
 \begin{equation}
 \label{eq:SwarmStabilityDistance1}
-\mu_d(b) = \frac{1}{\mathlarger{|nbr(b)|}}\left({\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}\right)
+\mu_d(b) =
+\frac{1}{\mathlarger{\card{\mathcal{N}_b}}}\left({\mathlarger{\sum_{b' \in
+\mathcal{N}_b}}\magn{bb'}}\right)
 \end{equation}
 
-The mean distance for a swarm is calculated by~Equation~\ref{eq:SwarmStabilityDistance2}. All the inter-agent distances are included for the swarm ($S$). 
+The mean distance for a swarm is calculated
+by~Equation~\ref{eq:SwarmStabilityDistance2}. All the inter-agent distances
+are included for the swarm ($\mathcal S$). 
 
 %% $\sum_{b \in S}|nbr(b)|$ calculates how many inter-agent relationships exist in the swarm and $\sum_{b' \in nbr(b)}|bb'|$ calculates the total distance between each agent and its neighbours. $\sum_{b \in S}$ iterates over all the agents in the swarm~($S$).
 
 \begin{equation}
 \label{eq:SwarmStabilityDistance2}
-\mu_d(S) = \frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}|bb'|}{\mathlarger{\sum_{b \in S}|nbr(b)|}}
+\mu_d(\mathcal{S}) = \frac{\mathlarger{\sum_{b \in
+\mathcal{S}}}~\mathlarger{\sum_{b' \in
+\mathcal{N}_b}}\magn{bb'}}{\mathlarger{\sum_{b \in
+\mathcal{S}}\card{\mathcal{N}_b}}}
 \end{equation}
 
 %\section{Standard deviation in distance metric}\label{Section:VarianceInDistance}
@@ -445,14 +481,17 @@ The mean distance provides a indication of the large scale structure of the swar
 
 \begin{equation}
 \label{eq:SwarmStabilityDistance3}
-\sigma_d(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}~\mathlarger{\sum_{b' \in nbr(b)}}\Big(|bb'| - \mu_d(S)\Big)^2}{\mathlarger{\sum_{b \in S}|nbr(b)|}}}
+\sigma_d(\mathcal{S}) = \sqrt{\frac{\mathlarger{\sum_{b \in
+\mathcal{S}}}~\mathlarger{\sum_{b' \in \mathcal{N}_b}}\Big(\magn{bb'} -
+\mu_d(\mathcal{S})\Big)^2}{\mathlarger{\sum_{b \in
+\mathcal{S}}\card{\mathcal{N}_b}}}}
 \end{equation}
 
-The distance-based metric for the internal distribution of the agents is therefore $\mu_d(S)$ and $\sigma_d(S)$. This can be written informally as:
+The distance-based metric for the internal distribution of the agents is therefore $\mu_d(\mathcal{S})$ and $\sigma_d(\mathcal{S})$. This can be written informally as:
 
 \begin{equation}
 \label{eq:SwarmDistanceMetric}
-\psi_d(S) = \mu_d(S)\pm \sigma_d(S)
+\psi_d(\mathcal{S}) = \mu_d(\mathcal{S})\pm \sigma_d(\mathcal{S})
 \end{equation}
 
 \subsection{Magnitude Metric}
@@ -473,21 +512,21 @@ The mean cohesion/repulsion scalar for the swarm is now given by~(\ref{eq:SwarmS
 
 \begin{equation}
 \label{eq:SwarmStabilityMetricT3}
-\mu_p(S) = \frac{\mathlarger{\sum_{b \in S} P(b)}}{\mathlarger{\sum_{b \in S}}|nbr(b)| + \mathlarger{\sum_{b \in S}}|rep(b)|}
+\mu_p(\mathcal{S}) = \frac{\mathlarger{\sum_{b \in \mathcal{S}} P(b)}}{\mathlarger{\sum_{b \in \mathcal{S}}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal{S}}}|rep(b)|}
 \end{equation}
-
+\fbox{\textit{what is $rep(b)$ here ?}}
 The standard deviation associated with this mean is calculated as Equation~\ref{eq:SwarmStabilityQuotientT}.
 
 \begin{equation}
 \label{eq:SwarmStabilityQuotientT}
-\sigma_p(S) = \sqrt{\frac{\mathlarger{\sum_{b \in S}}\Big(P(b)-\mu_p(S)\Big)^2}{\mathlarger{\sum_{b \in S}}|nbr(b)| + \mathlarger{\sum_{b \in S}}|rep(b)|}}
+\sigma_p(\mathcal{S}) = \sqrt{\frac{\mathlarger{\sum_{b \in \mathcal{S}}}\Big(P(b)-\mu_p(\mathcal{S})\Big)^2}{\mathlarger{\sum_{b \in \mathcal{S}}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal{S}}}|rep(b)|}}
 \end{equation}
 
-The metric for the internal movement is this pair of numbers, the mean and standard deviation of the swarm's internal \textit{cohesion/repulsion}. The pair $\mu_p(S)$, $\sigma_p(S)$ may be written informally as: 
+The metric for the internal movement is this pair of numbers, the mean and standard deviation of the swarm's internal \textit{cohesion/repulsion}. The pair $\mu_p(\mathcal{S})$, $\sigma_p(\mathcal{S})$ may be written informally as: 
 
 \begin{equation}
 \label{eq:SwarmPotentialMagnitude}
-\psi_p(S) = \mu_p(S)\pm \sigma_p(S)
+\psi_p(\mathcal{S}) = \mu_p(\mathcal{S})\pm \sigma_p(\mathcal{S})
 \end{equation}
 
 \section{Effect of concave reduction on swarm structure}
