@@ -457,7 +457,7 @@ agent to its neighbours $\mathcal{N}_b$.
 \label{eq:SwarmStabilityDistance1}
 \mu_d(b) =
 \frac{1}{\mathlarger{\card{\mathcal{N}_b}}}\left({\mathlarger{\sum_{b' \in
-\mathcal{N}_b}}\magn{bb'}}\right)
+\mathcal{N}_b}}\magn{\vec b'}}\right)
 \end{equation}
 
 The mean distance for a swarm is calculated
@@ -468,11 +468,12 @@ are included for the swarm ($\mathcal S$).
 
 \begin{equation}
 \label{eq:SwarmStabilityDistance2}
-\mu_d(\mathcal{S}) = \frac{\mathlarger{\sum_{b \in
-\mathcal{S}}}~\mathlarger{\sum_{b' \in
-\mathcal{N}_b}}\magn{bb'}}{\mathlarger{\sum_{b \in
-\mathcal{S}}\card{\mathcal{N}_b}}}
+\mu_d(\mathcal S) = \frac{\mathlarger{\sum_{b \in
+\mathcal S}}~\mathlarger{\sum_{b' \in
+\mathcal{N}_b}}\magn{\vec b'}}{\mathlarger{\sum_{b \in
+\mathcal S}\card{\mathcal{N}_b}}}
 \end{equation}
+\fbox{is this an over estimate -- distances are counted twice}
 
 %\section{Standard deviation in distance metric}\label{Section:VarianceInDistance}
 The mean distance provides a indication of the large scale structure of the swarm. However it is not sufficient to give an indication of the internal distribution of the agents. The standard deviation clarifies the distribution within the swarm as shown in~Equation~\ref{eq:SwarmStabilityDistance3}. 
@@ -481,17 +482,17 @@ The mean distance provides a indication of the large scale structure of the swar
 
 \begin{equation}
 \label{eq:SwarmStabilityDistance3}
-\sigma_d(\mathcal{S}) = \sqrt{\frac{\mathlarger{\sum_{b \in
-\mathcal{S}}}~\mathlarger{\sum_{b' \in \mathcal{N}_b}}\Big(\magn{bb'} -
-\mu_d(\mathcal{S})\Big)^2}{\mathlarger{\sum_{b \in
-\mathcal{S}}\card{\mathcal{N}_b}}}}
+\sigma_d(\mathcal S) = \sqrt{\frac{\mathlarger{\sum_{b \in
+\mathcal S}}~\mathlarger{\sum_{b' \in \mathcal{N}_b}}\Big(\magn{\vec b'} -
+\mu_d(\mathcal S)\Big)^2}{\mathlarger{\sum_{b \in
+\mathcal S}\card{\mathcal{N}_b}}}}
 \end{equation}
 
-The distance-based metric for the internal distribution of the agents is therefore $\mu_d(\mathcal{S})$ and $\sigma_d(\mathcal{S})$. This can be written informally as:
+The distance-based metric for the internal distribution of the agents is therefore $\mu_d(\mathcal S)$ and $\sigma_d(\mathcal S)$. This can be written informally as:
 
 \begin{equation}
 \label{eq:SwarmDistanceMetric}
-\psi_d(\mathcal{S}) = \mu_d(\mathcal{S})\pm \sigma_d(\mathcal{S})
+\psi_d(\mathcal S) = \mu_d(\mathcal S)\pm \sigma_d(\mathcal S)
 \end{equation}
 
 \subsection{Magnitude Metric}
@@ -501,32 +502,33 @@ Now, we define for each agent $b$ a \textit{cohesion/repulsion scalar}, $P(b)$, 
 \begin{equation}
 \label{eq:CohesionRepulsion}
 P(b) = \left\{\begin{array}{lll}
-               |v(b)|& \mathrm{if} & |k_cv_c(b)| > |k_r v_r(b)|\\
-              -|v(b)|& \mathrm{otherwise}
+               |\vec v(b)|& \mathrm{if} & |k_c \vec v_c(b)| > |k_r \vec v_r(b)|\\
+              -|\vec v(b)|& \mathrm{otherwise}
               \end{array}\right.
 \end{equation}
 
-Although it is possible for $v(b)$ to be null there could still be variation in the constituent components. The variation calculation (standard deviation) as shown in Equation~\ref{eq:SwarmStabilityQuotientT}. 
+Although it is possible for $\vec v(b)$ to be null there could still be variation in the constituent components. The variation calculation (standard deviation) as shown in Equation~\ref{eq:SwarmStabilityQuotientT}. 
 
 The mean cohesion/repulsion scalar for the swarm is now given by~(\ref{eq:SwarmStabilityMetricT3}).  
 
 \begin{equation}
 \label{eq:SwarmStabilityMetricT3}
-\mu_p(\mathcal{S}) = \frac{\mathlarger{\sum_{b \in \mathcal{S}} P(b)}}{\mathlarger{\sum_{b \in \mathcal{S}}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal{S}}}|rep(b)|}
+\mu_p(\mathcal S) = \frac{\mathlarger{\sum_{b \in \mathcal S} P(b)}}{\mathlarger{\sum_{b \in \mathcal S}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal S}}|\mathcal R_b|}
 \end{equation}
-\fbox{\textit{what is $rep(b)$ here ?}}
+Where $\mathcal R_b$ is the set of neighbours subject to repulsion, 
+where $\mathcal R_b \subseteq \mathcal N_b$ and $\vec b'\in\mathcal R_b:\magn{\vec b'}\leq R_b$
 The standard deviation associated with this mean is calculated as Equation~\ref{eq:SwarmStabilityQuotientT}.
 
 \begin{equation}
 \label{eq:SwarmStabilityQuotientT}
-\sigma_p(\mathcal{S}) = \sqrt{\frac{\mathlarger{\sum_{b \in \mathcal{S}}}\Big(P(b)-\mu_p(\mathcal{S})\Big)^2}{\mathlarger{\sum_{b \in \mathcal{S}}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal{S}}}|rep(b)|}}
+\sigma_p(\mathcal S) = \sqrt{\frac{\mathlarger{\sum_{b \in \mathcal S}}\Big(P(b)-\mu_p(\mathcal S)\Big)^2}{\mathlarger{\sum_{b \in \mathcal S}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal S}}|\mathcal R_b|}}
 \end{equation}
 
-The metric for the internal movement is this pair of numbers, the mean and standard deviation of the swarm's internal \textit{cohesion/repulsion}. The pair $\mu_p(\mathcal{S})$, $\sigma_p(\mathcal{S})$ may be written informally as: 
+The metric for the internal movement is this pair of numbers, the mean and standard deviation of the swarm's internal \textit{cohesion/repulsion}. The pair $\mu_p(\mathcal S)$, $\sigma_p(\mathcal S)$ may be written informally as: 
 
 \begin{equation}
 \label{eq:SwarmPotentialMagnitude}
-\psi_p(\mathcal{S}) = \mu_p(\mathcal{S})\pm \sigma_p(\mathcal{S})
+\psi_p(\mathcal S) = \mu_p(\mathcal S)\pm \sigma_p(\mathcal S)
 \end{equation}
 
 \section{Effect of concave reduction on swarm structure}
