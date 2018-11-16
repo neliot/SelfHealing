@@ -143,10 +143,11 @@ the set of agents that are within an agent's $b$ repulsion range.
 \frac{1}{\card{\mathcal R_b}}
 \left(
 	\mathlarger{\mathlarger{\sum_{\vec b' \in \mathcal R_b}}}
-	{\left( 1-\frac{r_{b'}}{R_b} \right)}
+	{\left( 1-\frac{\magn{\vec b'}}{R_b} \right)}
 	\vec b'
 \right)
 \end{equation}
+\fbox{Shouldn't this be $-\vec b'$?}
 
 \textit{Cohesion} $\vec v_{c}(b)$, defined in Equation~\ref{eq:FlyToCentre1},
 calculates the movement that makes an agent move towards other agents to form
