@@ -35,6 +35,11 @@ Samitha~W Ekanayake and Pubudu~N Pathirana.
 \newblock {\em International Journal of Advanced Robotic Systems},
   7(3):173--190, 2010.
 
+\bibitem{EKB:18}
+N.~Eliot, D.~Kendall, and M.~Brockway.
+\newblock A new metric for the analysis of swarms using potential fields.
+\newblock {\em IEEE Access}, pages 1--1, 2018.
+
 \bibitem{GP:04a}
 V.~Gazi and K.~M. Passino.
 \newblock Stability analysis of social foraging swarms.
@@ -153,6 +158,13 @@ David Smalley.
   \url{http://www.onr.navy.mil/Media-Center/Press-Releases/2015/LOCUST-low-cost-UAV-swarm-ONR.aspx},
   April 2015.
 \newblock [Online; accessed 15-Apr-2016].
+
+\bibitem{TIBW:16}
+J.~Timmis, A.R. Ismail, J.D. Bjerknes, and A.F.T. Winfield.
+\newblock An immune-inspired swarm aggregation algorithm for self-healing swarm
+  robotic systems.
+\newblock {\em Biosystems}, 146:60 -- 76, 2016.
+\newblock Information Processing in Cells and Tissues.
 
 \bibitem{VH:09}
 E.~Vassev and M.~Hinchey.
