@@ -8,4 +8,4 @@ paper.pdf
 *.fdb_latexmk
 *.fls
 *.log
-*.pdf
+#*.pdf
