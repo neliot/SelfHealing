@@ -1,15 +1,27 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["bibtex paper"] 1544103095 "paper.aux" "paper.bbl" "paper" 1544103127
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "paper.aux" 1544103127 14475 b01989d23f4ea52b2aeec4654fdee98b ""
+=======
+["bibtex paper"] 1544101606 "paper.aux" "paper.bbl" "paper" 1544101607
+  "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "paper.aux" 1544101607 14341 3660aeb0302b2425a64b97cd7eb96848 ""
+>>>>>>> 98706cbeb16066e58d6b1937f6a9b27c755368c3
   "paper.bcf" 0 -1 0 ""
-  "thesis.bib" 1542024388 172817 f8436a52d9ba239ccb0d19204f9ffa6c ""
+  "thesis.bib" 1542970980 172817 f8436a52d9ba239ccb0d19204f9ffa6c ""
   (generated)
   "paper.blg"
+<<<<<<< HEAD
   "paper.bbl"
 ["pdflatex"] 1544103127 "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" "paper.pdf" "paper" 1544103127
   "/etc/texmf/web2c/texmf.cnf" 1521458482 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/SelfHealing/paper.tex" 1544103127 87720 fc97cc3e203e2c2dc41c6b751ce6515a ""
+=======
+["pdflatex"] 1544101606 "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/ALUN/SelfHealing/paper.tex" "paper.pdf" "paper" 1544101607
+  "/etc/texmf/web2c/texmf.cnf" 1521458482 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/neil/neil@eliot.org.uk/NE-PhD/Writeup/Journal/IEEE/ALUN/SelfHealing/paper.tex" 1544101605 87594 008ba6142253d372a0e595c7d86ef03e ""
+>>>>>>> 98706cbeb16066e58d6b1937f6a9b27c755368c3
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1480098688 4484 b828043cbd581d289d955903c1339981 ""
@@ -146,13 +158,17 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1521458878 73733 f9b5667691d3ab97dd84123edfa5bdb6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1539784574 812750 61b64afbb4ee143a829d8294409fce49 ""
+<<<<<<< HEAD
   "IEEEtran.cls" 1489848912 201378 42ce70e421cb96e8f31b04f83c0d6d0e ""
+=======
+  "IEEEtran.cls" 1542970980 201378 42ce70e421cb96e8f31b04f83c0d6d0e ""
+>>>>>>> 98706cbeb16066e58d6b1937f6a9b27c755368c3
   "Images/brock.pdf" 1519301226 167845 87dfb3b7d2be0c4e5e51bc5f500c86d2 ""
   "Images/eliot.pdf" 1519301226 9324 a224462daecf690d1842d74712292003 ""
   "Images/kenda.pdf" 1519301225 10091 912fcf733a2542d351e31a947dc9e4a4 ""
   "Images/moon.pdf" 1538999530 28361 3b10e11e1910579b08b196b9f2c20d4a ""
-  "Logo.png" 1519301226 9705 6ba9f1039498f006286d6457f067dc20 ""
-  "bullet.png" 1519301226 430 e52d8fe748259de33fa611fdd6a099c1 ""
+  "Logo.png" 1542970980 9705 6ba9f1039498f006286d6457f067dc20 ""
+  "bullet.png" 1542970980 430 e52d8fe748259de33fa611fdd6a099c1 ""
   "figures/Baseline4560End.pdf" 1531642687 155662 a67d3ae023665211f9f8c177cbbf4769 ""
   "figures/Baseline8060End.pdf" 1531642687 203706 d2deded84799985a6b7735a1605b612e ""
   "figures/BaselineConcaveEffectDist.pdf" 1531642688 662198 0fd9383258125887b70fcabd2d6a5f0e ""
@@ -211,6 +227,7 @@
   "figures/SwarmCoverage4560-2.pdf" 1531650305 3926689 b59418ae247491e5a7b887796edc5781 ""
   "figures/SwarmStableShape1.pdf" 1531642730 46036 ec1cb4f730572587ab0be4377bd80475 ""
   "figures/VoidConcave1.pdf" 1531642731 13541 125c5a212ecd266f71faaf51326a7c93 ""
+<<<<<<< HEAD
   "figures/neighbours.pdf" 1544101364 26550 8fe7e919c0bbb5e2cdccf77ebc7fe034 ""
   "figures/obstacles.pdf" 1544101364 35008 f6bb3b012df3f187d12c8c08964b01b6 ""
   "figures/stableswarm.pdf" 1544101364 35729 5ddf16173258961b3ad16f885e314d36 ""
@@ -219,6 +236,13 @@
   "paper.aux" 1544103127 14475 b01989d23f4ea52b2aeec4654fdee98b ""
   "paper.bbl" 1544103095 7427 269d4d1e74539929627f38877b4f50d7 "bibtex paper"
   "paper.tex" 1544103127 87720 fc97cc3e203e2c2dc41c6b751ce6515a ""
+=======
+  "ieeeaccess.cls" 1542970980 43839 3abf959902254cbaf82e6ce14f087bf5 ""
+  "notaglineLogo.png" 1542970980 3150 e273b7aed356b5f76c6d0b072166d68c ""
+  "paper.aux" 1544101607 14341 3660aeb0302b2425a64b97cd7eb96848 ""
+  "paper.bbl" 1544101606 7427 269d4d1e74539929627f38877b4f50d7 "bibtex paper"
+  "paper.tex" 1544101605 87594 008ba6142253d372a0e595c7d86ef03e ""
+>>>>>>> 98706cbeb16066e58d6b1937f6a9b27c755368c3
   (generated)
   "paper.pdf"
   "paper.log"
