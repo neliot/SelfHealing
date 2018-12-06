@@ -45,7 +45,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 % can use linebreaks \\ within to get better formatting as desired
 \title{Concave reduction in Self-Healing Swarms}
 \author{\uppercase{Neil Eliot}\authorrefmark{1},
-\uppercase{David Kendall\authorrefmark{1}, Michael Brockway\authorrefmark{1}, Alun Moon\authorrefmark{1}}}
+\uppercase{David Kendall\authorrefmark{1}, Alun Moon\authorrefmark{1}, Michael Brockway\authorrefmark{1}}}
 \address[1]{Northumbria University, Department of Computing and Information Sciences, Newcastle upon Tyne, NE1 8ST}
 \markboth
 {Eliot \headeretal: Concave reduction in Self-Healing Swarms}
@@ -76,12 +76,12 @@ Swarming, Swarm Dynamics, Mobile Sensor Networks, Algorithms.
 Currently, much swarm research uses field effects as the method of modelling inter-agent interactions~\cite{BAF:06, BAFVM:06, BM:09, APZDAMC:09, GP:02, GP:04, GP:04a, GP:05, GP:11, MYP:09}. The models usually use two \textit{field effects} to implement the swarming characteristic. These effects are \textit{cohesion}, to draw agents closer, and \textit{repulsion} to prevent agents colliding. \textit{Field effects} have ranges around an agent to determine the effect other agents have upon its movement~(Fig.~\ref{methods:FieldEffects}) the effects are derived from these ranges as vectors. All ranges must fall within the sensing capabilities of the agent ($S_b$). It is usual for the cohesion field to have a radius ($C_b$) which is larger than the repulsion radius ($R_b$). When an agent ($b'$) moves into the \textit{neighbour field} of an agent ($b$) then $b'$ is said to be a neighbour of $b$ and is subject to cohesion. When an agent $b'$ moves into the repulsion field of $b$ then $b$ also subjected to repulsion. When the repulsion magnitude exceeds the cohesion magnitude the agent will have a tendency to move away from $b'$, i.e. repelled. When an agent $b$ moves too close to an obstacle, i.e. within the obstacle repulsion range $O_b$, it has its repulsion vector applied and the agent will tend towards moving away from the obstacle.
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/FieldEffects}
 {Agent field effects.\label{methods:FieldEffects}}
-\begin{figure}
+%\begin{figure}
 %\begin{tikzpicture}
 %	\node at (0,0) [circle,fill=black!50]{};
 %\end{tikzpicture}
-	\includegraphics{stableswarm}
-\end{figure}
+%	\includegraphics{stableswarm}
+%\end{figure}
 When cohesion and repulsion (\textit{inter-agent vectors}) are the only field effects creating a swarming effect the number of stable structures that can develop is limited. These structures, which are constructed from triangles, are either straight edges or partial lattices. Partial lattices can create concave anomalies (\textit{dents}) and convex anomalies (\textit{peaks}) in a perimeter~(Fig.~\ref{concave:SwarmStableShape1}). An anomaly is any construct within the swarm that is not a hexagonal lattice or an agent distribution that causes the swarm to deviate from having only convex or flat edges. The advantage of creating a well structured swarm can be realised in two classes of swarm application; \textit{Reconnaissance}, by creating a more uniform structure that eliminates blank spots, and \textit{Object Containment}, when using a swarm to surround a target.  
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/SwarmStableShape1}
@@ -1085,13 +1085,13 @@ has been a Senior Lecturer at Northumbria University since 1998.  Neil was award
 has been a Senior Lecturer in Computing at Northumbria University since 1989, except for a brief period as a Lecturer in Computer Science at Durham University (2001-02). Previously, he was a Research Associate at Newcastle University (1987-89), following experience as a Senior Software Engineer in industry (1983-86). He has an M.A. degree in Literae Humaniores from Oxford University, where he studied at New College. He received M.Sc. and Ph.D. degrees in Computing Science from Newcastle University. His research interests are in the area of formal modelling and analysis of embedded systems. 
 \end{IEEEbiography}
 
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/moon.pdf}}]{Alun Moon} has been a Senior Lecturer in Computing at Northumbria Universiy since 2001. He has a PhD from Newcastle University in Electronic Engineering, a MSc from Hull University in Mechatronics, a PgDip in Astronomical Technology from Edinburgh University, and a BEng in Materials Science from Liverpool University.
+	Prior experience as a research associate at Newcastle University included, embedded systems, engineering system modelling, and engineering visualisation.
+\end{IEEEbiography}  
+	
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/brock.pdf}}]{Michael Brockway}
 has been a Senior Lecturer at Northumbria University for 17 years. His first degree is in pure and applied mathematics (1973-4), his Masters in mathematics (mathematical logic, category theory, 1975), and he has a PhD in computer science (formal methods for distributed embedded systems, 2010) from Northumbria University. Before that Michael worked in teaching and the computing industry.
 \end{IEEEbiography}
-
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Images/moon.pdf}}]{Alun Moon} has been a Senior Lecturer in Computing at Northumbria Universiy since 2001. He has a PhD from Newcastle University in Electronic Engineering, a MSc from Hull University in Mechatronics, a PgDip in Astronomical Technology from Edinburgh University, and a BEng in Materials Science from Liverpool University.
-Prior experience as a research associate at Newcastle University included, embedded systems, engineering system modelling, and engineering visualisation.
-\end{IEEEbiography}  
   
 \EOD
 \end{document}
