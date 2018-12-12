@@ -26,8 +26,6 @@
 %\usepackage{color}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-%\let\latexvec=\vec
-%\let\vec=\latexvec
 \interdisplaylinepenalty=2500
 \newtheorem{definition}{Definition}
 \newtheorem{exampleb}{Example}
@@ -75,21 +73,8 @@ Swarming, Swarm Dynamics, Mobile Sensor Networks, Algorithms.
 \textit{Swarming} in the animal kingdom of ants, bees, fish and birds for instance has long been studied by scientists. From these studies mathematical models and algorithms have evolved. The models and algorithms have in turn captured the interest of computing scientists who are interested in applying them to large groups of autonomous mobile \textit{agents} (`robots'). The cooperative coordination of these agents can take many forms such as following a set path~\cite{HCS:09}, existing in a static space~\cite{EP:10, GP:02, GP:04} or foraging as a colony~\cite{HER:11, GK:07}. One of the attributes of swarms that has captured the interest of scientists is that the models and algorithms used to coordinate them are generally sets of simple rules. These simple rules cause the agents to appear to work cooperatively.
 Currently, much swarm research uses field effects as the method of modelling inter-agent interactions~\cite{BAF:06, BAFVM:06, BM:09, APZDAMC:09, GP:02, GP:04, GP:04a, GP:05, GP:11, MYP:09}. The models usually use two \textit{field effects} to implement the swarming characteristic. These effects are \textit{cohesion}, to draw agents closer, and \textit{repulsion} to prevent agents colliding. \textit{Field effects} have ranges around an agent to determine the effect other agents have upon its movement~(Fig.~\ref{methods:FieldEffects}) the effects are derived from these ranges as vectors. All ranges must fall within the sensing capabilities of the agent ($S_b$). It is usual for the cohesion field to have a radius ($C_b$) which is larger than the repulsion radius ($R_b$). When an agent ($b'$) moves into the \textit{neighbour field} of an agent ($b$) then $b'$ is said to be a neighbour of $b$ and is subject to cohesion. When an agent $b'$ moves into the repulsion field of $b$ then $b$ also subjected to repulsion. When the repulsion magnitude exceeds the cohesion magnitude the agent will have a tendency to move away from $b'$, i.e. repelled. When an agent $b$ moves too close to an obstacle, i.e. within the obstacle repulsion range $O_b$, it has its repulsion vector applied and the agent will tend towards moving away from the obstacle.
 
-\Figure[t!](topskip=0pt, botskip=0pt,
-midskip=0pt){figures/stableswarm}
-{Agent field effects.\label{methods:FieldEffects}}
-%\begin{figure}
-%\begin{tikzpicture}
-%	\node at (0,0) [circle,fill=black!50]{};
-%\end{tikzpicture}
-<<<<<<< HEAD
-%	\includegraphics{stableswarm}
-%\end{figure}
-=======
-%	\includegraphics{figures/stableswarm}
-%\end{figure}
+\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt){figures/stableswarm} {Agent field effects.\label{methods:FieldEffects}}
 
->>>>>>> 59f32b8163a4fb7c6f199e3ca3439c0188c5d03a
 When cohesion and repulsion (\textit{inter-agent vectors}) are the only field effects creating a swarming effect the number of stable structures that can develop is limited. These structures, which are constructed from triangles, are either straight edges or partial lattices. Partial lattices can create concave anomalies (\textit{dents}) and convex anomalies (\textit{peaks}) in a perimeter~(Fig.~\ref{concave:SwarmStableShape1}). An anomaly is any construct within the swarm that is not a hexagonal lattice or an agent distribution that causes the swarm to deviate from having only convex or flat edges. The advantage of creating a well structured swarm can be realised in two classes of swarm application; \textit{Reconnaissance}, by creating a more uniform structure that eliminates blank spots, and \textit{Object Containment}, when using a swarm to surround a target.  
 
 \Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt)[width=7.5cm]{figures/SwarmStableShape1}
@@ -133,52 +118,51 @@ neighbour $b'$ with respect to the sensor reference frame of agent $b$.
 Alternative notations are given in equation \ref{notation}
 \begin{equation}
 	\mathcal N_b = \{(r,\beta) \ldots \} = \{ (r_{b'}, \beta_{b'}) \ldots \} = \{
-	\vec{b'} \ldots \}
+	b' \ldots \}
 	\label{notation}
 \end{equation}
 
 The model use is the same as that defined by Eliot et. al. in their paper that introduces a new magnitude based metric~\cite{EKB:18}. 
 Equation~\ref{eq:BotPhysics1} defines a weighted model that includes cohesion,
-repulsion, direction and obstacle avoidance ($\vec v_c(b), \vec v_r(b),
-\vec v_d(b), \vec v_o(b)$). 
+repulsion, direction and obstacle avoidance ($v_c(b), v_r(b),
+v_d(b), v_o(b)$). 
 The weightings $k_c, k_r, k_d, k_o$ allow each component to be scaled to tailor the swarming effect. 
 
 \begin{equation}\label{eq:BotPhysics1}
-  \vec v(b) = k_c\vec v_c(b) + k_r\vec v_r(b) + k_d\vec v_d(b) + k_o\vec v_o(b)
+  v(b) = k_cv_c(b) + k_rv_r(b) + k_dv_d(b) + k_ov_o(b)
 \end{equation}
 
-\textit{Repulsion} $\vec v_r(b)$, defined in Equation~\ref{eq:Repulsion1}, is the
+\textit{Repulsion} $v_r(b)$, defined in Equation~\ref{eq:Repulsion1}, is the
 directional movement required to prevent agents colliding. $\mathcal R_b$ is
 the set of agents that are within an agent's $b$ repulsion range.
 
 \begin{equation}\label{eq:Repulsion1}
-\vec v_r(b) = 
+v_r(b) = 
 \frac{1}{\card{\mathcal R_b}}
 \left(
-	\mathlarger{\mathlarger{\sum_{\vec b' \in \mathcal R_b}}}
-	{\left( 1-\frac{\magn{\vec b'}}{R_b} \right)}
-	\vec b'
+	\mathlarger{\mathlarger{\sum_{b' \in \mathcal R_b}}}
+	{\left( 1-\frac{\magn{b'}}{R_b} \right)}
+	b'
 \right)
 \end{equation}
-\fbox{Shouldn't this be $-\vec b'$?}
 
-\textit{Cohesion} $\vec v_{c}(b)$, defined in Equation~\ref{eq:FlyToCentre1},
+\textit{Cohesion} $v_{c}(b)$, defined in Equation~\ref{eq:FlyToCentre1},
 calculates the movement that makes an agent move towards other agents to form
 a cohesive structure. $\mathcal C_b$ is the set of agents that are within an agent's ($b$) cohesion range.
 
 \begin{equation}\label{eq:FlyToCentre1}
-	\vec v_c(b) =
-	\frac{1}{\card{\mathcal C_b}}\left({\mathlarger{\sum_{\vec b' \in
-	\mathcal C_b}}{\vec b'}}\right)
+	v_c(b) =
+	\frac{-1}{\card{\mathcal C_b}}\left({\mathlarger{\sum_{b' \in
+	\mathcal C_b}}{b'}}\right)
 \end{equation}
 
-\textit{Direction} $\vec v_d(b)$, defined in Equation~\ref{eq:Direction},
+\textit{Direction} $v_d(b)$, defined in Equation~\ref{eq:Direction},
 generates a directional vector for an agent to move towards a destination
-defined as $\vec d$.
+defined as $d$.
 
 \begin{equation}
 \label{eq:Direction}
-\vec v_d(b) = \vec d
+v_d(b) = d
 \end{equation}
 
 Obstacles, like agents, can be represented as a point. As an agent moves it may enter an obstacle's \textit{repulsion field}. If this occurs then the agent should move away. In this paper agents are modelled with a fixed \textit{obstacle repulsion field} ($O_b$). If an agent enters the field a vector of magnitude $O_b$ is applied. If more than one obstacle is within the field, the applied repulsion vector is the sum of the repulsion vectors~(Figure~\ref{fig:Obstacle1}). The resultant vector is normalised and scaled such that the magnitude is the same as the field distance~$O_b$ as shown in Equation~\ref{eq:Obstacle2}.
@@ -190,35 +174,30 @@ Obstacles, like agents, can be represented as a point. As an agent moves it may 
 \caption{Obstacle repulsion \label{fig:Obstacle1}}
 \end{figure}
 
-Equation~\ref{eq:Obstacle2} shows the repulsion vector $\vec v_o(b)$ for an agent.
+Equation~\ref{eq:Obstacle2} shows the repulsion vector $v_o(b)$ for an agent.
 $\mathcal O_b$ is the set of obstacles that are within the range of agent $b$.
 The obstacles are identified using the distance between an agent and an
 obstacle $o_r$ and comparing the result to the fixed obstacle repulsion
-field~$O_b$, so $\forall \vec o \in \mathcal O_b : \magn{\vec o}\leq O_b$.
+field~$O_b$, so $\forall o \in \mathcal O_b : \magn{o}\leq O_b$.
 The applied repulsion is calculated by scaling the normalised sum of the
 normalised vectors $\hat o$ by $O_b$.  Note that $\string^$ is the equivalent
-of $\hat v = \frac{\vec v}{\magn{\vec v}}$ the normalised vector.
-
-% \begin{equation}\label{eq:Obstacle2}
-% v_o(b) =
-%  O_b\Bigg(\mathlarger{\mathlarger{\mathlarger{\sum}}}_{o \in O~:~\magn{ob} <= O_b}(ob)\string^\Bigg)\string^
-% \end{equation}
+of $\hat v = \frac{v}{\magn{v}}$ the normalised vector.
 
 \begin{eqnarray}\label{eq:Obstacle2}
-  \vec v_o(b) & = & O_b \hat q_o \\
-	\mathrm{where~}  \vec q_o & = & \sum_{\vec o\in \mathcal O_b } \hat o
+  v_o(b) & = & O_b \hat q_o \\
+	\mathrm{where~}  q_o & = & \sum_{o\in \mathcal O_b } \hat o
 	\nonumber \\
-	\vec v_o(b) & = & O_b \widehat{\sum_{\vec o\in \mathcal O_b }} \hat o \nonumber
+	v_o(b) & = & O_b \left(\sum_{o\in \mathcal O_b }\hat o\right)^{\!\!\wedge} \nonumber
 \end{eqnarray}
 
 An agent's \textit{movement vector} is the sum of all the component vectors as
 shown in Equation~\ref{eq:BotPhysics1}. This is a similar technique as used by
 Hashimoto et. al.~\cite{HAY:08}. For a vector to be used for movement it be
 normalised before the agent's speed ($s_b$)  can be applied. The resultant
-\textit{movement vector} $\vec m_b$, as defined in Equation~\ref{eq:AgentMovement}, is calculated using unit time, speed and the normalised \textit{movement vector}.
+\textit{movement vector} $m_b$, as defined in Equation~\ref{eq:AgentMovement}, is calculated using unit time, speed and the normalised \textit{movement vector}.
 
 \begin{equation}\label{eq:AgentMovement}
-\vec m_b = s_b  \hat v(b)  t
+m_b = s_b  \hat v(b)  t
 \end{equation}
 
 Applying the calculations described in this section to all agents in turn creates the swarming effect. 
@@ -247,7 +226,7 @@ increasing
 \begin{equation}
 	\mathcal P_a = \langle (r_0,\beta_0),\ldots,(r_n,\beta_n) \rangle
 \end{equation}
-such that $\forall i \in \{0\ldots n-1\}: \beta_i<\beta_{i+1}$
+such that $\beta_0 < \beta_1 < \ldots < \beta_n$
 
 This set of agents forms the perimeter of an enclosing polygon of agent $b$. 
 Each consecutive pair of agents (in the sequence) defines an edge, which has
@@ -289,7 +268,7 @@ The agent $b$ is on the perimeter of the swarm if the predicate in equation
 \ref{perimeter-predicate} is true.
 \begin{equation}
 	\exists d_i\in\mathcal{P}_e:d_i>C_b \vee
-	\exists\theta\-i\in\mathcal{P}_e:\theta_i\geq\pi
+	\exists\theta_i\in\mathcal{P}_e:\theta_i\geq\pi
 	\label{perimeter-predicate}
 \end{equation}
 An agent is at the apex of a concave region of the perimeter if
@@ -313,7 +292,9 @@ The predicates are independent of the orientation of the sensing agent.
 In a static swarm, where there are no \textit{destination vectors}, concave reduction will result in a restructuring motion that creates a more `rounded' swarm as shown in Fig.~\ref{fig:OuterPerimeter3}. Concave reduction also creates a surround effect as it removes voids from a swarm. This is discussed in more detail in section~\ref{voids:ObjectSurrounding}. When concave reduction is applied to a mobile swarm the void closing effect can be used to improve reconnaissance coverage as the swarm passes obstacles. This is discussed in section~\ref{concave:mobileSwarm1}.
 Although these effects improve the potential applications of swarms there are negative effects that can be impact introduced. In some circumstances concave reduction can create an artificial \textit{destination vector} in that the swarm will appear to have a directional movement. 
 
-To implement void reduction full perimeter detection is required. The identification of candidate agents is incorporated into the perimeter detection algorithm as shown in Fig.~\ref{algo:checkVisibility2}. The addition is to set a status flag to highlight when a gap is detected and to record the agent's that create the gap. Concave reduction does not require the perimeter type to be identified and no communications infrastructure is required. Many coordination algorithms require inter-agent communications~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The disadvantage of requiring a communications infrastructure is that the size of a swarm is limited through message propagation.
+To implement void reduction full perimeter detection is required. The
+identification of candidate agents is incorporated into the perimeter
+detection algorithm as shown in equation~\ref{concave-predicate}. The addition is to set a status flag to highlight when a gap is detected and to record the agent's that create the gap. Concave reduction does not require the perimeter type to be identified and no communications infrastructure is required. Many coordination algorithms require inter-agent communications~\cite{MD:09,NIM:09,SOM:12,ZFG:13,JG:13}. The disadvantage of requiring a communications infrastructure is that the size of a swarm is limited through message propagation.
 
 \subsection{Perimeter Exceptions}\label{concave:Exceptions}
 When a swarm is forming or disrupted through either agent failures, catastrophic events or interactions with obstacles, sections of the swarm may become isolated. When this occurs the sections can be considered to be separate sub-swarms. It is also possible for sections of the swarm to remain connected through tenuous links of either 1 or 2 agents as shown in Figs.~\ref{fig:Connector1} and \ref{fig:Connector2}. In the case of a link connection~(Fig.~\ref{fig:Connector1}) concave reduction can be applied as normal. In the case of a `bridge' link (Fig.~\ref{fig:Connector2}) there is an issue in that there is more than one concave gap. As there is no communications infrastructure in swarm model. One option is allow the swarming algorithm to be applied; this is a reasonable approach as the overall structure of the swarm is unknown therefore the movement cannot be optimised. An alternative approach would be to select either the largest or the smallest gap; again as the structure of the swarm is unknown this may not be beneficial. A third option would be to select one of the gaps (randomly, first seen, last seen) and implement the concave reduction at that point. The approach taken in this paper is to select the first gap that is detected. Selecting the first gap reduces the computational overhead of the algorithm.
@@ -429,34 +410,29 @@ Equation~\ref{eq:ConcaveVoidPhysics3} calculates the centroid of the gap agents.
 %S_b \buildrel \Delta \over = \{(b',\angle(b'~b~b^0)) : b' \in nbr(b)\}
 %\end{equation}
 
-The mid-point $\vec D(b)$ is then calculated as below in Equation~\ref{eq:ConcaveVoidPhysics3}.
+The mid-point $D(b)$ is then calculated as below in Equation~\ref{eq:ConcaveVoidPhysics3}.
 
 \begin{equation}
 \label{eq:ConcaveVoidPhysics3}
-\vec D(b) = \frac{1}{2}\sum_{\vec b' \in \mathcal G_b}\vec b' 
+D(b) = \frac{1}{2}\sum_{b' \in \mathcal G_b}b' 
 \end{equation}
 
-$\vec D(b)$~is the \textit{concave reduction} vector is derived from the identified
+$D(b)$~is the \textit{concave reduction} vector is derived from the identified
 mid-point of the neighbour gap~($\mathcal{G}_b$) to the parent agent~($b$) as
 shown in Equation~\ref{eq:ConcaveVoidPhysics3}.
-
-%%\begin{equation}\label{eq:ConcaveVoidPhysics3a}
-%%D(b) = bD_{pos}(b) 
-%%\end{equation}
-%%\fbox{\textit{do we mean product of $b$ and $D_{pos}$?}}
 
 The final vector needs to accommodate an agent's surroundings. Due to agent
 proximity it can be assumed that there are no agents in the path between the
 agent and the gap, however, there may be an obstacle in the agent's path. The
 \textit{concave-reduction-vector} must include an obstacle avoidance
-component~$\vec v_o(b)$.  As with all the previous vector based calculations a 
+component~$v_o(b)$.  As with all the previous vector based calculations a 
 weighting is applied $k_{cr}$ to allow the model to vary the intensity of the effects.  
-The resultant vector $\vec V(b)$ as shown
+The resultant vector $V(b)$ as shown
 in~Equation~\ref{eq:ConcaveVoidPhysics4}  is normalised to produce the \textit{unit-movement-vector}
 $\hat V(b)$.
 
 \begin{equation}\label{eq:ConcaveVoidPhysics4}
-\vec V(b) = (k_{cr}\vec D(b) + k_o\vec v_o(b))
+V(b) = (k_{cr}D(b) + k_ov_o(b))
 \end{equation}
 
 \section{Swarm Metrics}
@@ -471,7 +447,7 @@ agent to its neighbours $\mathcal{N}_b$.
 \label{eq:SwarmStabilityDistance1}
 \mu_d(b) =
 \frac{1}{\mathlarger{\card{\mathcal{N}_b}}}\left({\mathlarger{\sum_{b' \in
-\mathcal{N}_b}}\magn{\vec b'}}\right)
+\mathcal{N}_b}}\magn{b'}}\right)
 \end{equation}
 
 The mean distance for a swarm is calculated
@@ -484,10 +460,9 @@ are included for the swarm ($\mathcal S$).
 \label{eq:SwarmStabilityDistance2}
 \mu_d(\mathcal S) = \frac{\mathlarger{\sum_{b \in
 \mathcal S}}~\mathlarger{\sum_{b' \in
-\mathcal{N}_b}}\magn{\vec b'}}{\mathlarger{\sum_{b \in
+\mathcal{N}_b}}\magn{b'}}{\mathlarger{\sum_{b \in
 \mathcal S}\card{\mathcal{N}_b}}}
 \end{equation}
-\fbox{is this an over estimate -- distances are counted twice}
 
 %\section{Standard deviation in distance metric}\label{Section:VarianceInDistance}
 The mean distance provides a indication of the large scale structure of the swarm. However it is not sufficient to give an indication of the internal distribution of the agents. The standard deviation clarifies the distribution within the swarm as shown in~Equation~\ref{eq:SwarmStabilityDistance3}. 
@@ -497,7 +472,7 @@ The mean distance provides a indication of the large scale structure of the swar
 \begin{equation}
 \label{eq:SwarmStabilityDistance3}
 \sigma_d(\mathcal S) = \sqrt{\frac{\mathlarger{\sum_{b \in
-\mathcal S}}~\mathlarger{\sum_{b' \in \mathcal{N}_b}}\Big(\magn{\vec b'} -
+\mathcal S}}~\mathlarger{\sum_{b' \in \mathcal{N}_b}}\Big(\magn{b'} -
 \mu_d(\mathcal S)\Big)^2}{\mathlarger{\sum_{b \in
 \mathcal S}\card{\mathcal{N}_b}}}}
 \end{equation}
@@ -516,12 +491,12 @@ The metric used to analyse the swarm changes are defined by Eliot et. al. in~\ci
 \begin{equation}
 \label{eq:CohesionRepulsion}
 P(b) = \left\{\begin{array}{lll}
-               |\vec v(b)|& \mathrm{if} & |k_c \vec v_c(b)| > |k_r \vec v_r(b)|\\
-              -|\vec v(b)|& \mathrm{otherwise}
+               |v(b)|& \mathrm{if} & |k_c v_c(b)| > |k_r v_r(b)|\\
+              -|v(b)|& \mathrm{otherwise}
               \end{array}\right.
 \end{equation}
 
-Although it is possible for $\vec v(b)$ to be null there could still be variation in the constituent components. The variation calculation (standard deviation) as shown in Equation~\ref{eq:SwarmStabilityQuotientT}. 
+Although it is possible for $v(b)$ to be null there could still be variation in the constituent components. The variation calculation (standard deviation) as shown in Equation~\ref{eq:SwarmStabilityQuotientT}. 
 
 The mean cohesion/repulsion scalar for the swarm is now given by~(\ref{eq:SwarmStabilityMetricT3}).  
 
@@ -530,7 +505,7 @@ The mean cohesion/repulsion scalar for the swarm is now given by~(\ref{eq:SwarmS
 \mu_p(\mathcal S) = \frac{\mathlarger{\sum_{b \in \mathcal S} P(b)}}{\mathlarger{\sum_{b \in \mathcal S}}|\mathcal{N}_b| + \mathlarger{\sum_{b \in \mathcal S}}|\mathcal R_b|}
 \end{equation}
 Where $\mathcal R_b$ is the set of neighbours subject to repulsion, 
-where $\mathcal R_b \subseteq \mathcal N_b$ and $\vec b'\in\mathcal R_b:\magn{\vec b'}\leq R_b$
+where $\mathcal R_b \subseteq \mathcal N_b$ and $b'\in\mathcal R_b:\magn{b'}\leq R_b$
 The standard deviation associated with this mean is calculated as Equation~\ref{eq:SwarmStabilityQuotientT}.
 
 \begin{equation}
