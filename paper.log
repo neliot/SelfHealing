@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  6 DEC 2018 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.17)  12 DEC 2018 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,32 +500,32 @@ Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
 (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 41.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 
 LaTeX Font Warning: Font shape `T1/ptm/n/n' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 41.
+(Font)              using `T1/ptm/m/n' instead on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -572,66 +572,66 @@ e
 <bullet.png, id=3, 12.045pt x 35.38219pt>
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 55.
+Package pdftex.def Info: bullet.png  used on input line 53.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 55.
+Package xcolor Warning: Incompatible color definition on input line 53.
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 55.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 
 LaTeX Font Warning: Font shape `T1/phv/n/n' undefined
-(Font)              using `T1/phv/m/n' instead on input line 55.
+(Font)              using `T1/phv/m/n' instead on input line 53.
 
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 67.
+Package pdftex.def Info: bullet.png  used on input line 65.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 
-Package xcolor Warning: Incompatible color definition on input line 67.
+Package xcolor Warning: Incompatible color definition on input line 65.
 
 
-Package xcolor Warning: Incompatible color definition on input line 72.
+Package xcolor Warning: Incompatible color definition on input line 70.
 
-LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 72.
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 72.
+LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 70.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.3> not available
-(Font)              size <5> substituted on input line 72.
+(Font)              size <5> substituted on input line 70.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.3> not available
-(Font)              size <5> substituted on input line 72.
+(Font)              size <5> substituted on input line 70.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.3> not available
-(Font)              size <5> substituted on input line 72.
+(Font)              size <5> substituted on input line 70.
 
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 72--72
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 70--70
 []  
  []
 
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 72--72
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 70--70
 []  
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 72.
 
 
 Underfull \vbox (badness 3758) has occurred while \output is active []
@@ -639,46 +639,41 @@ Underfull \vbox (badness 3758) has occurred while \output is active []
 <figures/stableswarm.pdf, id=4, 210.90294pt x 171.11629pt>
 File: figures/stableswarm.pdf Graphic file (type pdf)
 <use figures/stableswarm.pdf>
-Package pdftex.def Info: figures/stableswarm.pdf  used on input line 80.
+Package pdftex.def Info: figures/stableswarm.pdf  used on input line 76.
 (pdftex.def)             Requested size: 210.9024pt x 171.11586pt.
 File: figures/stableswarm.pdf Graphic file (type pdf)
 <use figures/stableswarm.pdf>
-Package pdftex.def Info: figures/stableswarm.pdf  used on input line 80.
+Package pdftex.def Info: figures/stableswarm.pdf  used on input line 76.
 (pdftex.def)             Requested size: 210.9024pt x 171.11586pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 80.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Overfull \hbox (6.15567pt too wide) in paragraph at lines 92--94
-[]\T1/ptm/n/n/10 >>>>>>> 59f32b8163a4fb7c6f199e3ca3439c0188c5d03a When
- []
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 <figures/SwarmStableShape1.pdf, id=5, 544.0325pt x 360.34625pt>
 File: figures/SwarmStableShape1.pdf Graphic file (type pdf)
 <use figures/SwarmStableShape1.pdf>
-Package pdftex.def Info: figures/SwarmStableShape1.pdf  used on input line 96.
+Package pdftex.def Info: figures/SwarmStableShape1.pdf  used on input line 81.
 (pdftex.def)             Requested size: 213.39566pt x 141.34824pt.
 File: figures/SwarmStableShape1.pdf Graphic file (type pdf)
 <use figures/SwarmStableShape1.pdf>
-Package pdftex.def Info: figures/SwarmStableShape1.pdf  used on input line 96.
+Package pdftex.def Info: figures/SwarmStableShape1.pdf  used on input line 81.
 (pdftex.def)             Requested size: 213.39566pt x 141.34824pt.
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 81.
 
 
-Package xcolor Warning: Incompatible color definition on input line 96.
+Package xcolor Warning: Incompatible color definition on input line 81.
 
 
-Package xcolor Warning: Incompatible color definition on input line 105.
+Package xcolor Warning: Incompatible color definition on input line 90.
 
 <Logo.png, id=6, 206.27063pt x 53.44969pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
-Package pdftex.def Info: Logo.png  used on input line 105.
+Package pdftex.def Info: Logo.png  used on input line 90.
 (pdftex.def)             Requested size: 91.32pt x 23.66309pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -705,35 +700,35 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  <./Logo.png> <./bullet.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 108.
+Package xcolor Warning: Incompatible color definition on input line 93.
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 109--111
+Underfull \hbox (badness 1460) in paragraph at lines 94--96
 \T1/ptm/n/n/10 Research has iden-ti-fied sev-eral ap-proaches to re-solv-ing
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 112.
+Package xcolor Warning: Incompatible color definition on input line 97.
 
 <figures/neighbours.pdf, id=19, 180.65593pt x 190.32304pt>
 File: figures/neighbours.pdf Graphic file (type pdf)
 <use figures/neighbours.pdf>
-Package pdftex.def Info: figures/neighbours.pdf  used on input line 115.
+Package pdftex.def Info: figures/neighbours.pdf  used on input line 100.
 (pdftex.def)             Requested size: 180.65549pt x 190.32256pt.
 File: figures/neighbours.pdf Graphic file (type pdf)
 <use figures/neighbours.pdf>
-Package pdftex.def Info: figures/neighbours.pdf  used on input line 115.
+Package pdftex.def Info: figures/neighbours.pdf  used on input line 100.
 (pdftex.def)             Requested size: 180.65549pt x 190.32256pt.
 
-Package xcolor Warning: Incompatible color definition on input line 115.
+Package xcolor Warning: Incompatible color definition on input line 100.
 
 
-Package xcolor Warning: Incompatible color definition on input line 115.
+Package xcolor Warning: Incompatible color definition on input line 100.
 
 <notaglineLogo.png, id=20, 169.38281pt x 42.91031pt>
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 134.
+Package pdftex.def Info: notaglineLogo.png  used on input line 123.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -752,40 +747,44 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [2 <./notaglineLogo.png> <./figures/stableswarm.pdf> <./figures/SwarmStableShap
 e1.pdf> <./figures/neighbours.pdf>]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 158.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 143.
 <figures/obstacles.pdf, id=66, 140.29614pt x 131.00545pt>
 File: figures/obstacles.pdf Graphic file (type pdf)
 <use figures/obstacles.pdf>
-Package pdftex.def Info: figures/obstacles.pdf  used on input line 188.
+Package pdftex.def Info: figures/obstacles.pdf  used on input line 172.
 (pdftex.def)             Requested size: 140.29579pt x 131.00511pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 190.
+Package xcolor Warning: Incompatible color definition on input line 174.
 
 
-Package xcolor Warning: Incompatible color definition on input line 190.
+Package xcolor Warning: Incompatible color definition on input line 174.
 
 
-Package xcolor Warning: Incompatible color definition on input line 226.
+Underfull \vbox (badness 2452) has occurred while \output is active []
+
+
+
+Package xcolor Warning: Incompatible color definition on input line 205.
 
 <figures/PerimeterBots1.pdf, id=67, 432.61626pt x 430.60875pt>
 File: figures/PerimeterBots1.pdf Graphic file (type pdf)
 <use figures/PerimeterBots1.pdf>
-Package pdftex.def Info: figures/PerimeterBots1.pdf  used on input line 237.
+Package pdftex.def Info: figures/PerimeterBots1.pdf  used on input line 216.
 (pdftex.def)             Requested size: 142.26378pt x 141.60196pt.
 File: figures/PerimeterBots1.pdf Graphic file (type pdf)
 <use figures/PerimeterBots1.pdf>
-Package pdftex.def Info: figures/PerimeterBots1.pdf  used on input line 237.
+Package pdftex.def Info: figures/PerimeterBots1.pdf  used on input line 216.
 (pdftex.def)             Requested size: 142.26378pt x 141.60196pt.
 
-Package xcolor Warning: Incompatible color definition on input line 237.
+Package xcolor Warning: Incompatible color definition on input line 216.
 
 
-Package xcolor Warning: Incompatible color definition on input line 237.
+Package xcolor Warning: Incompatible color definition on input line 216.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 237.
+Package pdftex.def Info: notaglineLogo.png  used on input line 216.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -803,34 +802,28 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3 <./figures/obstacles.pdf>]
-<figures/PerimeterBots2.pdf, id=92, 696.6025pt x 776.9025pt>
+<figures/PerimeterBots2.pdf, id=91, 696.6025pt x 776.9025pt>
 File: figures/PerimeterBots2.pdf Graphic file (type pdf)
 <use figures/PerimeterBots2.pdf>
-Package pdftex.def Info: figures/PerimeterBots2.pdf  used on input line 240.
+Package pdftex.def Info: figures/PerimeterBots2.pdf  used on input line 219.
 (pdftex.def)             Requested size: 227.62204pt x 253.85359pt.
 File: figures/PerimeterBots2.pdf Graphic file (type pdf)
 <use figures/PerimeterBots2.pdf>
-Package pdftex.def Info: figures/PerimeterBots2.pdf  used on input line 240.
+Package pdftex.def Info: figures/PerimeterBots2.pdf  used on input line 219.
 (pdftex.def)             Requested size: 227.62204pt x 253.85359pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 240.
+Package xcolor Warning: Incompatible color definition on input line 219.
 
 
-Package xcolor Warning: Incompatible color definition on input line 240.
+Package xcolor Warning: Incompatible color definition on input line 219.
 
 
-Package xcolor Warning: Incompatible color definition on input line 312.
-
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 316.
-
-LaTeX Warning: Reference `algo:checkVisibility2' on page 4 undefined on input l
-ine 316.
+Package xcolor Warning: Incompatible color definition on input line 291.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 317.
+Package pdftex.def Info: notaglineLogo.png  used on input line 298.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -849,96 +842,96 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [4 <./figures/PerimeterBots1.pdf> <./figures/PerimeterBots2.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 318.
+Package xcolor Warning: Incompatible color definition on input line 299.
 
-<figures/PerimeterBots4.pdf, id=110, 304.13625pt x 187.70125pt>
+<figures/PerimeterBots4.pdf, id=108, 304.13625pt x 187.70125pt>
 File: figures/PerimeterBots4.pdf Graphic file (type pdf)
 <use figures/PerimeterBots4.pdf>
-Package pdftex.def Info: figures/PerimeterBots4.pdf  used on input line 321.
+Package pdftex.def Info: figures/PerimeterBots4.pdf  used on input line 302.
 (pdftex.def)             Requested size: 113.81102pt x 70.23886pt.
 File: figures/PerimeterBots4.pdf Graphic file (type pdf)
 <use figures/PerimeterBots4.pdf>
-Package pdftex.def Info: figures/PerimeterBots4.pdf  used on input line 321.
+Package pdftex.def Info: figures/PerimeterBots4.pdf  used on input line 302.
 (pdftex.def)             Requested size: 113.81102pt x 70.23886pt.
 
-Package xcolor Warning: Incompatible color definition on input line 321.
+Package xcolor Warning: Incompatible color definition on input line 302.
 
 
-Package xcolor Warning: Incompatible color definition on input line 321.
+Package xcolor Warning: Incompatible color definition on input line 302.
 
-<figures/PerimeterBots5.pdf, id=111, 357.335pt x 187.70125pt>
+<figures/PerimeterBots5.pdf, id=109, 357.335pt x 187.70125pt>
 File: figures/PerimeterBots5.pdf Graphic file (type pdf)
 <use figures/PerimeterBots5.pdf>
-Package pdftex.def Info: figures/PerimeterBots5.pdf  used on input line 328.
+Package pdftex.def Info: figures/PerimeterBots5.pdf  used on input line 309.
 (pdftex.def)             Requested size: 142.26378pt x 74.72688pt.
 File: figures/PerimeterBots5.pdf Graphic file (type pdf)
 <use figures/PerimeterBots5.pdf>
-Package pdftex.def Info: figures/PerimeterBots5.pdf  used on input line 328.
+Package pdftex.def Info: figures/PerimeterBots5.pdf  used on input line 309.
 (pdftex.def)             Requested size: 142.26378pt x 74.72688pt.
 
-Package xcolor Warning: Incompatible color definition on input line 328.
+Package xcolor Warning: Incompatible color definition on input line 309.
 
 
-Package xcolor Warning: Incompatible color definition on input line 328.
+Package xcolor Warning: Incompatible color definition on input line 309.
 
 
-Package xcolor Warning: Incompatible color definition on input line 336.
+Package xcolor Warning: Incompatible color definition on input line 317.
 
-<figures/VoidConcave1.pdf, id=112, 261.97874pt x 230.8625pt>
+<figures/VoidConcave1.pdf, id=110, 261.97874pt x 230.8625pt>
 File: figures/VoidConcave1.pdf Graphic file (type pdf)
 <use figures/VoidConcave1.pdf>
-Package pdftex.def Info: figures/VoidConcave1.pdf  used on input line 345.
+Package pdftex.def Info: figures/VoidConcave1.pdf  used on input line 326.
 (pdftex.def)             Requested size: 142.26378pt x 125.36841pt.
 File: figures/VoidConcave1.pdf Graphic file (type pdf)
 <use figures/VoidConcave1.pdf>
-Package pdftex.def Info: figures/VoidConcave1.pdf  used on input line 345.
+Package pdftex.def Info: figures/VoidConcave1.pdf  used on input line 326.
 (pdftex.def)             Requested size: 142.26378pt x 125.36841pt.
 
-Package xcolor Warning: Incompatible color definition on input line 345.
+Package xcolor Warning: Incompatible color definition on input line 326.
 
 
-Package xcolor Warning: Incompatible color definition on input line 345.
+Package xcolor Warning: Incompatible color definition on input line 326.
 
-<figures/InterAgentEffect1.pdf, id=113, 305.14pt x 195.73125pt>
+<figures/InterAgentEffect1.pdf, id=111, 305.14pt x 195.73125pt>
 File: figures/InterAgentEffect1.pdf Graphic file (type pdf)
 <use figures/InterAgentEffect1.pdf>
-Package pdftex.def Info: figures/InterAgentEffect1.pdf  used on input line 350.
+Package pdftex.def Info: figures/InterAgentEffect1.pdf  used on input line 331.
 
 (pdftex.def)             Requested size: 142.26378pt x 91.256pt.
 File: figures/InterAgentEffect1.pdf Graphic file (type pdf)
 <use figures/InterAgentEffect1.pdf>
-Package pdftex.def Info: figures/InterAgentEffect1.pdf  used on input line 350.
+Package pdftex.def Info: figures/InterAgentEffect1.pdf  used on input line 331.
 
 (pdftex.def)             Requested size: 142.26378pt x 91.256pt.
 
-Package xcolor Warning: Incompatible color definition on input line 350.
+Package xcolor Warning: Incompatible color definition on input line 331.
 
 
-Package xcolor Warning: Incompatible color definition on input line 350.
+Package xcolor Warning: Incompatible color definition on input line 331.
 
-<figures/InterAgentEffect2.pdf, id=114, 305.14pt x 223.83624pt>
+<figures/InterAgentEffect2.pdf, id=112, 305.14pt x 223.83624pt>
 File: figures/InterAgentEffect2.pdf Graphic file (type pdf)
 <use figures/InterAgentEffect2.pdf>
-Package pdftex.def Info: figures/InterAgentEffect2.pdf  used on input line 358.
+Package pdftex.def Info: figures/InterAgentEffect2.pdf  used on input line 339.
 
 (pdftex.def)             Requested size: 142.26378pt x 104.35942pt.
 File: figures/InterAgentEffect2.pdf Graphic file (type pdf)
 <use figures/InterAgentEffect2.pdf>
-Package pdftex.def Info: figures/InterAgentEffect2.pdf  used on input line 358.
+Package pdftex.def Info: figures/InterAgentEffect2.pdf  used on input line 339.
 
 (pdftex.def)             Requested size: 142.26378pt x 104.35942pt.
 
-Package xcolor Warning: Incompatible color definition on input line 358.
+Package xcolor Warning: Incompatible color definition on input line 339.
 
 
-Package xcolor Warning: Incompatible color definition on input line 358.
+Package xcolor Warning: Incompatible color definition on input line 339.
 
 
-Package xcolor Warning: Incompatible color definition on input line 366.
+Package xcolor Warning: Incompatible color definition on input line 347.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 368.
+Package pdftex.def Info: notaglineLogo.png  used on input line 349.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -958,116 +951,116 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [5 <./figures/PerimeterBots4.pdf> <./figures/PerimeterBots5.pdf> <./figures/Voi
 dConcave1.pdf> <./figures/InterAgentEffect1.pdf> <./figures/InterAgentEffect2.p
 df>]
-<figures/OuterPerimeter1.pdf, id=149, 369.38pt x 461.725pt>
+<figures/OuterPerimeter1.pdf, id=147, 369.38pt x 461.725pt>
 File: figures/OuterPerimeter1.pdf Graphic file (type pdf)
 <use figures/OuterPerimeter1.pdf>
-Package pdftex.def Info: figures/OuterPerimeter1.pdf  used on input line 369.
+Package pdftex.def Info: figures/OuterPerimeter1.pdf  used on input line 350.
 (pdftex.def)             Requested size: 113.81102pt x 142.25964pt.
 File: figures/OuterPerimeter1.pdf Graphic file (type pdf)
 <use figures/OuterPerimeter1.pdf>
-Package pdftex.def Info: figures/OuterPerimeter1.pdf  used on input line 369.
+Package pdftex.def Info: figures/OuterPerimeter1.pdf  used on input line 350.
 (pdftex.def)             Requested size: 113.81102pt x 142.25964pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 369.
+Package xcolor Warning: Incompatible color definition on input line 350.
 
 
-Package xcolor Warning: Incompatible color definition on input line 369.
+Package xcolor Warning: Incompatible color definition on input line 350.
 
-<figures/InnerPerimeter1.pdf, id=150, 369.38pt x 461.725pt>
+<figures/InnerPerimeter1.pdf, id=148, 369.38pt x 461.725pt>
 File: figures/InnerPerimeter1.pdf Graphic file (type pdf)
 <use figures/InnerPerimeter1.pdf>
-Package pdftex.def Info: figures/InnerPerimeter1.pdf  used on input line 377.
+Package pdftex.def Info: figures/InnerPerimeter1.pdf  used on input line 358.
 (pdftex.def)             Requested size: 113.81102pt x 142.25964pt.
 File: figures/InnerPerimeter1.pdf Graphic file (type pdf)
 <use figures/InnerPerimeter1.pdf>
-Package pdftex.def Info: figures/InnerPerimeter1.pdf  used on input line 377.
+Package pdftex.def Info: figures/InnerPerimeter1.pdf  used on input line 358.
 (pdftex.def)             Requested size: 113.81102pt x 142.25964pt.
 
-Package xcolor Warning: Incompatible color definition on input line 377.
+Package xcolor Warning: Incompatible color definition on input line 358.
 
 
-Package xcolor Warning: Incompatible color definition on input line 377.
+Package xcolor Warning: Incompatible color definition on input line 358.
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 385--386
+Underfull \hbox (badness 1655) in paragraph at lines 366--367
 \T1/ptm/n/n/10 all struc-ture of the swarm by re-plac-ing the cal-cu-lated
  []
 
-<figures/PerimeterBotsCircle3.pdf, id=151, 369.38pt x 461.725pt>
+<figures/PerimeterBotsCircle3.pdf, id=149, 369.38pt x 461.725pt>
 File: figures/PerimeterBotsCircle3.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle3.pdf>
 Package pdftex.def Info: figures/PerimeterBotsCircle3.pdf  used on input line 3
-88.
+69.
 (pdftex.def)             Requested size: 113.81102pt x 142.25964pt.
 File: figures/PerimeterBotsCircle3.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle3.pdf>
 Package pdftex.def Info: figures/PerimeterBotsCircle3.pdf  used on input line 3
-88.
+69.
 (pdftex.def)             Requested size: 113.81102pt x 142.25964pt.
 
-Package xcolor Warning: Incompatible color definition on input line 388.
+Package xcolor Warning: Incompatible color definition on input line 369.
 
 
-Package xcolor Warning: Incompatible color definition on input line 388.
+Package xcolor Warning: Incompatible color definition on input line 369.
 
-<figures/PerimeterBotsCircle4.pdf, id=152, 357.335pt x 460.72125pt>
+<figures/PerimeterBotsCircle4.pdf, id=150, 357.335pt x 460.72125pt>
 File: figures/PerimeterBotsCircle4.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle4.pdf>
 Package pdftex.def Info: figures/PerimeterBotsCircle4.pdf  used on input line 3
-95.
+76.
 (pdftex.def)             Requested size: 113.81102pt x 146.73784pt.
 File: figures/PerimeterBotsCircle4.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle4.pdf>
 Package pdftex.def Info: figures/PerimeterBotsCircle4.pdf  used on input line 3
-95.
+76.
 (pdftex.def)             Requested size: 113.81102pt x 146.73784pt.
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 376.
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 376.
 
-<figures/PerimeterBotsCircle1.pdf, id=153, 344.78813pt x 434.23099pt>
+<figures/PerimeterBotsCircle1.pdf, id=151, 344.78813pt x 434.23099pt>
 File: figures/PerimeterBotsCircle1.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle1.pdf>
-Package pdftex.def Info: figures/PerimeterBotsCircle1.pdf  used on input line 4
-02.
+Package pdftex.def Info: figures/PerimeterBotsCircle1.pdf  used on input line 3
+83.
 (pdftex.def)             Requested size: 113.81102pt x 143.33641pt.
 File: figures/PerimeterBotsCircle1.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle1.pdf>
-Package pdftex.def Info: figures/PerimeterBotsCircle1.pdf  used on input line 4
-02.
+Package pdftex.def Info: figures/PerimeterBotsCircle1.pdf  used on input line 3
+83.
 (pdftex.def)             Requested size: 113.81102pt x 143.33641pt.
 
-Package xcolor Warning: Incompatible color definition on input line 402.
+Package xcolor Warning: Incompatible color definition on input line 383.
 
 
-Package xcolor Warning: Incompatible color definition on input line 402.
+Package xcolor Warning: Incompatible color definition on input line 383.
 
-<figures/PerimeterBotsCircle2.pdf, id=154, 368.37625pt x 467.7475pt>
+<figures/PerimeterBotsCircle2.pdf, id=152, 368.37625pt x 467.7475pt>
 File: figures/PerimeterBotsCircle2.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle2.pdf>
-Package pdftex.def Info: figures/PerimeterBotsCircle2.pdf  used on input line 4
-09.
+Package pdftex.def Info: figures/PerimeterBotsCircle2.pdf  used on input line 3
+90.
 (pdftex.def)             Requested size: 113.81102pt x 144.50775pt.
 File: figures/PerimeterBotsCircle2.pdf Graphic file (type pdf)
 <use figures/PerimeterBotsCircle2.pdf>
-Package pdftex.def Info: figures/PerimeterBotsCircle2.pdf  used on input line 4
-09.
+Package pdftex.def Info: figures/PerimeterBotsCircle2.pdf  used on input line 3
+90.
 (pdftex.def)             Requested size: 113.81102pt x 144.50775pt.
 
-Package xcolor Warning: Incompatible color definition on input line 409.
+Package xcolor Warning: Incompatible color definition on input line 390.
 
 
-Package xcolor Warning: Incompatible color definition on input line 409.
+Package xcolor Warning: Incompatible color definition on input line 390.
 
 
-Package xcolor Warning: Incompatible color definition on input line 417.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 457.
+Package pdftex.def Info: notaglineLogo.png  used on input line 433.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1088,20 +1081,88 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 erimeterBotsCircle3.pdf> <./figures/PerimeterBotsCircle4.pdf> <./figures/Perime
 terBotsCircle1.pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 462.
+Package xcolor Warning: Incompatible color definition on input line 438.
 
 
-Package xcolor Warning: Incompatible color definition on input line 464.
+Package xcolor Warning: Incompatible color definition on input line 440.
 
 
-Package xcolor Warning: Incompatible color definition on input line 512.
+Package xcolor Warning: Incompatible color definition on input line 487.
 
 
-Package xcolor Warning: Incompatible color definition on input line 548.
+Package xcolor Warning: Incompatible color definition on input line 523.
+
+
+Package xcolor Warning: Incompatible color definition on input line 529.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
+[]|\T1/ptm/b/n/8 Weight
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
+[]|\T1/ptm/b/n/8 Baseline
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
+[]|\T1/ptm/b/n/8 Concave
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]|\T1/ptm/m/n/8 weight ad-juster for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/ptm/m/n/8 con-cave re-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
+[]|\T1/ptm/m/n/8 weight ad-juster for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--538
+[]|\T1/ptm/m/n/8 weight ad-juster for
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 538--538
+\T1/ptm/m/n/8 des-ti-na-tion vec-tor 0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]|\T1/ptm/m/n/8 Repulsion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
+[]|\T1/ptm/m/n/8 Neighbour
+ []
+
+<figures/ConcaveInitial.pdf, id=182, 1387.58403pt x 692.3466pt>
+File: figures/ConcaveInitial.pdf Graphic file (type pdf)
+<use figures/ConcaveInitial.pdf>
+Package pdftex.def Info: figures/ConcaveInitial.pdf  used on input line 547.
+(pdftex.def)             Requested size: 236.15796pt x 117.82413pt.
+File: figures/ConcaveInitial.pdf Graphic file (type pdf)
+<use figures/ConcaveInitial.pdf>
+Package pdftex.def Info: figures/ConcaveInitial.pdf  used on input line 547.
+(pdftex.def)             Requested size: 236.15796pt x 117.82413pt.
+
+Package xcolor Warning: Incompatible color definition on input line 547.
+
+
+Package xcolor Warning: Incompatible color definition on input line 547.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 552.
+Package pdftex.def Info: notaglineLogo.png  used on input line 551.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1119,128 +1180,61 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7 <./figures/PerimeterBotsCircle2.pdf>]
-
-Package xcolor Warning: Incompatible color definition on input line 554.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
-[]|\T1/ptm/b/n/8 Weight
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
-[]|\T1/ptm/b/n/8 Baseline
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
-[]|\T1/ptm/b/n/8 Concave
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
-[]|\T1/ptm/m/n/8 weight ad-juster for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
-\T1/ptm/m/n/8 con-cave re-duc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--561
-[]|\T1/ptm/m/n/8 weight ad-juster for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 563--563
-[]|\T1/ptm/m/n/8 weight ad-juster for
- []
-
-
-Underfull \hbox (badness 3907) in paragraph at lines 563--563
-\T1/ptm/m/n/8 des-ti-na-tion vec-tor 0
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
-[]|\T1/ptm/m/n/8 Repulsion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
-[]|\T1/ptm/m/n/8 Neighbour
- []
-
-<figures/ConcaveInitial.pdf, id=195, 1387.58403pt x 692.3466pt>
-File: figures/ConcaveInitial.pdf Graphic file (type pdf)
-<use figures/ConcaveInitial.pdf>
-Package pdftex.def Info: figures/ConcaveInitial.pdf  used on input line 572.
-(pdftex.def)             Requested size: 236.15796pt x 117.82413pt.
-File: figures/ConcaveInitial.pdf Graphic file (type pdf)
-<use figures/ConcaveInitial.pdf>
-Package pdftex.def Info: figures/ConcaveInitial.pdf  used on input line 572.
-(pdftex.def)             Requested size: 236.15796pt x 117.82413pt.
-
-Package xcolor Warning: Incompatible color definition on input line 572.
-
-
-Package xcolor Warning: Incompatible color definition on input line 572.
-
-<figures/BaselineConcaveEffectDist.pdf, id=196, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcaveEffectDist.pdf, id=194, 1387.1825pt x 711.65875pt>
 File: figures/BaselineConcaveEffectDist.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectDist.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectDist.pdf  used on input l
-ine 577.
+ine 552.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcaveEffectDist.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectDist.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectDist.pdf  used on input l
-ine 577.
+ine 552.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 577.
+
+Package xcolor Warning: Incompatible color definition on input line 552.
 
 
-Package xcolor Warning: Incompatible color definition on input line 577.
+Package xcolor Warning: Incompatible color definition on input line 552.
 
-<figures/BaselineConcaveEffectMag.pdf, id=197, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcaveEffectMag.pdf, id=195, 1387.1825pt x 711.65875pt>
 File: figures/BaselineConcaveEffectMag.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectMag.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectMag.pdf  used on input li
-ne 589.
+ne 564.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcaveEffectMag.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectMag.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectMag.pdf  used on input li
-ne 589.
+ne 564.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 589.
+Package xcolor Warning: Incompatible color definition on input line 564.
 
 
-Package xcolor Warning: Incompatible color definition on input line 589.
+Package xcolor Warning: Incompatible color definition on input line 564.
 
-<figures/BaselineConcavePerimeter.pdf, id=198, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcavePerimeter.pdf, id=196, 1387.1825pt x 711.65875pt>
 File: figures/BaselineConcavePerimeter.pdf Graphic file (type pdf)
 <use figures/BaselineConcavePerimeter.pdf>
 Package pdftex.def Info: figures/BaselineConcavePerimeter.pdf  used on input li
-ne 599.
+ne 574.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcavePerimeter.pdf Graphic file (type pdf)
 <use figures/BaselineConcavePerimeter.pdf>
 Package pdftex.def Info: figures/BaselineConcavePerimeter.pdf  used on input li
-ne 599.
+ne 574.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 599.
+Package xcolor Warning: Incompatible color definition on input line 574.
 
 
-Package xcolor Warning: Incompatible color definition on input line 599.
+Package xcolor Warning: Incompatible color definition on input line 574.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 607.
+Package pdftex.def Info: notaglineLogo.png  used on input line 582.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1259,131 +1253,131 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [8 <./figures/ConcaveInitial.pdf> <./figures/BaselineConcaveEffectDist.pdf> <./
 figures/BaselineConcaveEffectMag.pdf>]
-<figures/OuterPerimeterJitter1.pdf, id=252, 466.74374pt x 399.4925pt>
+<figures/OuterPerimeterJitter1.pdf, id=251, 466.74374pt x 399.4925pt>
 File: figures/OuterPerimeterJitter1.pdf Graphic file (type pdf)
 <use figures/OuterPerimeterJitter1.pdf>
 Package pdftex.def Info: figures/OuterPerimeterJitter1.pdf  used on input line 
-608.
+583.
 (pdftex.def)             Requested size: 142.26378pt x 121.76274pt.
 File: figures/OuterPerimeterJitter1.pdf Graphic file (type pdf)
 <use figures/OuterPerimeterJitter1.pdf>
 Package pdftex.def Info: figures/OuterPerimeterJitter1.pdf  used on input line 
-608.
+583.
 (pdftex.def)             Requested size: 142.26378pt x 121.76274pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 608.
+Package xcolor Warning: Incompatible color definition on input line 583.
 
 
-Package xcolor Warning: Incompatible color definition on input line 608.
+Package xcolor Warning: Incompatible color definition on input line 583.
 
-<figures/OuterPerimeterJitter2.pdf, id=253, 456.70625pt x 392.46625pt>
+<figures/OuterPerimeterJitter2.pdf, id=252, 456.70625pt x 392.46625pt>
 File: figures/OuterPerimeterJitter2.pdf Graphic file (type pdf)
 <use figures/OuterPerimeterJitter2.pdf>
 Package pdftex.def Info: figures/OuterPerimeterJitter2.pdf  used on input line 
-615.
+590.
 (pdftex.def)             Requested size: 142.26378pt x 122.25015pt.
 File: figures/OuterPerimeterJitter2.pdf Graphic file (type pdf)
 <use figures/OuterPerimeterJitter2.pdf>
 Package pdftex.def Info: figures/OuterPerimeterJitter2.pdf  used on input line 
-615.
+590.
 (pdftex.def)             Requested size: 142.26378pt x 122.25015pt.
 
-Package xcolor Warning: Incompatible color definition on input line 615.
+Package xcolor Warning: Incompatible color definition on input line 590.
 
 
-Package xcolor Warning: Incompatible color definition on input line 615.
+Package xcolor Warning: Incompatible color definition on input line 590.
 
-<figures/BaselineConcaveEffectPath1.pdf, id=254, 1387.1825pt x 691.58376pt>
+<figures/BaselineConcaveEffectPath1.pdf, id=253, 1387.1825pt x 691.58376pt>
 File: figures/BaselineConcaveEffectPath1.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath1.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath1.pdf  used on input 
-line 625.
+line 600.
 (pdftex.def)             Requested size: 236.15796pt x 117.73653pt.
 File: figures/BaselineConcaveEffectPath1.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath1.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath1.pdf  used on input 
-line 625.
+line 600.
 (pdftex.def)             Requested size: 236.15796pt x 117.73653pt.
 
-Package xcolor Warning: Incompatible color definition on input line 625.
+Package xcolor Warning: Incompatible color definition on input line 600.
 
 
-Package xcolor Warning: Incompatible color definition on input line 625.
+Package xcolor Warning: Incompatible color definition on input line 600.
 
-<figures/BaselineConcaveEffectPath2.pdf, id=255, 1387.1825pt x 691.58376pt>
+<figures/BaselineConcaveEffectPath2.pdf, id=254, 1387.1825pt x 691.58376pt>
 File: figures/BaselineConcaveEffectPath2.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath2.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath2.pdf  used on input 
-line 636.
+line 611.
 (pdftex.def)             Requested size: 236.15796pt x 117.73653pt.
 File: figures/BaselineConcaveEffectPath2.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath2.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath2.pdf  used on input 
-line 636.
+line 611.
 (pdftex.def)             Requested size: 236.15796pt x 117.73653pt.
 
-Package xcolor Warning: Incompatible color definition on input line 636.
+Package xcolor Warning: Incompatible color definition on input line 611.
 
 
-Package xcolor Warning: Incompatible color definition on input line 636.
+Package xcolor Warning: Incompatible color definition on input line 611.
 
 
-Package xcolor Warning: Incompatible color definition on input line 647.
+Package xcolor Warning: Incompatible color definition on input line 622.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
 []|\T1/ptm/b/n/8 Weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
 []|\T1/ptm/b/n/8 Baseline
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
 []|\T1/ptm/b/n/8 Concave
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--654
+Underfull \hbox (badness 10000) in paragraph at lines 629--629
 []|\T1/ptm/m/n/8 weight ad-juster for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--654
+Underfull \hbox (badness 10000) in paragraph at lines 629--629
 \T1/ptm/m/n/8 con-cave re-duc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--655
+Underfull \hbox (badness 10000) in paragraph at lines 630--630
 []|\T1/ptm/m/n/8 weight ad-juster for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--657
+Underfull \hbox (badness 10000) in paragraph at lines 632--632
 []|\T1/ptm/m/n/8 weight ad-juster for
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 657--657
+Underfull \hbox (badness 3907) in paragraph at lines 632--632
 \T1/ptm/m/n/8 des-ti-na-tion vec-tor 0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--658
+Underfull \hbox (badness 10000) in paragraph at lines 633--633
 []|\T1/ptm/m/n/8 Repulsion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
+Underfull \hbox (badness 10000) in paragraph at lines 634--634
 []|\T1/ptm/m/n/8 Neighbour
  []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 663.
+Package pdftex.def Info: notaglineLogo.png  used on input line 642.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1403,91 +1397,91 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [9 <./figures/BaselineConcavePerimeter.pdf> <./figures/OuterPerimeterJitter1.pd
 f> <./figures/OuterPerimeterJitter2.pdf> <./figures/BaselineConcaveEffectPath1.
 pdf> <./figures/BaselineConcaveEffectPath2.pdf>]
-<figures/BaselineConcaveEffectDist8060.pdf, id=289, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcaveEffectDist8060.pdf, id=288, 1387.1825pt x 711.65875pt>
 File: figures/BaselineConcaveEffectDist8060.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectDist8060.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectDist8060.pdf  used on inp
-ut line 668.
+ut line 643.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcaveEffectDist8060.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectDist8060.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectDist8060.pdf  used on inp
-ut line 668.
+ut line 643.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 668.
+Package xcolor Warning: Incompatible color definition on input line 643.
 
 
-Package xcolor Warning: Incompatible color definition on input line 668.
+Package xcolor Warning: Incompatible color definition on input line 643.
 
-<figures/BaselineConcaveEffectMag8060.pdf, id=290, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcaveEffectMag8060.pdf, id=289, 1387.1825pt x 711.65875pt>
 File: figures/BaselineConcaveEffectMag8060.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectMag8060.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectMag8060.pdf  used on inpu
-t line 679.
+t line 654.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcaveEffectMag8060.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectMag8060.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectMag8060.pdf  used on inpu
-t line 679.
+t line 654.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 679.
+Package xcolor Warning: Incompatible color definition on input line 654.
 
 
-Package xcolor Warning: Incompatible color definition on input line 679.
+Package xcolor Warning: Incompatible color definition on input line 654.
 
-<figures/BaselineConcavePerimeter8060.pdf, id=291, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcavePerimeter8060.pdf, id=290, 1387.1825pt x 711.65875pt>
 File: figures/BaselineConcavePerimeter8060.pdf Graphic file (type pdf)
 <use figures/BaselineConcavePerimeter8060.pdf>
 Package pdftex.def Info: figures/BaselineConcavePerimeter8060.pdf  used on inpu
-t line 690.
+t line 665.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcavePerimeter8060.pdf Graphic file (type pdf)
 <use figures/BaselineConcavePerimeter8060.pdf>
 Package pdftex.def Info: figures/BaselineConcavePerimeter8060.pdf  used on inpu
-t line 690.
+t line 665.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 690.
+Package xcolor Warning: Incompatible color definition on input line 665.
 
 
-Package xcolor Warning: Incompatible color definition on input line 690.
+Package xcolor Warning: Incompatible color definition on input line 665.
 
-<figures/Baseline8060End.pdf, id=292, 1387.1825pt x 711.65875pt>
+<figures/Baseline8060End.pdf, id=291, 1387.1825pt x 711.65875pt>
 File: figures/Baseline8060End.pdf Graphic file (type pdf)
 <use figures/Baseline8060End.pdf>
-Package pdftex.def Info: figures/Baseline8060End.pdf  used on input line 701.
+Package pdftex.def Info: figures/Baseline8060End.pdf  used on input line 676.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Baseline8060End.pdf Graphic file (type pdf)
 <use figures/Baseline8060End.pdf>
-Package pdftex.def Info: figures/Baseline8060End.pdf  used on input line 701.
+Package pdftex.def Info: figures/Baseline8060End.pdf  used on input line 676.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 701.
+Package xcolor Warning: Incompatible color definition on input line 676.
 
 
-Package xcolor Warning: Incompatible color definition on input line 701.
+Package xcolor Warning: Incompatible color definition on input line 676.
 
-<figures/Concave8060End.pdf, id=293, 1387.1825pt x 711.65875pt>
+<figures/Concave8060End.pdf, id=292, 1387.1825pt x 711.65875pt>
 File: figures/Concave8060End.pdf Graphic file (type pdf)
 <use figures/Concave8060End.pdf>
-Package pdftex.def Info: figures/Concave8060End.pdf  used on input line 709.
+Package pdftex.def Info: figures/Concave8060End.pdf  used on input line 684.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Concave8060End.pdf Graphic file (type pdf)
 <use figures/Concave8060End.pdf>
-Package pdftex.def Info: figures/Concave8060End.pdf  used on input line 709.
+Package pdftex.def Info: figures/Concave8060End.pdf  used on input line 684.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 709.
+Package xcolor Warning: Incompatible color definition on input line 684.
 
 
-Package xcolor Warning: Incompatible color definition on input line 709.
+Package xcolor Warning: Incompatible color definition on input line 684.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 718.
+Package pdftex.def Info: notaglineLogo.png  used on input line 693.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1506,141 +1500,141 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [10 <./figures/BaselineConcaveEffectDist8060.pdf> <./figures/BaselineConcaveEff
 ectMag8060.pdf> <./figures/BaselineConcavePerimeter8060.pdf> <./figures/Baselin
-e8060End.pdf>]
-<figures/BaselineConcaveEffectPath80601.pdf, id=321, 1387.1825pt x 711.65875pt>
+e8060End.pdf> <./figures/Concave8060End.pdf>]
+<figures/BaselineConcaveEffectPath80601.pdf, id=326, 1387.1825pt x 711.65875pt>
 
 File: figures/BaselineConcaveEffectPath80601.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath80601.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath80601.pdf  used on in
-put line 720.
+put line 695.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcaveEffectPath80601.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath80601.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath80601.pdf  used on in
-put line 720.
+put line 695.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 720.
+Package xcolor Warning: Incompatible color definition on input line 695.
 
 
-Package xcolor Warning: Incompatible color definition on input line 720.
+Package xcolor Warning: Incompatible color definition on input line 695.
 
-<figures/BaselineConcaveEffectPath80602.pdf, id=322, 1387.1825pt x 711.65875pt>
+<figures/BaselineConcaveEffectPath80602.pdf, id=327, 1387.1825pt x 711.65875pt>
 
 File: figures/BaselineConcaveEffectPath80602.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath80602.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath80602.pdf  used on in
-put line 729.
+put line 704.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/BaselineConcaveEffectPath80602.pdf Graphic file (type pdf)
 <use figures/BaselineConcaveEffectPath80602.pdf>
 Package pdftex.def Info: figures/BaselineConcaveEffectPath80602.pdf  used on in
-put line 729.
+put line 704.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 729.
+Package xcolor Warning: Incompatible color definition on input line 704.
 
 
-Package xcolor Warning: Incompatible color definition on input line 729.
+Package xcolor Warning: Incompatible color definition on input line 704.
 
 
-Package xcolor Warning: Incompatible color definition on input line 739.
+Package xcolor Warning: Incompatible color definition on input line 714.
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 744--744
+Underfull \hbox (badness 3138) in paragraph at lines 719--719
 []|\T1/ptm/b/n/8 Concave re-duc-
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 751.
+Package xcolor Warning: Incompatible color definition on input line 726.
 
 
-Package xcolor Warning: Incompatible color definition on input line 757.
+Package xcolor Warning: Incompatible color definition on input line 732.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--762
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 []|\T1/ptm/b/n/8 Weight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--762
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 []|\T1/ptm/b/n/8 Baseline
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--762
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 []|\T1/ptm/b/n/8 Concave
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 764--764
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 []|\T1/ptm/m/n/8 weight ad-juster for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 764--764
+Underfull \hbox (badness 10000) in paragraph at lines 739--739
 \T1/ptm/m/n/8 con-cave re-duc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 765--765
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/ptm/m/n/8 weight ad-juster for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--767
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
 []|\T1/ptm/m/n/8 weight ad-juster for
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 767--767
+Underfull \hbox (badness 3907) in paragraph at lines 742--742
 \T1/ptm/m/n/8 des-ti-na-tion vec-tor 0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--768
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 []|\T1/ptm/m/n/8 Repulsion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--769
+Underfull \hbox (badness 10000) in paragraph at lines 744--744
 []|\T1/ptm/m/n/8 Neighbour
  []
 
-<figures/Baseline4560End.pdf, id=323, 1387.1825pt x 711.65875pt>
+<figures/Baseline4560End.pdf, id=328, 1387.1825pt x 711.65875pt>
 File: figures/Baseline4560End.pdf Graphic file (type pdf)
 <use figures/Baseline4560End.pdf>
-Package pdftex.def Info: figures/Baseline4560End.pdf  used on input line 778.
+Package pdftex.def Info: figures/Baseline4560End.pdf  used on input line 753.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Baseline4560End.pdf Graphic file (type pdf)
 <use figures/Baseline4560End.pdf>
-Package pdftex.def Info: figures/Baseline4560End.pdf  used on input line 778.
+Package pdftex.def Info: figures/Baseline4560End.pdf  used on input line 753.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 778.
+Package xcolor Warning: Incompatible color definition on input line 753.
 
 
-Package xcolor Warning: Incompatible color definition on input line 778.
+Package xcolor Warning: Incompatible color definition on input line 753.
 
-<figures/Concave4560End.pdf, id=324, 1387.1825pt x 711.65875pt>
+<figures/Concave4560End.pdf, id=329, 1387.1825pt x 711.65875pt>
 File: figures/Concave4560End.pdf Graphic file (type pdf)
 <use figures/Concave4560End.pdf>
-Package pdftex.def Info: figures/Concave4560End.pdf  used on input line 787.
+Package pdftex.def Info: figures/Concave4560End.pdf  used on input line 762.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Concave4560End.pdf Graphic file (type pdf)
 <use figures/Concave4560End.pdf>
-Package pdftex.def Info: figures/Concave4560End.pdf  used on input line 787.
+Package pdftex.def Info: figures/Concave4560End.pdf  used on input line 762.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 787.
+Package xcolor Warning: Incompatible color definition on input line 762.
 
 
-Package xcolor Warning: Incompatible color definition on input line 787.
+Package xcolor Warning: Incompatible color definition on input line 762.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 796.
+Package pdftex.def Info: notaglineLogo.png  used on input line 771.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1657,91 +1651,176 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[11 <./figures/Concave8060End.pdf> <./figures/BaselineConcaveEffectPath80601.pd
-f> <./figures/BaselineConcaveEffectPath80602.pdf>]
-<figures/Concave4560-1.pdf, id=346, 1387.1825pt x 711.65875pt>
+[11 <./figures/BaselineConcaveEffectPath80601.pdf> <./figures/BaselineConcaveEf
+fectPath80602.pdf>]
+<figures/Concave4560-1.pdf, id=345, 1387.1825pt x 711.65875pt>
 File: figures/Concave4560-1.pdf Graphic file (type pdf)
 <use figures/Concave4560-1.pdf>
-Package pdftex.def Info: figures/Concave4560-1.pdf  used on input line 798.
+Package pdftex.def Info: figures/Concave4560-1.pdf  used on input line 773.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Concave4560-1.pdf Graphic file (type pdf)
 <use figures/Concave4560-1.pdf>
-Package pdftex.def Info: figures/Concave4560-1.pdf  used on input line 798.
+Package pdftex.def Info: figures/Concave4560-1.pdf  used on input line 773.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 798.
+Package xcolor Warning: Incompatible color definition on input line 773.
 
 
-Package xcolor Warning: Incompatible color definition on input line 798.
+Package xcolor Warning: Incompatible color definition on input line 773.
 
-<figures/Concave4560-2.pdf, id=347, 1387.1825pt x 711.65875pt>
+<figures/Concave4560-2.pdf, id=346, 1387.1825pt x 711.65875pt>
 File: figures/Concave4560-2.pdf Graphic file (type pdf)
 <use figures/Concave4560-2.pdf>
-Package pdftex.def Info: figures/Concave4560-2.pdf  used on input line 807.
+Package pdftex.def Info: figures/Concave4560-2.pdf  used on input line 782.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Concave4560-2.pdf Graphic file (type pdf)
 <use figures/Concave4560-2.pdf>
-Package pdftex.def Info: figures/Concave4560-2.pdf  used on input line 807.
+Package pdftex.def Info: figures/Concave4560-2.pdf  used on input line 782.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 807.
+Package xcolor Warning: Incompatible color definition on input line 782.
 
 
-Package xcolor Warning: Incompatible color definition on input line 807.
+Package xcolor Warning: Incompatible color definition on input line 782.
 
-<figures/Concave4560-3.pdf, id=348, 1387.1825pt x 711.65875pt>
+<figures/Concave4560-3.pdf, id=347, 1387.1825pt x 711.65875pt>
 File: figures/Concave4560-3.pdf Graphic file (type pdf)
 <use figures/Concave4560-3.pdf>
-Package pdftex.def Info: figures/Concave4560-3.pdf  used on input line 816.
+Package pdftex.def Info: figures/Concave4560-3.pdf  used on input line 791.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/Concave4560-3.pdf Graphic file (type pdf)
 <use figures/Concave4560-3.pdf>
-Package pdftex.def Info: figures/Concave4560-3.pdf  used on input line 816.
+Package pdftex.def Info: figures/Concave4560-3.pdf  used on input line 791.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 816.
+Package xcolor Warning: Incompatible color definition on input line 791.
 
 
-Package xcolor Warning: Incompatible color definition on input line 816.
+Package xcolor Warning: Incompatible color definition on input line 791.
 
-<figures/ConcavePerimeter4560-DIST.pdf, id=349, 1387.58403pt x 711.85951pt>
+<figures/ConcavePerimeter4560-DIST.pdf, id=348, 1387.58403pt x 711.85951pt>
 File: figures/ConcavePerimeter4560-DIST.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST.pdf  used on input l
-ine 829.
+ine 804.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 File: figures/ConcavePerimeter4560-DIST.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST.pdf  used on input l
-ine 829.
+ine 804.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 
-Package xcolor Warning: Incompatible color definition on input line 829.
+Package xcolor Warning: Incompatible color definition on input line 804.
 
 
-Package xcolor Warning: Incompatible color definition on input line 829.
+Package xcolor Warning: Incompatible color definition on input line 804.
 
-<figures/ConcavePerimeter4560-DIST-2.pdf, id=350, 1387.1825pt x 711.65875pt>
+<figures/ConcavePerimeter4560-DIST-2.pdf, id=349, 1387.1825pt x 711.65875pt>
 File: figures/ConcavePerimeter4560-DIST-2.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST-2.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST-2.pdf  used on input
- line 840.
+ line 815.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 File: figures/ConcavePerimeter4560-DIST-2.pdf Graphic file (type pdf)
 <use figures/ConcavePerimeter4560-DIST-2.pdf>
 Package pdftex.def Info: figures/ConcavePerimeter4560-DIST-2.pdf  used on input
- line 840.
+ line 815.
 (pdftex.def)             Requested size: 236.15796pt x 121.15413pt.
 
-Package xcolor Warning: Incompatible color definition on input line 840.
+Package xcolor Warning: Incompatible color definition on input line 815.
 
 
-Package xcolor Warning: Incompatible color definition on input line 840.
+Package xcolor Warning: Incompatible color definition on input line 815.
+
+<figures/ConcavePerimeter4560-MAG.pdf, id=350, 1387.58403pt x 705.35516pt>
+File: figures/ConcavePerimeter4560-MAG.pdf Graphic file (type pdf)
+<use figures/ConcavePerimeter4560-MAG.pdf>
+Package pdftex.def Info: figures/ConcavePerimeter4560-MAG.pdf  used on input li
+ne 824.
+(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
+File: figures/ConcavePerimeter4560-MAG.pdf Graphic file (type pdf)
+<use figures/ConcavePerimeter4560-MAG.pdf>
+Package pdftex.def Info: figures/ConcavePerimeter4560-MAG.pdf  used on input li
+ne 824.
+(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
+
+Package xcolor Warning: Incompatible color definition on input line 824.
+
+
+Package xcolor Warning: Incompatible color definition on input line 824.
+
+<figures/ConcavePerimeter4560-MAG-2.pdf, id=351, 1387.58403pt x 705.35516pt>
+File: figures/ConcavePerimeter4560-MAG-2.pdf Graphic file (type pdf)
+<use figures/ConcavePerimeter4560-MAG-2.pdf>
+Package pdftex.def Info: figures/ConcavePerimeter4560-MAG-2.pdf  used on input 
+line 833.
+(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
+File: figures/ConcavePerimeter4560-MAG-2.pdf Graphic file (type pdf)
+<use figures/ConcavePerimeter4560-MAG-2.pdf>
+Package pdftex.def Info: figures/ConcavePerimeter4560-MAG-2.pdf  used on input 
+line 833.
+(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
+
+Package xcolor Warning: Incompatible color definition on input line 833.
+
+
+Package xcolor Warning: Incompatible color definition on input line 833.
+
+<figures/ConcavePerimeter4560-1.pdf, id=352, 1387.58403pt x 711.85951pt>
+File: figures/ConcavePerimeter4560-1.pdf Graphic file (type pdf)
+<use figures/ConcavePerimeter4560-1.pdf>
+Package pdftex.def Info: figures/ConcavePerimeter4560-1.pdf  used on input line
+ 843.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/ConcavePerimeter4560-1.pdf Graphic file (type pdf)
+<use figures/ConcavePerimeter4560-1.pdf>
+Package pdftex.def Info: figures/ConcavePerimeter4560-1.pdf  used on input line
+ 843.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 843.
+
+
+Package xcolor Warning: Incompatible color definition on input line 843.
+
+<figures/SwarmCoverage4560-1.pdf, id=353, 1387.58403pt x 711.85951pt>
+File: figures/SwarmCoverage4560-1.pdf Graphic file (type pdf)
+<use figures/SwarmCoverage4560-1.pdf>
+Package pdftex.def Info: figures/SwarmCoverage4560-1.pdf  used on input line 85
+2.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/SwarmCoverage4560-1.pdf Graphic file (type pdf)
+<use figures/SwarmCoverage4560-1.pdf>
+Package pdftex.def Info: figures/SwarmCoverage4560-1.pdf  used on input line 85
+2.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 852.
+
+
+Package xcolor Warning: Incompatible color definition on input line 852.
+
+<figures/SwarmCoverage4560-2.pdf, id=354, 1387.58403pt x 711.85951pt>
+File: figures/SwarmCoverage4560-2.pdf Graphic file (type pdf)
+<use figures/SwarmCoverage4560-2.pdf>
+Package pdftex.def Info: figures/SwarmCoverage4560-2.pdf  used on input line 86
+1.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/SwarmCoverage4560-2.pdf Graphic file (type pdf)
+<use figures/SwarmCoverage4560-2.pdf>
+Package pdftex.def Info: figures/SwarmCoverage4560-2.pdf  used on input line 86
+1.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 861.
+
+
+Package xcolor Warning: Incompatible color definition on input line 861.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 840.
+Package pdftex.def Info: notaglineLogo.png  used on input line 868.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1761,95 +1840,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [12 <./figures/Baseline4560End.pdf> <./figures/Concave4560End.pdf> <./figures/C
 oncave4560-1.pdf> <./figures/Concave4560-2.pdf> <./figures/Concave4560-3.pdf> <
 ./figures/ConcavePerimeter4560-DIST.pdf>]
-<figures/ConcavePerimeter4560-MAG.pdf, id=435, 1387.58403pt x 705.35516pt>
-File: figures/ConcavePerimeter4560-MAG.pdf Graphic file (type pdf)
-<use figures/ConcavePerimeter4560-MAG.pdf>
-Package pdftex.def Info: figures/ConcavePerimeter4560-MAG.pdf  used on input li
-ne 849.
-(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
-File: figures/ConcavePerimeter4560-MAG.pdf Graphic file (type pdf)
-<use figures/ConcavePerimeter4560-MAG.pdf>
-Package pdftex.def Info: figures/ConcavePerimeter4560-MAG.pdf  used on input li
-ne 849.
-(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
-
-
-Package xcolor Warning: Incompatible color definition on input line 849.
-
-
-Package xcolor Warning: Incompatible color definition on input line 849.
-
-<figures/ConcavePerimeter4560-MAG-2.pdf, id=436, 1387.58403pt x 705.35516pt>
-File: figures/ConcavePerimeter4560-MAG-2.pdf Graphic file (type pdf)
-<use figures/ConcavePerimeter4560-MAG-2.pdf>
-Package pdftex.def Info: figures/ConcavePerimeter4560-MAG-2.pdf  used on input 
-line 858.
-(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
-File: figures/ConcavePerimeter4560-MAG-2.pdf Graphic file (type pdf)
-<use figures/ConcavePerimeter4560-MAG-2.pdf>
-Package pdftex.def Info: figures/ConcavePerimeter4560-MAG-2.pdf  used on input 
-line 858.
-(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
-
-Package xcolor Warning: Incompatible color definition on input line 858.
-
-
-Package xcolor Warning: Incompatible color definition on input line 858.
-
-<figures/ConcavePerimeter4560-1.pdf, id=437, 1387.58403pt x 711.85951pt>
-File: figures/ConcavePerimeter4560-1.pdf Graphic file (type pdf)
-<use figures/ConcavePerimeter4560-1.pdf>
-Package pdftex.def Info: figures/ConcavePerimeter4560-1.pdf  used on input line
- 868.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/ConcavePerimeter4560-1.pdf Graphic file (type pdf)
-<use figures/ConcavePerimeter4560-1.pdf>
-Package pdftex.def Info: figures/ConcavePerimeter4560-1.pdf  used on input line
- 868.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 
 Package xcolor Warning: Incompatible color definition on input line 868.
 
 
-Package xcolor Warning: Incompatible color definition on input line 868.
-
-<figures/SwarmCoverage4560-1.pdf, id=438, 1387.58403pt x 711.85951pt>
-File: figures/SwarmCoverage4560-1.pdf Graphic file (type pdf)
-<use figures/SwarmCoverage4560-1.pdf>
-Package pdftex.def Info: figures/SwarmCoverage4560-1.pdf  used on input line 87
-7.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/SwarmCoverage4560-1.pdf Graphic file (type pdf)
-<use figures/SwarmCoverage4560-1.pdf>
-Package pdftex.def Info: figures/SwarmCoverage4560-1.pdf  used on input line 87
-7.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-
-Package xcolor Warning: Incompatible color definition on input line 877.
-
-
-Package xcolor Warning: Incompatible color definition on input line 877.
-
-<figures/SwarmCoverage4560-2.pdf, id=439, 1387.58403pt x 711.85951pt>
-File: figures/SwarmCoverage4560-2.pdf Graphic file (type pdf)
-<use figures/SwarmCoverage4560-2.pdf>
-Package pdftex.def Info: figures/SwarmCoverage4560-2.pdf  used on input line 88
-6.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/SwarmCoverage4560-2.pdf Graphic file (type pdf)
-<use figures/SwarmCoverage4560-2.pdf>
-Package pdftex.def Info: figures/SwarmCoverage4560-2.pdf  used on input line 88
-6.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-
-Package xcolor Warning: Incompatible color definition on input line 886.
-
-
-Package xcolor Warning: Incompatible color definition on input line 886.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 893.
+Package pdftex.def Info: notaglineLogo.png  used on input line 873.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1880,89 +1879,166 @@ sion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./figures/SwarmCoverage4560-1.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-
-Package xcolor Warning: Incompatible color definition on input line 893.
-
-<figures/OilSlick.pdf, id=625, 449.68pt x 385.44pt>
+<figures/OilSlick.pdf, id=624, 449.68pt x 385.44pt>
 File: figures/OilSlick.pdf Graphic file (type pdf)
 <use figures/OilSlick.pdf>
-Package pdftex.def Info: figures/OilSlick.pdf  used on input line 899.
+Package pdftex.def Info: figures/OilSlick.pdf  used on input line 874.
 (pdftex.def)             Requested size: 236.15796pt x 202.42372pt.
 File: figures/OilSlick.pdf Graphic file (type pdf)
 <use figures/OilSlick.pdf>
-Package pdftex.def Info: figures/OilSlick.pdf  used on input line 899.
+Package pdftex.def Info: figures/OilSlick.pdf  used on input line 874.
 (pdftex.def)             Requested size: 236.15796pt x 202.42372pt.
 
-Package xcolor Warning: Incompatible color definition on input line 899.
+
+Package xcolor Warning: Incompatible color definition on input line 874.
 
 
-Package xcolor Warning: Incompatible color definition on input line 899.
+Package xcolor Warning: Incompatible color definition on input line 874.
 
-<figures/OilSpillSimulator.pdf, id=626, 1029.8475pt x 790.955pt>
+<figures/OilSpillSimulator.pdf, id=625, 1029.8475pt x 790.955pt>
 File: figures/OilSpillSimulator.pdf Graphic file (type pdf)
 <use figures/OilSpillSimulator.pdf>
-Package pdftex.def Info: figures/OilSpillSimulator.pdf  used on input line 912.
+Package pdftex.def Info: figures/OilSpillSimulator.pdf  used on input line 887.
 
 (pdftex.def)             Requested size: 236.15796pt x 181.37271pt.
 File: figures/OilSpillSimulator.pdf Graphic file (type pdf)
 <use figures/OilSpillSimulator.pdf>
-Package pdftex.def Info: figures/OilSpillSimulator.pdf  used on input line 912.
+Package pdftex.def Info: figures/OilSpillSimulator.pdf  used on input line 887.
 
 (pdftex.def)             Requested size: 236.15796pt x 181.37271pt.
 
-Package xcolor Warning: Incompatible color definition on input line 912.
+Package xcolor Warning: Incompatible color definition on input line 887.
 
 
-Package xcolor Warning: Incompatible color definition on input line 912.
+Package xcolor Warning: Incompatible color definition on input line 887.
 
-<figures/OilSpillBase1.pdf, id=627, 1387.58403pt x 711.85951pt>
+<figures/OilSpillBase1.pdf, id=626, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillBase1.pdf Graphic file (type pdf)
 <use figures/OilSpillBase1.pdf>
-Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 923.
+Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 898.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 File: figures/OilSpillBase1.pdf Graphic file (type pdf)
 <use figures/OilSpillBase1.pdf>
-Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 923.
+Package pdftex.def Info: figures/OilSpillBase1.pdf  used on input line 898.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 
-Package xcolor Warning: Incompatible color definition on input line 923.
+Package xcolor Warning: Incompatible color definition on input line 898.
 
 
-Package xcolor Warning: Incompatible color definition on input line 923.
+Package xcolor Warning: Incompatible color definition on input line 898.
 
-<figures/OilSpillBase2.pdf, id=628, 1387.58403pt x 711.85951pt>
+<figures/OilSpillBase2.pdf, id=627, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillBase2.pdf Graphic file (type pdf)
 <use figures/OilSpillBase2.pdf>
-Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 931.
+Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 906.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 File: figures/OilSpillBase2.pdf Graphic file (type pdf)
 <use figures/OilSpillBase2.pdf>
-Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 931.
+Package pdftex.def Info: figures/OilSpillBase2.pdf  used on input line 906.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 
-Package xcolor Warning: Incompatible color definition on input line 931.
+Package xcolor Warning: Incompatible color definition on input line 906.
 
 
-Package xcolor Warning: Incompatible color definition on input line 931.
+Package xcolor Warning: Incompatible color definition on input line 906.
 
-<figures/OilSpillBase3.pdf, id=629, 1387.58403pt x 711.85951pt>
+<figures/OilSpillBase3.pdf, id=628, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillBase3.pdf Graphic file (type pdf)
 <use figures/OilSpillBase3.pdf>
-Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 939.
+Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 914.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 File: figures/OilSpillBase3.pdf Graphic file (type pdf)
 <use figures/OilSpillBase3.pdf>
-Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 939.
+Package pdftex.def Info: figures/OilSpillBase3.pdf  used on input line 914.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 
-Package xcolor Warning: Incompatible color definition on input line 939.
+Package xcolor Warning: Incompatible color definition on input line 914.
 
 
-Package xcolor Warning: Incompatible color definition on input line 939.
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+<figures/OilSpillConcave1.pdf, id=629, 1387.58403pt x 711.85951pt>
+File: figures/OilSpillConcave1.pdf Graphic file (type pdf)
+<use figures/OilSpillConcave1.pdf>
+Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 925.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/OilSpillConcave1.pdf Graphic file (type pdf)
+<use figures/OilSpillConcave1.pdf>
+Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 925.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 925.
+
+
+Package xcolor Warning: Incompatible color definition on input line 925.
+
+<figures/OilSpillConcave2.pdf, id=630, 1387.58403pt x 711.85951pt>
+File: figures/OilSpillConcave2.pdf Graphic file (type pdf)
+<use figures/OilSpillConcave2.pdf>
+Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 934.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/OilSpillConcave2.pdf Graphic file (type pdf)
+<use figures/OilSpillConcave2.pdf>
+Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 934.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 934.
+
+
+Package xcolor Warning: Incompatible color definition on input line 934.
+
+<figures/OilSpillConcave3.pdf, id=631, 1387.58403pt x 711.85951pt>
+File: figures/OilSpillConcave3.pdf Graphic file (type pdf)
+<use figures/OilSpillConcave3.pdf>
+Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 943.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/OilSpillConcave3.pdf Graphic file (type pdf)
+<use figures/OilSpillConcave3.pdf>
+Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 943.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 943.
+
+
+Package xcolor Warning: Incompatible color definition on input line 943.
+
+<figures/OilSpillPerimeter8060-DIST-1.pdf, id=632, 1387.58403pt x 711.85951pt>
+File: figures/OilSpillPerimeter8060-DIST-1.pdf Graphic file (type pdf)
+<use figures/OilSpillPerimeter8060-DIST-1.pdf>
+Package pdftex.def Info: figures/OilSpillPerimeter8060-DIST-1.pdf  used on inpu
+t line 953.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+File: figures/OilSpillPerimeter8060-DIST-1.pdf Graphic file (type pdf)
+<use figures/OilSpillPerimeter8060-DIST-1.pdf>
+Package pdftex.def Info: figures/OilSpillPerimeter8060-DIST-1.pdf  used on inpu
+t line 953.
+(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
+
+Package xcolor Warning: Incompatible color definition on input line 953.
+
+
+Package xcolor Warning: Incompatible color definition on input line 953.
+
+<figures/OilSpillPerimeter8060-MAG-1.pdf, id=633, 1387.58403pt x 705.35516pt>
+File: figures/OilSpillPerimeter8060-MAG-1.pdf Graphic file (type pdf)
+<use figures/OilSpillPerimeter8060-MAG-1.pdf>
+Package pdftex.def Info: figures/OilSpillPerimeter8060-MAG-1.pdf  used on input
+ line 962.
+(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
+File: figures/OilSpillPerimeter8060-MAG-1.pdf Graphic file (type pdf)
+<use figures/OilSpillPerimeter8060-MAG-1.pdf>
+Package pdftex.def Info: figures/OilSpillPerimeter8060-MAG-1.pdf  used on input
+ line 962.
+(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
+
+Package xcolor Warning: Incompatible color definition on input line 962.
+
+
+Package xcolor Warning: Incompatible color definition on input line 962.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 948.
+Package pdftex.def Info: notaglineLogo.png  used on input line 971.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -1981,89 +2057,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [14 <./figures/SwarmCoverage4560-2.pdf> <./figures/OilSlick.pdf> <./figures/Oil
 SpillSimulator.pdf>]
-<figures/OilSpillConcave1.pdf, id=683, 1387.58403pt x 711.85951pt>
-File: figures/OilSpillConcave1.pdf Graphic file (type pdf)
-<use figures/OilSpillConcave1.pdf>
-Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 950.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/OilSpillConcave1.pdf Graphic file (type pdf)
-<use figures/OilSpillConcave1.pdf>
-Package pdftex.def Info: figures/OilSpillConcave1.pdf  used on input line 950.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-
-
-Package xcolor Warning: Incompatible color definition on input line 950.
-
-
-Package xcolor Warning: Incompatible color definition on input line 950.
-
-<figures/OilSpillConcave2.pdf, id=684, 1387.58403pt x 711.85951pt>
-File: figures/OilSpillConcave2.pdf Graphic file (type pdf)
-<use figures/OilSpillConcave2.pdf>
-Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 959.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/OilSpillConcave2.pdf Graphic file (type pdf)
-<use figures/OilSpillConcave2.pdf>
-Package pdftex.def Info: figures/OilSpillConcave2.pdf  used on input line 959.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-
-Package xcolor Warning: Incompatible color definition on input line 959.
-
-
-Package xcolor Warning: Incompatible color definition on input line 959.
-
-<figures/OilSpillConcave3.pdf, id=685, 1387.58403pt x 711.85951pt>
-File: figures/OilSpillConcave3.pdf Graphic file (type pdf)
-<use figures/OilSpillConcave3.pdf>
-Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 968.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/OilSpillConcave3.pdf Graphic file (type pdf)
-<use figures/OilSpillConcave3.pdf>
-Package pdftex.def Info: figures/OilSpillConcave3.pdf  used on input line 968.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-
-Package xcolor Warning: Incompatible color definition on input line 968.
-
-
-Package xcolor Warning: Incompatible color definition on input line 968.
-
-<figures/OilSpillPerimeter8060-DIST-1.pdf, id=686, 1387.58403pt x 711.85951pt>
-File: figures/OilSpillPerimeter8060-DIST-1.pdf Graphic file (type pdf)
-<use figures/OilSpillPerimeter8060-DIST-1.pdf>
-Package pdftex.def Info: figures/OilSpillPerimeter8060-DIST-1.pdf  used on inpu
-t line 978.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-File: figures/OilSpillPerimeter8060-DIST-1.pdf Graphic file (type pdf)
-<use figures/OilSpillPerimeter8060-DIST-1.pdf>
-Package pdftex.def Info: figures/OilSpillPerimeter8060-DIST-1.pdf  used on inpu
-t line 978.
-(pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
-
-Package xcolor Warning: Incompatible color definition on input line 978.
-
-
-Package xcolor Warning: Incompatible color definition on input line 978.
-
-<figures/OilSpillPerimeter8060-MAG-1.pdf, id=687, 1387.58403pt x 705.35516pt>
-File: figures/OilSpillPerimeter8060-MAG-1.pdf Graphic file (type pdf)
-<use figures/OilSpillPerimeter8060-MAG-1.pdf>
-Package pdftex.def Info: figures/OilSpillPerimeter8060-MAG-1.pdf  used on input
- line 987.
-(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
-File: figures/OilSpillPerimeter8060-MAG-1.pdf Graphic file (type pdf)
-<use figures/OilSpillPerimeter8060-MAG-1.pdf>
-Package pdftex.def Info: figures/OilSpillPerimeter8060-MAG-1.pdf  used on input
- line 987.
-(pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
-
-Package xcolor Warning: Incompatible color definition on input line 987.
-
-
-Package xcolor Warning: Incompatible color definition on input line 987.
-
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 996.
+Package pdftex.def Info: notaglineLogo.png  used on input line 971.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2100,69 +2096,133 @@ multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figures/OilSpillConcave3.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
+> <./figures/OilSpillPerimeter8060-DIST-1.pdf
+
+pdfTeX warning: pdflatex (file ./figures/OilSpillPerimeter8060-DIST-1.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/OilSpillPerimeter8060-1.pdf, id=921, 1387.58403pt x 711.85951pt>
+<figures/OilSpillPerimeter8060-1.pdf, id=970, 1387.58403pt x 711.85951pt>
 File: figures/OilSpillPerimeter8060-1.pdf Graphic file (type pdf)
 <use figures/OilSpillPerimeter8060-1.pdf>
 Package pdftex.def Info: figures/OilSpillPerimeter8060-1.pdf  used on input lin
-e 998.
+e 973.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 File: figures/OilSpillPerimeter8060-1.pdf Graphic file (type pdf)
 <use figures/OilSpillPerimeter8060-1.pdf>
 Package pdftex.def Info: figures/OilSpillPerimeter8060-1.pdf  used on input lin
-e 998.
+e 973.
 (pdftex.def)             Requested size: 236.15796pt x 121.14485pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 998.
+Package xcolor Warning: Incompatible color definition on input line 973.
 
 
-Package xcolor Warning: Incompatible color definition on input line 998.
+Package xcolor Warning: Incompatible color definition on input line 973.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1006.
+Package xcolor Warning: Incompatible color definition on input line 981.
 
-
-Underfull \vbox (badness 4595) has occurred while \output is active []
-
-<figures/PerimeterObject2.pdf, id=922, 981.6675pt x 776.9025pt>
+<figures/PerimeterObject2.pdf, id=971, 981.6675pt x 776.9025pt>
 File: figures/PerimeterObject2.pdf Graphic file (type pdf)
 <use figures/PerimeterObject2.pdf>
-Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 1010.
-
+Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 985.
 (pdftex.def)             Requested size: 199.16928pt x 157.61826pt.
 File: figures/PerimeterObject2.pdf Graphic file (type pdf)
 <use figures/PerimeterObject2.pdf>
-Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 1010.
-
+Package pdftex.def Info: figures/PerimeterObject2.pdf  used on input line 985.
 (pdftex.def)             Requested size: 199.16928pt x 157.61826pt.
 
+Package xcolor Warning: Incompatible color definition on input line 985.
 
-Package xcolor Warning: Incompatible color definition on input line 1010.
 
+Package xcolor Warning: Incompatible color definition on input line 985.
 
-Package xcolor Warning: Incompatible color definition on input line 1010.
-
-<figures/PerimeterObject1.pdf, id=923, 764.8575pt x 776.9025pt>
+<figures/PerimeterObject1.pdf, id=972, 764.8575pt x 776.9025pt>
 File: figures/PerimeterObject1.pdf Graphic file (type pdf)
 <use figures/PerimeterObject1.pdf>
-Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 1017.
-
+Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 992.
 (pdftex.def)             Requested size: 142.26378pt x 144.49525pt.
 File: figures/PerimeterObject1.pdf Graphic file (type pdf)
 <use figures/PerimeterObject1.pdf>
-Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 1017.
-
+Package pdftex.def Info: figures/PerimeterObject1.pdf  used on input line 992.
 (pdftex.def)             Requested size: 142.26378pt x 144.49525pt.
 
-Package xcolor Warning: Incompatible color definition on input line 1017.
+Package xcolor Warning: Incompatible color definition on input line 992.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1017.
+Package xcolor Warning: Incompatible color definition on input line 992.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1003.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+[]|\T1/ptm/b/n/8 Weight
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/ptm/b/n/8 com-po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+[]|\T1/ptm/b/n/8 Baseline
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+[]|\T1/ptm/m/n/8 Sample
+ []
+
+
+Underfull \hbox (badness 3029) in paragraph at lines 1010--1010
+[]|\T1/ptm/m/n/8 weight ad-juster for con-cave
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 1011--1011
+[]|\T1/ptm/m/n/8 weight ad-juster for ob-sta-cle
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 1012--1012
+[]|\T1/ptm/m/n/8 weight ad-juster for co-he-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/ptm/m/n/8 Repulsion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1016
+[]|\T1/ptm/m/n/8 Neighbour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1017
+[]|\T1/ptm/m/n/8 Obstacle
+ []
+
+<figures/ObstacleTest.pdf, id=973, 812.03375pt x 765.86125pt>
+File: figures/ObstacleTest.pdf Graphic file (type pdf)
+<use figures/ObstacleTest.pdf>
+Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1023.
+(pdftex.def)             Requested size: 227.62204pt x 214.6734pt.
+File: figures/ObstacleTest.pdf Graphic file (type pdf)
+<use figures/ObstacleTest.pdf>
+Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1023.
+(pdftex.def)             Requested size: 227.62204pt x 214.6734pt.
+
+Package xcolor Warning: Incompatible color definition on input line 1023.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1023.
 
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1026.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1032.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2179,135 +2239,64 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[16 <./figures/OilSpillPerimeter8060-DIST-1.pdf> <./figures/OilSpillPerimeter80
-60-MAG-1.pdf
-
-pdfTeX warning: pdflatex (file ./figures/OilSpillPerimeter8060-MAG-1.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
-> <./figures/OilSpillPerimeter8060-1.pdf
+[16 <./figures/OilSpillPerimeter8060-MAG-1.pdf> <./figures/OilSpillPerimeter806
+0-1.pdf
 
 pdfTeX warning: pdflatex (file ./figures/OilSpillPerimeter8060-1.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 > <./figures/PerimeterObject2.pdf> <./figures/PerimeterObject1.pdf>]
-
-Package xcolor Warning: Incompatible color definition on input line 1028.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]|\T1/ptm/b/n/8 Weight
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-\T1/ptm/b/n/8 com-po-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]|\T1/ptm/b/n/8 Baseline
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
-[]|\T1/ptm/m/n/8 Sample
- []
-
-
-Underfull \hbox (badness 3029) in paragraph at lines 1035--1035
-[]|\T1/ptm/m/n/8 weight ad-juster for con-cave
- []
-
-
-Underfull \hbox (badness 2799) in paragraph at lines 1036--1036
-[]|\T1/ptm/m/n/8 weight ad-juster for ob-sta-cle
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 1037--1037
-[]|\T1/ptm/m/n/8 weight ad-juster for co-he-sion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1040--1040
-[]|\T1/ptm/m/n/8 Repulsion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1041
-[]|\T1/ptm/m/n/8 Neighbour
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
-[]|\T1/ptm/m/n/8 Obstacle
- []
-
-<figures/ObstacleTest.pdf, id=1078, 812.03375pt x 765.86125pt>
-File: figures/ObstacleTest.pdf Graphic file (type pdf)
-<use figures/ObstacleTest.pdf>
-Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1048.
-(pdftex.def)             Requested size: 227.62204pt x 214.6734pt.
-File: figures/ObstacleTest.pdf Graphic file (type pdf)
-<use figures/ObstacleTest.pdf>
-Package pdftex.def Info: figures/ObstacleTest.pdf  used on input line 1048.
-(pdftex.def)             Requested size: 227.62204pt x 214.6734pt.
-
-Package xcolor Warning: Incompatible color definition on input line 1048.
-
-
-Package xcolor Warning: Incompatible color definition on input line 1048.
-
-<figures/SWARMCOVER456060BASELINE.pdf, id=1079, 1387.58403pt x 705.35516pt>
+<figures/SWARMCOVER456060BASELINE.pdf, id=1078, 1387.58403pt x 705.35516pt>
 File: figures/SWARMCOVER456060BASELINE.pdf Graphic file (type pdf)
 <use figures/SWARMCOVER456060BASELINE.pdf>
 Package pdftex.def Info: figures/SWARMCOVER456060BASELINE.pdf  used on input li
-ne 1059.
+ne 1034.
 (pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
 File: figures/SWARMCOVER456060BASELINE.pdf Graphic file (type pdf)
 <use figures/SWARMCOVER456060BASELINE.pdf>
 Package pdftex.def Info: figures/SWARMCOVER456060BASELINE.pdf  used on input li
-ne 1059.
+ne 1034.
 (pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
 
-Package xcolor Warning: Incompatible color definition on input line 1059.
+
+Package xcolor Warning: Incompatible color definition on input line 1034.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1059.
+Package xcolor Warning: Incompatible color definition on input line 1034.
 
-<figures/SWARMCOVER456060CONCAVE.pdf, id=1080, 1387.58403pt x 705.35516pt>
+<figures/SWARMCOVER456060CONCAVE.pdf, id=1079, 1387.58403pt x 705.35516pt>
 File: figures/SWARMCOVER456060CONCAVE.pdf Graphic file (type pdf)
 <use figures/SWARMCOVER456060CONCAVE.pdf>
 Package pdftex.def Info: figures/SWARMCOVER456060CONCAVE.pdf  used on input lin
-e 1069.
+e 1044.
 (pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
 File: figures/SWARMCOVER456060CONCAVE.pdf Graphic file (type pdf)
 <use figures/SWARMCOVER456060CONCAVE.pdf>
 Package pdftex.def Info: figures/SWARMCOVER456060CONCAVE.pdf  used on input lin
-e 1069.
+e 1044.
 (pdftex.def)             Requested size: 236.15796pt x 120.03793pt.
 
-Package xcolor Warning: Incompatible color definition on input line 1069.
+Package xcolor Warning: Incompatible color definition on input line 1044.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1069.
+Package xcolor Warning: Incompatible color definition on input line 1044.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1076.
+Package xcolor Warning: Incompatible color definition on input line 1051.
 
-<figures/IdealSwarm.pdf, id=1081, 302.12875pt x 261.97874pt>
+<figures/IdealSwarm.pdf, id=1080, 302.12875pt x 261.97874pt>
 File: figures/IdealSwarm.pdf Graphic file (type pdf)
 <use figures/IdealSwarm.pdf>
-Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1079.
+Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1054.
 (pdftex.def)             Requested size: 170.71652pt x 148.03026pt.
 File: figures/IdealSwarm.pdf Graphic file (type pdf)
 <use figures/IdealSwarm.pdf>
-Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1079.
+Package pdftex.def Info: figures/IdealSwarm.pdf  used on input line 1054.
 (pdftex.def)             Requested size: 170.71652pt x 148.03026pt.
 
-Package xcolor Warning: Incompatible color definition on input line 1079.
+Package xcolor Warning: Incompatible color definition on input line 1054.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1079.
+Package xcolor Warning: Incompatible color definition on input line 1054.
 
 (./paper.bbl
 File: notaglineLogo.png Graphic file (type png)
@@ -2370,7 +2359,7 @@ mil-i-
 )
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1090.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1065.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2388,59 +2377,59 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [18 <./figures/IdealSwarm.pdf>]
-<Images/eliot.pdf, id=1180, 41.15375pt x 40.15pt>
+<Images/eliot.pdf, id=1179, 41.15375pt x 40.15pt>
 File: Images/eliot.pdf Graphic file (type pdf)
 <use Images/eliot.pdf>
-Package pdftex.def Info: Images/eliot.pdf  used on input line 1092.
+Package pdftex.def Info: Images/eliot.pdf  used on input line 1067.
 (pdftex.def)             Requested size: 72.27884pt x 70.51593pt.
 File: Images/eliot.pdf Graphic file (type pdf)
 <use Images/eliot.pdf>
-Package pdftex.def Info: Images/eliot.pdf  used on input line 1092.
+Package pdftex.def Info: Images/eliot.pdf  used on input line 1067.
 (pdftex.def)             Requested size: 72.27884pt x 70.51593pt.
 
-Underfull \hbox (badness 1675) in paragraph at lines 1092--1094
+Underfull \hbox (badness 1675) in paragraph at lines 1067--1069
 []\T1/phv/m/n/8 NEIL ELIOT \T1/ptm/n/n/8 has been a Se-nior Lec-turer at
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 1092--1094
+Underfull \hbox (badness 1533) in paragraph at lines 1067--1069
 \T1/ptm/n/n/8 Northum-bria Uni-ver-sity since 1998. Neil was
  []
 
-<Images/kenda.pdf, id=1183, 146.5475pt x 128.48pt>
+<Images/kenda.pdf, id=1182, 146.5475pt x 128.48pt>
 File: Images/kenda.pdf Graphic file (type pdf)
 <use Images/kenda.pdf>
-Package pdftex.def Info: Images/kenda.pdf  used on input line 1096.
+Package pdftex.def Info: Images/kenda.pdf  used on input line 1071.
 (pdftex.def)             Requested size: 72.26953pt x 63.35959pt.
 File: Images/kenda.pdf Graphic file (type pdf)
 <use Images/kenda.pdf>
-Package pdftex.def Info: Images/kenda.pdf  used on input line 1096.
+Package pdftex.def Info: Images/kenda.pdf  used on input line 1071.
 (pdftex.def)             Requested size: 72.26953pt x 63.35959pt.
-<Images/moon.pdf, id=1186, 178.6675pt x 209.78375pt>
+<Images/moon.pdf, id=1185, 178.6675pt x 209.78375pt>
 File: Images/moon.pdf Graphic file (type pdf)
 <use Images/moon.pdf>
-Package pdftex.def Info: Images/moon.pdf  used on input line 1100.
+Package pdftex.def Info: Images/moon.pdf  used on input line 1075.
 (pdftex.def)             Requested size: 72.26996pt x 84.85631pt.
 File: Images/moon.pdf Graphic file (type pdf)
 <use Images/moon.pdf>
-Package pdftex.def Info: Images/moon.pdf  used on input line 1100.
+Package pdftex.def Info: Images/moon.pdf  used on input line 1075.
 (pdftex.def)             Requested size: 72.26996pt x 84.85631pt.
-<Images/brock.pdf, id=1189, 993.7125pt x 1024.82875pt>
+<Images/brock.pdf, id=1188, 993.7125pt x 1024.82875pt>
 File: Images/brock.pdf Graphic file (type pdf)
 <use Images/brock.pdf>
-Package pdftex.def Info: Images/brock.pdf  used on input line 1104.
+Package pdftex.def Info: Images/brock.pdf  used on input line 1079.
 (pdftex.def)             Requested size: 72.26596pt x 74.52882pt.
 File: Images/brock.pdf Graphic file (type pdf)
 <use Images/brock.pdf>
-Package pdftex.def Info: Images/brock.pdf  used on input line 1104.
+Package pdftex.def Info: Images/brock.pdf  used on input line 1079.
 (pdftex.def)             Requested size: 72.26596pt x 74.52882pt.
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 1108.
+Package pdftex.def Info: bullet.png  used on input line 1083.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglineLogo.png Graphic file (type png)
 <use notaglineLogo.png>
-Package pdftex.def Info: notaglineLogo.png  used on input line 1109.
+Package pdftex.def Info: notaglineLogo.png  used on input line 1084.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -2468,16 +2457,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 8002 strings out of 494847
- 125478 string characters out of 6179079
- 184337 words of memory out of 5000000
- 11055 multiletter control sequences out of 15000+600000
- 104246 words of font info for 162 fonts, out of 8000000 for 9000
+ 7998 strings out of 494847
+ 125422 string characters out of 6179079
+ 185337 words of memory out of 5000000
+ 11052 multiletter control sequences out of 15000+600000
+ 101443 words of font info for 160 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  51i,13n,53p,1502b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2493,17 +2479,16 @@ msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
-tic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (19 pages, 22233569 bytes).
+st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
+etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (19 pages, 22228989 bytes).
 PDF statistics:
- 1279 PDF objects out of 1440 (max. 8388607)
- 441 compressed objects within 5 object streams
+ 1275 PDF objects out of 1440 (max. 8388607)
+ 438 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
